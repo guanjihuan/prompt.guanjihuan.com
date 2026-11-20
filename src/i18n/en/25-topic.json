@@ -1,0 +1,50 @@
+{
+  "category": {
+    "name": "Research Directions and Topic Selection",
+    "desc": "Brainstorming, evaluation and tiering, framing and entry points, deepening existing work, novelty checks, roadmaps, and adjacent directions"
+  },
+  "prompts": {
+    "p186": {
+      "title": "Brainstorm Candidate Research Directions",
+      "tags": ["Topic Selection", "Directions", "Brainstorming"],
+      "short": "Inventory the existing research foundation and literature gaps, propose candidate topics, and prioritize them.",
+      "content": "Develop next-step directions from the existing research foundation and make them comparable. List the available research data, methods, technical capabilities, and validation results, then propose candidate topics based on gaps in the literature. Deliver a candidate list, comparison criteria, and priorities, elaborating the research question, methods, validation approach, and risks for the top three."
+    },
+    "p187": {
+      "title": "Evaluate and Classify Candidate Topics",
+      "tags": ["Topic Selection", "Evaluation", "Innovation"],
+      "short": "Assess the candidate topics honestly: grade them by novelty, feasibility, evidential value, and cost, and include the reasons to drop them.",
+      "content": "Judge whether the topics are worth investing in, and group the candidate topics. Check whether similar work exists, grade each one by novelty, feasibility, evidential value, and cost, and write down the scoring basis and the thresholds for each dimension. Deliver the assessment table, the grouping matrix, and the priority list, with the reasons to drop a topic and the conditions for reassessing it."
+    },
+    "p188": {
+      "title": "Define the Research Framing and Entry Point",
+      "tags": ["Topic Selection", "Framing", "Innovation"],
+      "short": "Find a focused, feasible question for this topic, list 3 candidate entry points, and recommend one.",
+      "content": "Narrow a broad topic into a focused question that can be completed. Propose 3 candidate entry points within the time and resource constraints, comparing the evidence required, feasibility, risks, and expected outputs for each. Deliver a candidate comparison table and, for the recommended direction, specify the research question, scope boundaries, and first validation step."
+    },
+    "p189": {
+      "title": "Deepen Existing Work",
+      "tags": ["Topic Selection", "Depth", "Innovation"],
+      "short": "Find 3–5 points worth exploring more deeply, explaining how each maps to specific modules, computational workflows, or experiments.",
+      "content": "Identify aspects of existing work that can be explored more deeply. Review recent literature, your own manuscripts, and code, distinguishing parameter tuning and dataset swaps from questions that could yield new explanations, and propose 3–5 candidate directions. Deliver supporting literature and code evidence, candidate priorities, and an implementation checklist specifying where changes would be made and which evaluation metrics to use."
+    },
+    "p190": {
+      "title": "Verify Whether Claimed Contributions Hold Up",
+      "tags": ["Topic Selection", "Innovation", "Evaluation"],
+      "short": "Check each claimed contribution against prior work to determine whether it adds new knowledge or merely rephrases existing work.",
+      "content": "First separate the contributions that are genuinely new from those that merely rephrase existing work. Compare the research subject, methods, and conclusions of each one with closely related work. Deliver a verification table and supporting citations, flagging claims that do not hold up, need narrowing, or could be merged, along with recommendations for additional evidence."
+    },
+    "p191": {
+      "title": "Create a Research Roadmap",
+      "tags": ["Topic Selection", "Roadmap", "Planning"],
+      "short": "Create a roadmap for the topic with phased goals and milestones, plus dependencies and a risk list.",
+      "content": "Break the topic into an executable research roadmap. Divide it into hypothesis formation, method implementation, validation, and manuscript preparation phases, setting checkable goals, deliverables, and milestones for each phase. Deliver a roadmap, dependency table, and risk list, specifying acceptance criteria and the earliest point at which the hypothesis can be falsified."
+    },
+    "p296": {
+      "title": "Explore Adjacent Research Directions",
+      "tags": ["Topic Selection", "Exploration", "Directions"],
+      "short": "When the current direction stalls, look at adjacent directions, compare expected payoff with validation costs, and pick one for small-scale validation.",
+      "content": "When the current direction offers no high-value opportunities, look for opportunities in adjacent directions. Review adjacent literature and problems, select entry points that connect with the existing work, and compare expected payoff with validation costs. Deliver a comparison of candidate directions and research findings, select one direction for small-scale validation, and explain the basis for ruling out alternatives."
+    }
+  }
+}

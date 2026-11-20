@@ -1,0 +1,56 @@
+{
+  "category": {
+    "name": "Literature Research and Reviews",
+    "desc": "Close-reading notes and comparison tables, literature reviews, novelty searches, report compilation, and reference verification"
+  },
+  "prompts": {
+    "p184": {
+      "title": "Close-Read a Paper and Take Structured Notes",
+      "tags": ["Literature", "Notes", "Close Reading"],
+      "short": "Close-read this paper and take structured notes covering methods, formulas and assumptions, experiments, and limitations.",
+      "content": "After reading a paper, produce structured notes that can be reused. Record the research question and methods, models and core formulas, and key assumptions, then organize the data and experiments and summarize the conclusions, limitations, and reproducibility. Deliver notes with page references, a glossary, and a list of questions, explaining which aspects could be adapted for other work."
+    },
+    "p185": {
+      "title": "Create a Literature Comparison Table",
+      "tags": ["Literature", "Comparison", "Review"],
+      "short": "Compare this set of papers by research question, methods, data, conclusions, and limitations, citing the source of every judgment.",
+      "content": "Use one table to show what each paper in this set does and what remains unresolved. First compare research questions, methods, and data, then compare core conclusions, limitations, and reproducibility. Cite the paper and specific location supporting every judgment. Deliver the complete table and a citation index, summarizing consensus, disagreements, and conclusions that cannot be compared directly."
+    },
+    "p177": {
+      "title": "Write a Literature Review with Derivations",
+      "tags": ["Literature", "Review", "Derivations"],
+      "short": "Write a review of a research direction with consistent notation and equation numbering, providing independently checkable derivations for key conclusions.",
+      "content": "Let the reader finish the review knowing which conclusions in this direction hold and which are still disputed. Write out the search scope and the screening criteria, unify the symbols and formula numbering, organise the review by question, and give a reproducible derivation with its conditions for each key conclusion. Deliver the review text, the reference table, and the index of derivations."
+    },
+    "p179": {
+      "title": "Fill Evidence Gaps and Correct Unsupported Citations",
+      "tags": ["Literature", "Research", "Argumentation"],
+      "short": "Find logical leaps and claims unsupported by their citations, add evidence from real literature, and rewrite the wording.",
+      "content": "Ensure every link in the argument is supported by real literature. Read the full text to locate logical leaps and claims that their citations do not support. Search for and read relevant literature to add evidence, and revise the wording to distinguish existing work from this paper's contributions. Deliver a revised draft and a citation change log with sources for every change, separately listing conclusions that still lack evidence."
+    },
+    "p181": {
+      "title": "Conduct a Novelty Search of Related Work",
+      "tags": ["Literature", "Novelty Search", "Innovation"],
+      "short": "Investigate whether similar research already exists, compare questions, methods, and evidence, and identify defensible contributions.",
+      "content": "Determine whether the same or closely related research already exists. Record search queries, the time range, and selection criteria, and compare research subjects, key assumptions, and strength of evidence item by item. Deliver a cited novelty-search report and a comparison table of the closest work, identifying defensible entry points and directions requiring further verification."
+    },
+    "p182": {
+      "title": "Survey the Landscape of the Field",
+      "tags": ["Research", "Review", "Frontier"],
+      "short": "Investigate mainstream methods, representative work, controversies, and trends in a selected field, producing a cited report.",
+      "content": "Help researchers choosing a topic see which questions and controversies remain unresolved in the field. Conduct a landscape review with clearly defined boundaries, covering mainstream methods and representative work. Organize unresolved questions, controversies, and trends, and compare assumptions and evidence using consistent dimensions. Deliver a structured report, verifiable citations, and a timeline of key work."
+    },
+    "p183": {
+      "title": "Turn Research Materials into a Report",
+      "tags": ["Research", "Report", "Code"],
+      "short": "Organize a folder of research materials into a report with accompanying runnable code.",
+      "content": "Turn scattered material into a report with a clear line of argument, and make it visible which inputs are still missing. Read the material folder and build an inventory, extract the research questions, algorithms, data, and experimental conclusions, and check whether the material is complete. Deliver the report, runnable code, and a table comparing the material coverage, marking the missing inputs and the steps that cannot be reproduced."
+    },
+    "p180": {
+      "title": "Verify References for Authenticity and Relevance",
+      "tags": ["Literature", "Verification", "Integrity"],
+      "short": "Verify each reference's authenticity, correct erroneous details, and mark anything that cannot be confirmed for further checking.",
+      "content": "Ensure every reference actually exists and can be located. Compare authors, years, and publication details and verify links; remove entries unrelated to the argument. Deliver the verified bibliography and an item-by-item log, stating the reasons for corrections, replacements, and items requiring manual confirmation."
+    }
+  }
+}

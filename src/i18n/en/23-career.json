@@ -1,0 +1,38 @@
+{
+  "category": {
+    "name": "Job Applications and Career Choices",
+    "desc": "Role fit and gaps, work experience and achievements, resumes and cover letters, interview questions and answers, and comparing job opportunities"
+  },
+  "prompts": {
+    "p-ae477e45c86abc2c": {
+      "title": "Analyze Job Fit and Gaps",
+      "tags": ["Job Search", "Role", "Fit"],
+      "short": "Compare the job requirements with your experience to identify matches, gaps, and whether the role is worth applying for.",
+      "content": "Before submitting a resume, get a clear picture of how well you fit the role. Compare each job requirement with your existing experience, distinguishing skills you already have, skills you can transfer, and skills you still lack. Do not treat every phrase in the job posting as a hard requirement. Deliver a fit comparison, evidence still needed, and an application recommendation, flagging any conditions that need confirmation from the employer."
+    },
+    "p-cbc72837b003f9a2": {
+      "title": "Organize Work Experience and Achievements",
+      "tags": ["Experience", "Achievements", "Job Search"],
+      "short": "Organize past experience into a bank of material covering task, action, and result, including numbers only when supported by evidence.",
+      "content": "Turn past experience into material you can draw on for both resumes and interview preparation. For each project or responsibility, organize the tasks, key actions, and results, and fill in the scale, duration, and your personal contribution. Include numbers only when supported by evidence. Deliver an experience material bank, an achievement list, and the information still to be supplied."
+    },
+    "p-d37a8fb4565dcf1d": {
+      "title": "Write a Resume and Cover Letter",
+      "tags": ["Job Search", "Resume", "Communication"],
+      "short": "Tailor a resume to the target role and write a cover letter that explains actual contributions rather than listing everything you did.",
+      "content": "Align the resume and cover letter with the target role instead of merely listing past activities. Select relevant experience based on the job requirements, explain what you did and what results it produced, and remove irrelevant material. Include a clearly structured cover letter. Deliver the resume text, cover letter, and a list of experience details that still need to be supplied."
+    },
+    "p-ca67b854a587a446": {
+      "title": "Prepare Interview Questions and Answers",
+      "tags": ["Interview", "Preparation", "Communication"],
+      "short": "Predict likely interview questions and prepare key points and delivery for each one.",
+      "content": "Focus interview preparation rather than relying on improvisation. First predict likely questions based on the role and resume. For each question, write key points, an example, and a one-sentence opening, then flag weak areas you cannot yet answer well. Deliver a question list, answer points for each question, and areas requiring further study."
+    },
+    "p-409ebd07aa6da477": {
+      "title": "Compare Job Opportunities and Make a Decision",
+      "tags": ["Career Choice", "Comparison", "Decision-making"],
+      "short": "Compare several job opportunities side by side in terms of income, growth, stability, and impact on your life.",
+      "content": "Compare job opportunities in terms of their effects on your life and long-term development. Review responsibilities, growth, compensation and costs, team, and stability item by item, distinguishing written terms, verbal promises, and personal preferences. List any deal-breakers. Deliver a weighted comparison, risk list, and recommendation, flagging questions to resolve before signing."
+    }
+  }
+}

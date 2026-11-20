@@ -1,0 +1,88 @@
+{
+  "category": {
+    "name": "Slide Editing and Export",
+    "desc": "Unify the layout with the slide master, replace fonts and colours, swap images in bulk, export to PDF and images, reduce the file size, add animations and transitions, check every slide, and build a reusable template"
+  },
+  "prompts": {
+    "p-19b2c3d4e5f60712": {
+      "title": "Unify the Layout with the Slide Master",
+      "tags": [
+        "Slide Master",
+        "Layout",
+        "Consistency"
+      ],
+      "short": "Use the slide master to unify the fonts, the footer, and the page numbers across the whole deck.",
+      "content": "Use the slide master to unify the layout of a whole deck, so that changing one thing changes it everywhere. Set the font and size of the titles and the body, the footer, the page numbers, and the place of the mark in the master, apply the master layouts to every slide, and then check that no single slide has slipped out of line. Deliver the file with the master applied and the note on the layout."
+    },
+    "p-2ac3d4e5f6071223": {
+      "title": "Replace the Fonts and the Colours Across the Deck",
+      "tags": [
+        "Fonts",
+        "Colours",
+        "Replacement"
+      ],
+      "short": "Replace the fonts and the colours of a whole deck, leaving nothing half old and half new.",
+      "content": "Replace the fonts and the colours of a whole deck, leaving nothing half old and half new. Settle on the target font and colours first, replace the text, the shape colours, and the master one by one, and deal with the text that overflows because the new font is wider. Deliver the file after the replacement and the list of what was replaced."
+    },
+    "p-3bd4e5f607122334": {
+      "title": "Swap the Images and the Icons in Bulk",
+      "tags": [
+        "Images",
+        "Icons",
+        "Replacement"
+      ],
+      "short": "Swap the images, the icons, and the codes in bulk, keeping the position and the size.",
+      "content": "Swap the images, the icons, and the codes of a whole deck in bulk, keeping the position and the size they had. Work through the assets by type, keep the cropping and the alignment as they were, and check every slide afterwards for anything that has been stretched or covered. Deliver the file with the new assets and the record of what was swapped."
+    },
+    "p-4ce5f60712233445": {
+      "title": "Export to PDF and to Images",
+      "tags": [
+        "Export",
+        "PDF",
+        "Images"
+      ],
+      "short": "Export to PDF and to per-page images, and check that no font or picture is missing.",
+      "content": "Export a deck to PDF and to per-page images, so that the version that arrives looks the same as the one on the screen. Settle the paper size and the range to export, open the result and check the fonts, the pages with animation, and the pictures, and replace any font that comes out missing with one that is always available. Deliver the exported PDF and the images, and the result of the check."
+    },
+    "p-5df6071223344556": {
+      "title": "Reduce the Size of the File",
+      "tags": [
+        "Compression",
+        "File Size",
+        "Images"
+      ],
+      "short": "Reduce the size of a deck so that it can be sent and shared without trouble.",
+      "content": "Reduce the size of a slide file so that it can be sent and shared without trouble. Find out what takes up the space, lower the resolution of the images that do not need it and crop the parts outside the frame, and merge the images that are used more than once, then check that the picture quality has not visibly suffered. Deliver the reduced file and a comparison of the size before and after."
+    },
+    "p-6e07122334455667": {
+      "title": "Add Animations and Transitions",
+      "tags": [
+        "Animation",
+        "Transition",
+        "Order"
+      ],
+      "short": "Add the animations and the transitions that only need to show the order.",
+      "content": "Add the animations and the transitions that a deck needs, so that the order of the talk is clear. Decide for each slide which elements should appear in which order, use simple fades rather than anything elaborate, keep the effects from taking attention away from the content, and use the same rules throughout. Deliver the file with the effects applied and the rules that were used."
+    },
+    "p-7f18223344556677": {
+      "title": "Check Every Slide for Typos and Figures",
+      "tags": [
+        "Proofreading",
+        "Figures",
+        "Checking"
+      ],
+      "short": "Check every slide before the talk, so that no typo or wrong figure goes on stage.",
+      "content": "Check a deck slide by slide before it is presented, so that no typo and no wrong figure goes on stage. Go through the text, the numbers, the dates, and the units, confirm that the values in the charts agree with what the text says, and mark the places that are still to be confirmed. Deliver the checking list and the corrected file."
+    },
+    "p-8023445566778899": {
+      "title": "Build a Template That Can Be Reused",
+      "tags": [
+        "Template",
+        "Placeholders",
+        "Reuse"
+      ],
+      "short": "Build a template that can be used again and again, so that the content only has to be filled in.",
+      "content": "Build a slide template that can be used again and again, so that next time only the content has to be filled in. Prepare a cover, a table of contents, a section divider, a content page, and a closing page for the usual occasions, add one page with a figure, settle the placeholder areas and the font sizes of each, and try it once with real content to see whether it is easy to work with. Deliver the template and the note on how to use it."
+    }
+  }
+}

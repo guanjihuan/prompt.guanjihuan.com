@@ -1,0 +1,122 @@
+{
+  "category": {
+    "name": "Task Instruction Blocks",
+    "desc": "General-purpose instruction blocks that can be appended to the end of a task: understand intent, proceed steadily, uphold quality standards, work autonomously, and more, plus dedicated blocks for loops, journal polishing, rigorous verification, and research"
+  },
+  "prompts": {
+    "p288": {
+      "title": "Instruction Block: Understand Intent",
+      "tags": ["Instruction Block", "Style"],
+      "short": "First understand the goals and constraints; use reversible defaults for noncritical details and record them.",
+      "content": "Base execution on the real goals rather than being led astray by literal requirements. Infer the task goals, intended audience, and constraints from the context. When literal requirements conflict with the goals, explain the impact before executing. Use reversible defaults for noncritical details and record the assumptions. Deliver the key assumptions, actual handling, and verification results."
+    },
+    "p-4f429007ff09927a": {
+      "title": "Instruction Block: Proceed Steadily",
+      "tags": ["Instruction Block", "Pace", "Prudence"],
+      "short": "Take small, steady steps: break the work into steps and proceed only after each step passes verification.",
+      "content": "Complete and verify each step before moving to the next. Break the task into small, verifiable steps. Explain what will be changed before making each change, stop and report anything unexpected, and do not expand the scope without authorization. Deliver step-by-step verification records and the final result."
+    },
+    "p-85ef64d18de0b32d": {
+      "title": "Instruction Block: Quality Baseline",
+      "tags": ["Instruction Block", "Quality", "Acceptance"],
+      "short": "Check logic and edge cases item by item; fix any issue found and verify again.",
+      "content": "Ensure every piece of logic stands up to scrutiny and no unfinished work remains. Check all logical details and edge cases item by item, fix any issue found immediately, and verify it again. Deliver the check coverage and the verification result for each item, explaining what was checked and how."
+    },
+    "p-2b4533287f9e8567": {
+      "title": "Instruction Block: Work Autonomously",
+      "tags": ["Instruction Block", "Authorization", "Autonomy"],
+      "short": "Work freely within the authorized scope and use your judgment on key trade-offs, but stop and explain the impact before deleting data or changing public interfaces.",
+      "content": "Take full ownership and proceed within the authorized scope without asking me. Use your judgment on the technical approach, implementation details, and minor formatting choices; the result must stand up to scrutiny. Stop and explain the impact before deleting data, changing public interfaces, or publishing anything."
+    },
+    "p287": {
+      "title": "Instruction Block: Version Control",
+      "tags": ["Instruction Block", "Version Control", "Automation"],
+      "short": "Commit each independently verifiable change as soon as it is complete, without including unrelated files.",
+      "content": "Commit independently verifiable changes one at a time, keeping the boundaries of each commit clear. Review the diff file by file before committing, stage only paths relevant to this task, and explain what changed and why in the commit message. Deliver the commit identifier and included files. Leave other people's uncommitted changes untouched and explain the boundary."
+    },
+    "p-8f63fa42f87d2b25": {
+      "title": "Instruction Block: Natural Expression",
+      "tags": ["Instruction Block", "Expression", "Copy"],
+      "short": "Make the writing free of an AI feel, with a natural, direct tone and minimal stock phrases and padding.",
+      "content": "Make the produced text read as if a person wrote it, without the tone of AI writing. Cut the clichés and the piling up of parallel phrases, keep the tone natural and direct, write user-facing copy from the user's point of view, and do not pile up product jargon. Deliver the text and mark the expressions that changed."
+    },
+    "p-2d2dc8640e017b15": {
+      "title": "Instruction Block: User-Friendly Design",
+      "tags": ["Instruction Block", "Product", "Usability"],
+      "short": "Design the implementation for user-friendliness, choose good defaults for users, and keep the main path simple.",
+      "content": "Design and implement from a user-friendly perspective, making the product so simple that anyone can use it. Choose good defaults for users, eliminate steps wherever possible, and do not pass every decision on to them. Put complex features under advanced options and keep the main path simple. When delivering, explain which default decisions you made for users."
+    },
+    "p-41b63dfe673581d2": {
+      "title": "Instruction Block: Refactoring Allowed",
+      "tags": ["Instruction Block", "Refactoring", "Improvement"],
+      "short": "Rebuild from scratch when the existing structure is not worth keeping, change it locally when it is, and ensure behavior stays unchanged after refactoring.",
+      "content": "Refactor when there is a need, and a full rewrite is allowed; do not be bound by the current implementation. First decide whether the existing structure is worth keeping: if it is, change it locally, and if it is not, rewrite it from scratch; after the refactor, keep the behaviour unchanged and get the verification passing. Deliver the reason for the refactor and a before-and-after comparison, stating what was kept and what was replaced."
+    },
+    "p286": {
+      "title": "Instruction Block: Automatic Loop",
+      "tags": ["Instruction Block", "Loop", "Automation"],
+      "short": "Advance one most valuable thing per round; wrap up when there is nothing worth doing.",
+      "content": "Keep going even when nobody is watching, and spend each round on the single most valuable thing. Each round starts by reviewing the previous round's result, pick a direction by value and risk, and execute within the granted authority; stop when there is nothing worth doing. Deliver the goal of each round, the actual changes, and the checking evidence, and summarise why it stopped."
+    },
+    "p-e418db87a387eaba": {
+      "title": "Instruction Block: Retry After Failure",
+      "tags": ["Instruction Block", "Retry", "Stop"],
+      "short": "Adjust retries based on new evidence; stop after 3 consecutive attempts at the same blocker yield no progress.",
+      "content": "When a failure occurs, adjust the retry approach based on new evidence rather than repeating the same command. After 3 consecutive attempts at the same blocker yield no progress, stop and report back. Distinguish recoverable errors from blockers that require human intervention. Deliver a retry log, where the work stopped, and recovery recommendations, preserving the last working state and failure logs."
+    },
+    "p290": {
+      "title": "Instruction Block: Review and Revise Immediately",
+      "tags": ["Instruction Block", "Review", "Iteration"],
+      "short": "Review first in each round, then fix substantiated issues; recheck affected content after editing.",
+      "content": "Review before revising in each round, limiting changes to substantiated issues. Review the current version's reasoning, data, and expression, and record issues with precise locations. Perform any necessary additional calculations or restructuring at the same time, and recheck affected parts after editing. Deliver this round's comments alongside the changes, verification records, and recommendations for the next round."
+    },
+    "p291": {
+      "title": "Instruction Block: Enhanced Computation",
+      "tags": ["Instruction Block", "Computation", "Verification"],
+      "short": "Add computations for key assumptions, set resource limits, and save configurations and results.",
+      "content": "Add computations that can settle the key assumptions so the conclusions are well supported. First state the assumptions to be tested, evidence gaps, and decision metrics; then select the compute scale, parameter sampling, or repeated experiments, and set time and storage limits. Deliver configurations, logs, and a result summary, and use controlled comparisons to determine whether the assumptions hold."
+    },
+    "p-c92584780d04ec08": {
+      "title": "Instruction Block: Journal-Style Polishing",
+      "tags": ["Instruction Block", "Polishing", "Journal"],
+      "short": "Polish the full text repeatedly against the target journal's publicly available writing requirements: natural language, balanced structure, and the mechanism as the main thread.",
+      "content": "Bring the manuscript closer to the target journal's writing requirements with each round. Address language and structure iteratively: remove mechanical expressions and stock phrases, and balance section lengths. Use the core mechanism as the narrative thread, making the data serve the argument rather than presenting results as a parallel list, and move lengthy material to the supplementary materials. Deliver a comparison of changes and outstanding issues, flagging anything that still needs verification."
+    },
+    "p-0704841c03732cdc": {
+      "title": "Instruction Block: Rigorous Verification",
+      "tags": ["Instruction Block", "Verification", "Rigor"],
+      "short": "Check in each round whether principles, formulas, code, and data are strictly correct; fix errors immediately and verify again.",
+      "content": "Ensure every derivation in the manuscript stands up to review. In each round, check whether the principles are applied correctly, whether the formulas are valid, and whether the code matches the formulas, and verify the data in figures and tables. Add calculations or citations where evidence is missing; flag uncertainties and provide supporting evidence; and verify again after corrections. Deliver a verification checklist and evidence supporting each item's conclusion."
+    },
+    "p-e1844a3f1e78ba63": {
+      "title": "Instruction Block: Check and Fix the Entire Project",
+      "tags": ["Instruction Block", "Inspection", "Fixes"],
+      "short": "Check and fix the entire project in each round, covering code, interface, documentation, and configuration.",
+      "content": "Ensure the entire project receives a thorough check in every round. Cover code logic, interface interactions, documentation, and configuration items in each round. Fix errors as soon as they are found, fix design problems as well, and verify the fixes before starting the next round. Deliver each round's check scope, fixed issues, and re-verification results, listing anything that still requires human confirmation."
+    },
+    "p292": {
+      "title": "Instruction Block: Supplement Literature and Restructure",
+      "tags": ["Instruction Block", "Literature", "Restructuring"],
+      "short": "Add verifiable literature for gaps in the argument and restructure content when necessary.",
+      "content": "Fill every gap in the argument with verifiable literature. First locate the gaps, then search for verifiable literature and record its sources and boundaries of applicability. Do not present existing methods as innovations of this paper. Adjust the structure when necessary. Deliver a literature list, the revised manuscript, and verification records."
+    },
+    "p293": {
+      "title": "Instruction Block: Top-Level Design",
+      "tags": ["Instruction Block", "Top-level", "Design"],
+      "short": "Review the full text through its core questions and mechanisms, add evidence, and remove content that strays from the main line.",
+      "content": "Review the overall structure through the core questions, mechanism explanations, and innovations. First list the evidence gaps that affect whether the conclusions hold, then decide whether to add calculations, make local revisions, or restructure the text. Remove content that strays from the main line and has no evidentiary value. Deliver a comparison of issues and changes, the revised manuscript, and review records."
+    },
+    "p289": {
+      "title": "Instruction Block: Deep Research Loop",
+      "tags": ["Instruction Block", "Loop", "Research"],
+      "short": "Advance only one research direction per round, leave verifiable results, and run a compilation check.",
+      "content": "Advance only one research direction per round, and ensure the results can be independently reviewed. First compare the benefits and evidence gaps of deepening the current topic versus investigating a new direction, then select one to pursue. Deliver sources, calculations, or manuscript changes and explain which judgments they support. When editing the manuscript, compile the paper into a PDF."
+    },
+    "p294": {
+      "title": "Archive Unused Material and Keep a Backup",
+      "tags": ["Instruction Block", "Archiving", "Backup"],
+      "short": "Check what the main line needs and run the tests, then archive the material that is not in use and keep a backup copy.",
+      "content": "Check what the main line needs, and archive the material that is not in use but still has value. Copy the files to keep into the backup directory before moving them out of the working area, run the code, computation, and document tests, and fill in the reproduction parameters, environment dependencies, and operating notes; record the source, the purpose, and the restore method when archiving. Deliver the archive directory, the backup location, the index, and the verification record."
+    }
+  }
+}

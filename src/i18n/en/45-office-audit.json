@@ -1,0 +1,128 @@
+{
+  "category": {
+    "name": "Cross-Checks and Verification",
+    "desc": "Compare two tables item by item, cross-check two sets of records, sample and verify data, unify counting rules before comparing, check against a checklist, verify consistency across stages, find outliers, and have two people check independently"
+  },
+  "prompts": {
+    "p-3900112233445567": {
+      "title": "Compare Two Tables Item by Item",
+      "tags": [
+        "Comparison",
+        "Matching",
+        "Differences"
+      ],
+      "short": "Compare two tables field by field on their shared keys and mark every mismatch.",
+      "content": "Compare two tables field by field on their shared keys, so that every mismatch can be pointed at. Settle the join key and the range of comparison first, then compare row by row and column by column, marking the items that are missing, duplicated, or numerically different, and write down which field the difference appears in. Deliver the comparison result, the list of differences, and the count of them."
+    },
+    "p-4a01122334455678": {
+      "title": "Cross-Check Two Sets of Records",
+      "tags": [
+        "Cross-Check",
+        "Records",
+        "Consistency"
+      ],
+      "short": "Cross-check two sets of records and find the mismatches that neither one shows on its own.",
+      "content": "Cross-check two sets of records and find the problems that neither one reveals on its own. Match the records on both sides by their key identifier, compare the key fields and the time order one by one, list the mismatches and the missing items separately, and trace each of them back to its own source. Deliver the cross-check result, the list of mismatches, and the location of each source."
+    },
+    "p-5b11223344556678": {
+      "title": "Sample and Verify the Accuracy of Data",
+      "tags": [
+        "Sampling",
+        "Review",
+        "Accuracy"
+      ],
+      "short": "Verify a batch of data by sampling, stating the sampling method and every error found.",
+      "content": "Verify the accuracy of a batch of data so that the conclusion can withstand questions. Write down the sampling method and size, the decision criteria, and the types of error, record the result of each check and the problems found, and do not check only the parts that are easy to check. Deliver the review report, the details of each error, and the basis for the sampling."
+    },
+    "p-6c22334455667788": {
+      "title": "Unify the Counting Rules Before Comparing",
+      "tags": [
+        "Definitions",
+        "Comparison",
+        "Attribution"
+      ],
+      "short": "Unify the counting rules before comparing, and separate differences in method from real differences.",
+      "content": "Unify the counting rules before comparing two sets of figures, so that the difference is a real one and not an artefact of the method. Check the scope of statistics, the time range, and the calculation method item by item, separate the differences caused by the rules from the real differences, and recalculate under the unified rules. Deliver the comparison of counting rules, the recalculated figures, and the attribution of each difference."
+    },
+    "p-7d33445566778899": {
+      "title": "Check Against an Acceptance Checklist",
+      "tags": [
+        "Acceptance",
+        "Checklist",
+        "Checking"
+      ],
+      "short": "Check every item on the agreed acceptance checklist and give each one a pass or fail.",
+      "content": "Check every item of an agreed acceptance list and give each one a definite verdict. Verify each item with real data or a real operation, record whether it passes, and for the ones that do not, write down what is missing, who will supply it, and by when. Deliver the item-by-item acceptance result, the failing items, and the plan to close them."
+    },
+    "p-8e445566778899aa": {
+      "title": "Check That the Data Is Consistent Across Stages",
+      "tags": [
+        "Consistency",
+        "Checking",
+        "Totals"
+      ],
+      "short": "Check that the same data adds up across stages, covering both the totals and the counting rules.",
+      "content": "Check that the same data adds up correctly across the stages it passes through, so that the upstream and downstream never disagree. Check the relationship between the totals, the subtotals, and the line items, compare how the same measure is counted in different tables, and mark the stage where the inconsistency is and the records it affects. Deliver the consistency check result and the list of problems."
+    },
+    "p-9f5566778899aabb": {
+      "title": "Find Outliers and Anomalous Records",
+      "tags": [
+        "Outliers",
+        "Anomalies",
+        "Rules"
+      ],
+      "short": "Find the outliers in a sheet and give the basis for each judgement instead of deleting them.",
+      "content": "Find the outliers and anomalous records in a sheet, and show the basis for the judgement rather than deleting anything. Mark the anomalies under the decision rules that were agreed in advance, give the rule that triggered and the original value for each one, and separate genuine anomalies from data entry mistakes with a suggested handling for each. Deliver the list of anomalies, the basis for the judgement, and the suggested handling."
+    },
+    "p-a06778899aabbcc": {
+      "title": "Keep Verification Records That Can Be Re-checked",
+      "tags": [
+        "Verification",
+        "Records",
+        "Re-check"
+      ],
+      "short": "Leave verification records that another person can follow and repeat.",
+      "content": "Make one round of verification something another person can follow and repeat, with both the process and the result open to review. Record the basis of each check, the location of the source, the decision criteria, and the conclusion at every step, store the intermediate artifacts separately, and mark the parts that could not be verified with the reasons. Deliver the verification record, the index of sources, and the note on what was not covered."
+    },
+    "p-1f9c2d7e46a0789": {
+      "title": "Have Two People Check Independently",
+      "tags": [
+        "Two-Person Review",
+        "Disagreement",
+        "Cross-Check"
+      ],
+      "short": "Have two people check separately and then align, so that what one missed is caught.",
+      "content": "Have two people check separately and then align, so that what one of them missed or misread is caught. Split them into two groups working independently from the same checklist, then compare the two sets of results item by item, work through every disagreement until it is settled, and record the disagreements and the final judgement. Deliver both sets of check records, the list of disagreements, and the final conclusion."
+    },
+    "p-2a0d3e8f57b189a": {
+      "title": "Compare Against the Same Period Last Year or a Benchmark",
+      "tags": [
+        "Same Period",
+        "Benchmark",
+        "Comparison"
+      ],
+      "short": "Compare the current figures with the same period last year or an agreed benchmark, and say where they differ.",
+      "content": "Compare the current figures with the same period last year or with a benchmark that was agreed in advance, and make the change clear. Check that the counting rules, the time range, and the sample range on both sides are comparable, split the difference into a change in level and a change in structure, and mark the parts that are not comparable. Deliver the comparison result, the breakdown of the difference, and the note on what is not comparable."
+    },
+    "p-9b7d0f1a2c3e4568": {
+      "title": "Write an Inspection Plan and the Decision Criteria",
+      "tags": [
+        "Inspection",
+        "Criteria",
+        "Sampling"
+      ],
+      "short": "Write an inspection plan: what to check, how to sample, and what counts as a pass.",
+      "content": "Set out for a batch of material or a batch of data how it is to be checked and what counts as a pass. Write down the objects and the range of the inspection, the sampling method and the sample size, the decision criteria, and what happens to the ones that fail, and leave room for a second look and for an objection. Deliver the inspection plan, the table of criteria, and the record template."
+    },
+    "p-0c8e1a2b3c4f5679": {
+      "title": "Trace Where Every Figure in a Report Comes From",
+      "tags": [
+        "Data Source",
+        "Formulas",
+        "Tracing"
+      ],
+      "short": "Trace where every figure in a report comes from, and write down the source and the calculation.",
+      "content": "Trace where every figure in a report comes from, so that anyone can recalculate it from the same steps. Follow each cell back to its source, its formula, and the filters applied, and mark the places where the same measure takes different values in different tables. Deliver the note on how the data was taken, the table of formulas, and the list of inconsistencies."
+    }
+  }
+}

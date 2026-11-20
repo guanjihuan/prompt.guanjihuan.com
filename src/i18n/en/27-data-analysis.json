@@ -1,0 +1,74 @@
+{
+  "category": {
+    "name": "Data Analysis and Statistics",
+    "desc": "Scraping and incremental updates, cleaning and validation, multi-table joins, metric definitions, exploratory analysis, and statistical methods"
+  },
+  "prompts": {
+    "p269": {
+      "title": "Implement Scraping and Incremental Updates",
+      "tags": ["Web Scraping", "Scraping", "Incremental Updates"],
+      "short": "Write a scraper that respects rate limits, collects only required fields, and updates incrementally using timestamps.",
+      "content": "Keep local data up to date when the source changes without scraping everything again. Write a scraper for the data source, verify access rates and data usage permissions, collect only fields required for the task, and use timestamps or cursors to record the synchronization position. Deliver the program, configuration, and incremental-update tests."
+    },
+    "p270": {
+      "title": "Handle Scraping Failures and Errors",
+      "tags": ["Web Scraping", "Fault Tolerance", "Debugging"],
+      "short": "Make scraping resilient to failures with timeout retries, rate limiting, resumable failed items, and alerts for empty results.",
+      "content": "Make the scraper resilient to timeouts, rate limiting, and failures. Set a maximum retry count and an overall time limit. Record status codes and response summaries for failed items and support resuming them. Raise alerts for empty results and structural changes. Deliver a failure list and recovery instructions."
+    },
+    "p263": {
+      "title": "Scrape Papers and Analyze Trends",
+      "tags": ["Data", "Scraping", "Analysis"],
+      "short": "Scrape recent articles from literature sources, deduplicate them, analyze trends, and produce trend charts.",
+      "content": "Make the popularity of research directions evidence-based. Fetch recent articles from the literature sources with the search query, deduplicate them by DOI and title, and verify the search query, field range, and access limits. Archive the raw responses by source, then count the frequency of keywords and key directions. Deliver the deduplicated data and chart pages, flagging periods that are not comparable."
+    },
+    "p264": {
+      "title": "Clean and Validate Data",
+      "tags": ["Data", "Cleaning", "Quality"],
+      "short": "Clean the data by backing up the raw data first, then handling missing values, outliers, and duplicates.",
+      "content": "Make the data used for analysis clean and reliable, with every processing step available for review. First back up the raw data and check field types, primary keys, and record counts. Then handle missing values, outliers, and duplicates, documenting the basis for every rule. Deliver the cleaned data and logs."
+    },
+    "p-25cdb473922c709d": {
+      "title": "Merge Data Tables from Multiple Sources",
+      "tags": ["Data", "Merging", "Joins"],
+      "short": "Join multiple data tables into one analysis-ready table using join keys, checking match rates and conflicts.",
+      "content": "Merge multiple data tables into one analysis-ready table using join keys. Check key uniqueness and match rates, standardize field definitions, and handle duplicates and conflicts while retaining the affected records. Deliver the merge script and result table, with a list and proportion of unmatched records."
+    },
+    "p267": {
+      "title": "Define Metrics and Statistical Definitions",
+      "tags": ["Data", "Metrics", "Definitions"],
+      "short": "Before calculating statistics, define every metric and the rules it uses: numerator and denominator, time window, and outlier handling.",
+      "content": "Give every metric for the research question one unambiguous, reproducible definition. Specify its meaning, numerator and denominator, time window, and data source, and define deduplication keys, aggregation granularity, and outlier-handling rules. Deliver a metric dictionary and calculation examples."
+    },
+    "p265": {
+      "title": "Conduct Exploratory Data Analysis",
+      "tags": ["Data", "Exploration", "Statistics"],
+      "short": "Perform exploratory analysis of distributions, group differences, correlations, and trends, delivering numbered figures.",
+      "content": "Find patterns in the dataset worth investigating further. Check field meanings and missing data, then examine distributions and group differences before looking at correlations, trends, and outliers. Deliver reproducible analysis code and numbered figures."
+    },
+    "p272": {
+      "title": "Choose Statistical Methods",
+      "tags": ["Data", "Statistics", "Significance"],
+      "short": "Choose statistical methods for the research question, test their assumptions, and select suitable alternatives when those assumptions fail.",
+      "content": "Choose statistical methods suited to the research question and data structure. Specify the comparison goal, variable types, independence, and sample size, and test assumptions such as distributions and variance. When assumptions do not hold, select an alternative model or robust method based on the data structure and inference goal. Deliver analysis code, assumption tests, and a results table."
+    },
+    "p268": {
+      "title": "Choose Appropriate Charts",
+      "tags": ["Data", "Charts", "Selection"],
+      "short": "Choose charts for the analysis goal: bar charts for comparisons, histograms or box plots for distributions, and line charts for trends.",
+      "content": "Choose appropriate charts for the analysis goal. Select chart types based on variable types and sample size: use bar charts for category comparisons, histograms or box plots for distributions, and scatter plots or line charts for relationships and trends. Deliver a chart selection table and example figures."
+    },
+    "p266": {
+      "title": "Make Data-Driven Research Recommendations",
+      "tags": ["Data", "Recommendations", "Research"],
+      "short": "Make evidence-backed research recommendations based on which directions are gaining or losing momentum.",
+      "content": "Decide where to invest next, with the data to back it. Based on the output growth and the recent share of each direction, work out which are heating up, which are cooling down, and which are crossing over, and recommend the research directions worth investing in. Deliver the evidence table for the directions and the priority recommendation."
+    },
+    "p271": {
+      "title": "Verify Import and Export Integrity",
+      "tags": ["Import and Export", "Integrity", "Data"],
+      "short": "Prevent data loss during import and export: imports must be complete, export followed by reimport must be equivalent, and failures must preserve the original data.",
+      "content": "Check whether the contents of data files remain consistent after import and export. Compare fields, record counts, and data types; confirm that imports have no omissions or truncation and that export followed by reimport is equivalent. Roll back failures while preserving the original data. Deliver test cases and a reconciliation checklist."
+    }
+  }
+}

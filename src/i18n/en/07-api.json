@@ -1,0 +1,86 @@
+{
+  "category": {
+    "name": "API Design",
+    "desc": "Interface contracts, error responses, authentication, pagination and batching, idempotency, wrappers for external calls, data exchange in standard formats, versioning and large-model access"
+  },
+  "prompts": {
+    "p062": {
+      "title": "Design Backend APIs",
+      "tags": ["API", "Backend", "Design"],
+      "short": "Design APIs for a feature: paths, fields, error codes, and pagination and sorting rules.",
+      "content": "Design API contracts for the feature that can be implemented directly. Follow the project's existing style for resources and verbs, specify request and response fields and error codes, and clearly document required fields, types, and pagination and sorting rules. Deliver the API definitions and field tables, along with typical request and response examples and error-code explanations."
+    },
+    "p063": {
+      "title": "Standardize Error Responses",
+      "tags": ["Backend", "Errors", "Standards"],
+      "short": "Standardize API error responses: error codes, readable messages, field-level errors, and request identifiers.",
+      "content": "Change API errors into a consistent response structure that makes issues easy to locate. Review all existing exception branches and standardize error codes, readable messages, field-level errors, and request identifiers while preserving compatibility rules for the existing protocol. Deliver the format definition and the situations in which each error code applies, along with a migration checklist and response examples."
+    },
+    "p064": {
+      "title": "Implement API Authentication and Authorization",
+      "tags": ["Authentication and Authorization", "Security", "Backend"],
+      "short": "Add authentication and authorization to APIs based on roles and resource ownership, including token validation, refresh, and unauthorized-access tests.",
+      "content": "Let every interface be reachable only by the roles that have the permission, with unauthorised access rejected. Extract the business roles and the operations into a permission matrix, make the anonymous access scope and the resource-level boundaries explicit, and implement the token validation, the refresh, and the server-side authorisation. Deliver the permission matrix and the authorisation changes, with the test results for the normal, expired, forged, and unauthorised cases."
+    },
+    "p068": {
+      "title": "Implement API Pagination",
+      "tags": ["API", "Pagination", "Sorting"],
+      "short": "Choose page-number or cursor pagination based on data changes and calling needs, avoiding duplicates, omissions, and unstable ordering.",
+      "content": "Design stable, predictable pagination for list APIs. Choose page-number or cursor pagination based on how frequently the data changes and positioning needs, and specify sort keys, page size, out-of-range behavior, and cursor-invalidation rules. Deliver the API contract and boundary examples, along with test results for page turns, empty pages, and data changes."
+    },
+    "p-9fcbca908f981547": {
+      "title": "Implement Batch Operations",
+      "tags": ["API", "Batch Operations", "Idempotency"],
+      "short": "Implement a batch interface: limit the count and the timeout, run it atomically or item by item, and mark the failed items separately.",
+      "content": "Make the batch interface give a result for each item even when part of the batch fails. Set the count limit, the timeout semantics, the execution order, and the transaction boundary, choose between an atomic submission and independent handling per item according to the business, and mark the failed items in the response. Deliver the interface spec and the error examples, with the tests for over-limit, timeout, and partial failure."
+    },
+    "p072": {
+      "title": "Implement API Idempotency and Retries",
+      "tags": ["API", "Idempotency", "Retries"],
+      "short": "Add idempotency keys and deduplication to write APIs, define timeout-retry semantics, and test that repeated requests take effect only once.",
+      "content": "Ensure write APIs take effect only once when submitted repeatedly. Define the scope, lifetime, and storage location of idempotency keys, enforce deduplication on the server, and specify retryable errors and backoff policies. Deliver the API contract and implementation changes, along with test results for duplicate requests, timeouts, and concurrent scenarios."
+    },
+    "p070": {
+      "title": "Implement File and Static-Asset APIs",
+      "tags": ["Files", "API", "Paths"],
+      "short": "Implement file read/write APIs, prevent directory traversal, and restrict upload types and sizes.",
+      "content": "Keep file reads and writes and static-asset access from becoming security holes. Normalize request paths and restrict them to the allowed root directory, limit upload types and sizes based on actual content, and define a cleanup policy for failures. Deliver the API implementation and tests for invalid paths and oversized files, along with results of accessing assets after deployment."
+    },
+    "p-9ac16ebad91538ce": {
+      "title": "Design a Command-Line Interface",
+      "tags": ["Command Line", "Interface", "Interaction"],
+      "short": "List the subcommands, arguments, and exit codes, and keep the interface style consistent with the existing project.",
+      "content": "Design a consistent, directly implementable command interface for a command-line tool. List the subcommands, positional arguments, and options, follow the existing naming habits, and make the default values, exit codes, and non-interactive mode explicit. Deliver the interface spec with positive and negative usage examples, plus the verification results for missing arguments, invalid input, and piped calls."
+    },
+    "p069": {
+      "title": "Integrate and Test Frontend-Backend APIs",
+      "tags": ["Integration Testing", "API", "Debugging"],
+      "short": "Send real requests through every item in the API documentation and check fields and error codes.",
+      "content": "Integrate and test every frontend-backend API end to end and align both sides on the contract. Send real requests according to the documentation, covering normal cases, null values, boundary conditions, and failures such as authentication errors, and check field nullability, status codes, and error codes. Deliver integration test cases and summaries of actual requests and responses, along with a list of fixes and retest results."
+    },
+    "p-8f368909c4c95168": {
+      "title": "Build a Wrapper for External APIs",
+      "tags": ["API", "Wrapper", "Integration"],
+      "short": "Wrap the external APIs you need in a unified calling layer that isolates their differences and failures.",
+      "content": "Make every call to an external interface go through one place, with the differences and the failures kept inside. List the differences between the external interfaces in authentication, fields, and error codes, define one request and response model, and handle the timeouts and the retries in the wrapper layer. Deliver the wrapper code, the field mapping table, and the timeout and retry configuration, with the test results for the exceptional cases."
+    },
+    "p-584ccb129ac4c8a3": {
+      "title": "Exchange Data in Standard Formats",
+      "tags": ["Data Exchange", "Format", "Compatibility"],
+      "short": "Send data out in widely supported standard formats instead of private structures only your own tool can read.",
+      "content": "Let other people use the data as soon as they receive it. Review everything exchanged outward and prefer widely recognized standard formats, keeping private structures only as a supplement with field descriptions and version. Deliver a format comparison table and sample files, marking which information is fully preserved and which is lost."
+    },
+    "p-93d52ac85ca9a621": {
+      "title": "Design API Versioning and Compatibility Policies",
+      "tags": ["API", "Versioning", "Compatibility"],
+      "short": "Define an API versioning policy that supports existing callers and provides a deprecation path.",
+      "content": "Ensure API changes do not disrupt callers already using them. Identify the API's current callers and differences in their dependencies, determine how versions are identified and the scope of compatibility, and provide a transition period, parallel operation of both versions, and a retirement plan. Deliver versioning conventions, a compatibility matrix, and a deprecation-notice template, flagging changes that must break compatibility."
+    },
+    "p-60f41973e8532ddc": {
+      "title": "Integrate LLM Chat Capabilities",
+      "tags": ["LLM", "API", "Integration"],
+      "short": "Integrate LLM chat into an application: streaming output, context management, and failure fallbacks.",
+      "content": "Enable the application to call an LLM reliably for chat functionality. Inject keys on the server side and limit usage, truncate conversation history to a window, allow retries after interrupted streams, and provide fallback messages for timeouts and rate limiting. Deliver integration configuration, a calling wrapper, and retry tests, identifying how context-limit overruns and abnormal costs are handled."
+    }
+  }
+}

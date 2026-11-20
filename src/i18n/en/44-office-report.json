@@ -1,0 +1,138 @@
+{
+  "category": {
+    "name": "Reporting and Presentation Materials",
+    "desc": "Write weekly reports that lead with the conclusion, turn project progress into a report, build reporting slides, prepare promotion and review materials, anticipate questions, extract the key points, write requests and applications, escalate risks, and prepare the data behind a report"
+  },
+  "prompts": {
+    "p-b18293a4b5c6d7e": {
+      "title": "Write a Weekly Report That Leads with the Conclusion",
+      "tags": [
+        "Weekly Report",
+        "Conclusion",
+        "Reporting"
+      ],
+      "short": "Write a weekly report: the conclusion and the decisions needed first, then progress, risks, and next week's plan.",
+      "content": "Write a weekly report that a manager can read in three minutes, with the point standing out instead of a running account. Give this week's conclusion and the items that need the reader to decide or to support, then the key progress, the plan for next week, and the risks, attaching checkable figures or facts to each. Deliver the report text and the source of each figure."
+    },
+    "p-c293a4b5c6d7e8f": {
+      "title": "Turn Project Progress into a Report",
+      "tags": [
+        "Progress",
+        "Reporting",
+        "Gap"
+      ],
+      "short": "Organize project progress into a report: where it stands, the gap, the reasons, and what needs deciding.",
+      "content": "Turn the progress made on a project over a period into material that can be presented to a group. Say first where the work now stands and how far it is from the goal, then the reasons for the gap and the measures already taken, and finally the items that need a decision or coordination. Deliver the outline of the report, the key figures, and the notes for the talk."
+    },
+    "p-d3a4b5c6d7e8f90": {
+      "title": "Build Reporting Slides",
+      "tags": [
+        "PPT",
+        "Slides",
+        "Reporting"
+      ],
+      "short": "Build reporting slides with the conclusion on the cover, one argument per slide, and the details in the notes.",
+      "content": "Build a set of reporting slides that can be presented directly, so the audience understands them without reading from a script. Put the conclusion and the key figures on the cover, give each slide a single argument with one picture that explains it, and move the details and the counting rules into the notes. Deliver the slide file, the notes for the talk, and the source of each figure."
+    },
+    "p-e4b5c6d7e8f9001": {
+      "title": "Prepare Promotion and Review Materials",
+      "tags": [
+        "Promotion",
+        "Materials",
+        "Evidence"
+      ],
+      "short": "Prepare review materials that state the results, the contributions, the method, and the gaps, backed by evidence.",
+      "content": "Prepare review materials that stand up to follow-up questions, presenting both the results and the gaps. Match each job responsibility to concrete outputs and checkable figures, distinguish the parts you led from the parts done in collaboration, and describe the working method, the remaining weaknesses, and how they will be improved. Deliver the review materials, the evidence list, and the questions to expect."
+    },
+    "p-f5c6d7e8f900112": {
+      "title": "Prepare the Wording for Questions and Answers",
+      "tags": [
+        "Questions",
+        "Wording",
+        "Preparation"
+      ],
+      "short": "Prepare the answers for a presentation: give an answer for the likely questions and state the boundary for the ones you cannot.",
+      "content": "Prepare the questions that may be asked during a presentation and the wording of the answers, so that nothing stalls on the spot. Sort the likely questions into data, progress, resources, and risks, give each a one-sentence answer with the basis that supports it, and for the ones that cannot be answered, state the current boundary and when the gap will be filled. Deliver the question-and-answer list and the source of each basis."
+    },
+    "p-06d7e8f90011223": {
+      "title": "Extract the Key Points for a Report",
+      "tags": [
+        "Key Points",
+        "Extraction",
+        "Materials"
+      ],
+      "short": "Pick the points a report really needs from long material and drop what does not support the conclusion.",
+      "content": "Pick out of a pile of material the points a report genuinely needs, and drop the parts that do not support the conclusion. Group them as conclusions, evidence, and risks, note which material each point comes from, and remove the details that have no bearing on the conclusion. Deliver the list of key points and the mapping to the source material."
+    },
+    "p-17e8f9001122334": {
+      "title": "Write a Request or an Application",
+      "tags": [
+        "Request",
+        "Application",
+        "Resources"
+      ],
+      "short": "Write a request or application stating the background, the necessity, the specific ask, and the resources needed.",
+      "content": "Write a request or application that makes the thing to be approved clear enough for the reader to decide at once. Give the background and the necessity first, then the specific request, the resources required, and the time window, and attach the supporting basis and the consequence of not approving. Deliver the request text, the supporting material, and the note on the consequence of refusal."
+    },
+    "p-28f9001122334456": {
+      "title": "Escalate Risks and Bad News",
+      "tags": [
+        "Risk",
+        "Escalation",
+        "Measures"
+      ],
+      "short": "Escalate a risk or bad news with the facts, the impact, and the measures that can still be taken.",
+      "content": "Escalate a risk or bad news so that the person receiving it gets information they can judge, rather than a bare statement that something went wrong. Write down what happened, the scope of the impact, and the expected loss, give the measures already taken and the options that remain, and say what the reader needs to decide. Deliver the risk note, the quantified impact, and the proposed measures."
+    },
+    "p-fd7a0b5c24e8567": {
+      "title": "Prepare the Data Behind a Report",
+      "tags": [
+        "Data",
+        "Definitions",
+        "Sources"
+      ],
+      "short": "Verify the data a report relies on, and mark its definitions, time range, and sources.",
+      "content": "Verify the data that a report relies on, so that every figure can be questioned. Confirm the definition of each measure and the time range it covers, check each value against its source, and check that it agrees with the other material. Deliver the data table, the note on the definitions, and the result of the checks."
+    },
+    "p-0e8b1c6d35f9678": {
+      "title": "Rewrite a Report for Each Audience",
+      "tags": [
+        "Rewriting",
+        "Audience",
+        "Reporting"
+      ],
+      "short": "Rewrite one piece of reporting material for each audience: conclusions for the boss, details for the team.",
+      "content": "Rewrite one piece of reporting material for each audience, so that everyone hears the part they care about. Adjust the opening and the level of detail separately for senior management, colleagues, and outside parties, keep the same facts and figures, and mark every change once the rewrite is done. Deliver the three versions and the note on the changes."
+    },
+    "p-7f5b8d9e0a1c2346": {
+      "title": "Give a Recommendation with the Alternatives",
+      "tags": [
+        "Decision",
+        "Recommendation",
+        "Options"
+      ],
+      "short": "Give a recommendation that lays out the options, their costs, and the reason for the one you pick.",
+      "content": "Write a recommendation for a matter that has to be decided, so that the reader can settle it from what you write. For each option state the approach, the cost, the risk, and the people and the time it needs, give the recommended option with the reason, and say under which conditions the other option would be the better one. Deliver the recommendation, a table comparing the options, and the reason for the recommendation."
+    },
+    "p-8a6c9e0f1b2d3457": {
+      "title": "Turn the Conclusions of a Report into Actions",
+      "tags": [
+        "Follow-up",
+        "Action Items",
+        "Tracking"
+      ],
+      "short": "Turn the decisions of a meeting into action items and follow them through to the end.",
+      "content": "Turn the conclusions reached in a report into actions that can actually be finished, so the discussion does not stop there. Break each conclusion into an owner, a deliverable, and a deadline, write down the acceptance criteria and how progress will be reported, and require that anything late is flagged in advance. Deliver the list of actions, the follow-up rhythm, and the note on the items that are not finished."
+    },
+    "p-a081b3456789c01d": {
+      "title": "Write the Conclusions and the Improvements of a Review",
+      "tags": [
+        "Review",
+        "Conclusions",
+        "Improvements"
+      ],
+      "short": "Write the conclusions and the improvements of a review, turning impressions into actions to follow next time.",
+      "content": "Write the review of a piece of work as conclusions and the actions to change, instead of stopping at impressions. Separate what was done well, what was done badly, and what came from outside, and give each one a concrete next step, an owner, and a time to check it. Deliver the conclusions, the list of improvements, and the checking arrangement."
+    }
+  }
+}

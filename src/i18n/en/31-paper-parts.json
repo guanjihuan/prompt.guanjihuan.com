@@ -1,0 +1,56 @@
+{
+  "category": {
+    "name": "Paper Components and Deliverables",
+    "desc": "Supplementary material, figure captions and table notes, acknowledgments and contributions, keywords, titles, reference entries, and compiled outputs"
+  },
+  "prompts": {
+    "p201": {
+      "title": "Write Supplementary Material as a Standalone Document",
+      "tags": ["Paper", "Supplementary Material", "Appendix"],
+      "short": "Organize content that does not fit in the main text as supplementary material or an appendix, and check cross-references.",
+      "content": "Ensure the supplementary material reads coherently on its own when reviewers want to examine the details. Turn content that does not fit in the main text into standalone supplementary material, organized into derivations, additional data, and parameter tables. Standardize figure, table, and equation numbering. Deliver a document that can be read independently, a table of moved content, and a list of cross-references, checking for undefined references and duplicate numbers."
+    },
+    "p202": {
+      "title": "Check How Figures Correspond to the Main Text",
+      "tags": ["Paper", "Figures", "Narrative"],
+      "short": "Check which argument each figure supports and whether the main text cites it, listing figures to add and references to revise.",
+      "content": "Ensure every figure supports a specific argument and is cited in the main text. Check each figure for the argument it supports and where it is cited, flagging figures with no corresponding argument and figures never cited in the main text. Deliver a figure-by-figure correspondence table and a list of revisions, identifying figures to add, figures to revise, and missing in-text citations, with priorities for each item."
+    },
+    "p206": {
+      "title": "Complete Figure and Table Captions",
+      "tags": ["Paper", "Figure Captions", "Table Notes"],
+      "short": "Check figure and table captions: figures must be understandable without the main text, and table notes must explain units, error meanings, and special symbols.",
+      "content": "Complete the caption for every figure and table so reviewers can understand them without consulting the main text. Figure captions must state the content, axes, units, and meaning of each curve. Table notes must supply error definitions and special symbols. Standardize terminology and numbering. Deliver the revised captions and notes with an itemized checklist, separately listing any data, definitions, or error explanations still missing."
+    },
+    "p207": {
+      "title": "Complete Acknowledgments and Author Contributions",
+      "tags": ["Paper", "Acknowledgments", "Authorship"],
+      "short": "Complete the acknowledgments and author contributions, and use only confirmed information for authorship.",
+      "content": "Acknowledge everyone who should be acknowledged and clearly attribute each contribution. Complete the acknowledgments and author-contribution statements based on actual contributions. Use only confirmed information for authorship, record funding, assistance, and computing-resource support, and identify the person responsible for each type of contribution. Deliver two paragraphs ready for inclusion in the paper and a list of information sources, with a separate list of items requiring confirmation."
+    },
+    "p208": {
+      "title": "Propose Paper Keywords",
+      "tags": ["Paper", "Keywords", "Search"],
+      "short": "Write 5–8 keywords covering the research subject, methods, core metrics, and field, balancing general concepts and search terms.",
+      "content": "Propose 5–8 keywords based on the research subject, methods, core metrics, and field. Balance general concepts in the field with terms actually used in searches, retain phrases that distinguish this work, and merge synonymous expressions. Deliver a keyword list ordered by importance, annotating each keyword with its location in the main text and its role in retrieval."
+    },
+    "p210": {
+      "title": "Propose Paper Titles",
+      "tags": ["Paper", "Title", "Abstract"],
+      "short": "Propose 10 title candidates based on the core problem, methods, and findings, covering concise, method-focused, and finding-focused styles.",
+      "content": "Provide enough accurate, specific, discoverable title candidates in one pass. Propose 10 titles based on the core problem, methods, and main findings, covering concise, method-focused, and finding-focused styles. State only contributions supported by evidence. Deliver the 10 candidates with an explanation of their categories, recommend 3 with reasons, and list words that should be avoided."
+    },
+    "p-22ab9e420652dbef": {
+      "title": "Generate Properly Formatted Reference Entries",
+      "tags": ["References", "Citations", "Entries"],
+      "short": "Generate importable reference entries in the target citation style, checking the fields and flagging the uncertain ones.",
+      "content": "Generate the entries in the target citation format so they can be imported straight into EndNote or Zotero, or turned into a BibTeX file, without filling in fields by hand. Check the author, title, journal, volume, issue, pages, and DOI, and unify abbreviations and capitalisation. Deliver the entry file and the import result, marking the missing fields and the doubtful references."
+    },
+    "p209": {
+      "title": "Compile the Paper and Check the Output",
+      "tags": ["Paper", "Compilation", "PDF"],
+      "short": "Compile the paper to PDF and check the output: page count, embedded fonts, image resolution, and any overflow or misalignment.",
+      "content": "Compile the main text and the supplementary material into PDFs and check the output. Handle the blocking errors, look for undefined references, duplicate numbering, and missing files, then check the page count, font embedding, image resolution, and the overflow and misalignment of the layout. Deliver the PDFs, the compile log, and the problem list, marking the fixed items and the warnings still to judge."
+    }
+  }
+}

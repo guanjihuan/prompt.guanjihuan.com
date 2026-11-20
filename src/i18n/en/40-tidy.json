@@ -1,0 +1,68 @@
+{
+  "category": {
+    "name": "Tidying and Maintenance",
+    "desc": "Tidy every part of a project, find the parts that no longer match reality, find what has gone unmaintained for long, fix every instance of the same problem at once, write scripts that batch-process files, and consolidate similar content scattered around"
+  },
+  "prompts": {
+    "p-9476888152dd972f": {
+      "title": "Thoroughly Organize the Entire Project",
+      "tags": [
+        "Organization",
+        "Cleanup",
+        "Consistency"
+      ],
+      "short": "Put scattered files back in place, sort out mixed responsibilities, and update the references.",
+      "content": "Make every part of the project tidy and predictably located. First find out what each area currently holds, where responsibilities are mixed together, and what is scattered across several places, then put everything in its place under one rule and straighten out the naming, updating references and document links as you go. Deliver the tidying list and a before-and-after comparison, with the verification that the build and tests still pass."
+    },
+    "p-3ecd23a09906db45": {
+      "title": "Find Parts That No Longer Match Reality",
+      "tags": [
+        "Consistency",
+        "Outdated",
+        "Verification"
+      ],
+      "short": "Find and fix places that do not match actual behavior.",
+      "content": "Keep descriptions everywhere consistent with actual behavior. Check dependency versions, configuration defaults, interface contracts, and documentation against actual behavior item by item, and correct both inaccurate descriptions and the corresponding calls. Deliver a list of inconsistencies, the locations changed, and the verification results."
+    },
+    "p-72d4956085d88d6f": {
+      "title": "Find Long-Unmaintained Areas",
+      "tags": [
+        "Maintenance",
+        "Trade-offs",
+        "Legacy"
+      ],
+      "short": "Find areas that have not been touched for a long time and decide whether to keep or replace them.",
+      "content": "Stop long-neglected areas from quietly holding the project back. Find modules, dependencies, documentation, and configuration that have not changed for a long time. Decide whether to keep maintaining, replace and rewrite, or remove each one, and explain the basis for each decision. Deliver a list of pending decisions, recommended trade-offs, and the scope of changes."
+    },
+    "p-a23baf57c3b32f79": {
+      "title": "Fix Every Instance of the Same Problem",
+      "tags": [
+        "Batch",
+        "Consistency",
+        "Fixes"
+      ],
+      "short": "If the same error pattern appears in several places, fix all of them correctly in one pass.",
+      "content": "Stop the same kind of problem from popping up in one place after another. First find every location in the project where the same error or omission occurs, fix them all using one consistent approach, and then verify each location to confirm that behavior has not drifted. Deliver the list of affected locations, the consistent fix, and verification results for every location."
+    },
+    "p-05db03a03ab17f10": {
+      "title": "Write a Script to Batch-Process Files",
+      "tags": [
+        "Scripts",
+        "Batch Processing",
+        "Files"
+      ],
+      "short": "Write a repeatable file batch-processing script with dry-run and fail-fast support; test it on a small batch before running it on everything.",
+      "content": "Complete repetitive operations on hundreds or thousands of files in one pass. First define the processing rules and target directory, then write a rerunnable script with dry-run and fail-fast support. Test it on a small batch and confirm the results before running it on everything. Deliver the script, usage instructions, and the processing list, with checks of both the trial and full runs."
+    },
+    "p-a20d7313bbc33029": {
+      "title": "Consolidate Similar Content Scattered Around",
+      "tags": [
+        "Consolidation",
+        "Merging",
+        "Single Source"
+      ],
+      "short": "When the same content lives in several places, make one of them the source of truth and point the rest at it.",
+      "content": "Let one thing have one authority. Find the similar content spread across several places whose wording or numbers may disagree, choose one location as the single source, and turn the others into references or remove them. Deliver the consolidation map, the merge changes, and the per-location verification results."
+    }
+  }
+}

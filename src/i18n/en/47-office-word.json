@@ -1,0 +1,88 @@
+{
+  "category": {
+    "name": "Document Editing and Layout",
+    "desc": "Find and replace, heading levels and a generated table of contents, pagination and page setup, headers, footers, and page numbers, unified styles, figure numbering and captions, tracked changes and comments, and a sweep for formatting problems"
+  },
+  "prompts": {
+    "p-1f2a3b4c5d6e7f80": {
+      "title": "Find and Replace in Bulk",
+      "tags": [
+        "Find",
+        "Replace",
+        "Bulk Edit"
+      ],
+      "short": "Find and replace across the body, the headers, and the footers, and check every change.",
+      "content": "Clean up every place in a long document that has to be worded the same way, and still be able to check each change afterwards. Work through the body, the headers and footers, the text boxes, and the comments separately, read the context before replacing so the wrong words are not touched, and list every change that was made. Deliver the corrected document and the list of changes."
+    },
+    "p-2a3b4c5d6e7f8012": {
+      "title": "Set the Heading Levels and Generate a Table of Contents",
+      "tags": [
+        "Headings",
+        "Levels",
+        "Contents"
+      ],
+      "short": "Set the heading levels, insert an automatic table of contents, and update the page numbers.",
+      "content": "Set the heading levels of a document so that the contents and the navigation are generated automatically. Put each heading at the level that matches its meaning, unify the heading styles, insert an automatic table of contents and refresh the page numbers, and check that the contents match the body one by one. Deliver the document with the levels set and a note on the structure of the contents."
+    },
+    "p-3b4c5d6e7f801234": {
+      "title": "Control the Pagination and the Page Setup",
+      "tags": [
+        "Pagination",
+        "Pages",
+        "Setup"
+      ],
+      "short": "Fix the page setup and the pagination, so that the printed pages break where they should.",
+      "content": "Set the page setup and the pagination so that the document no longer breaks across pages for no reason. Unify the paper size, the margins, and the text direction, use section and page breaks to start the parts that belong on a new page on one, and remove the empty paragraphs and blank lines that cause the trouble. Deliver the adjusted document and a note on the pagination."
+    },
+    "p-4c5d6e7f80123456": {
+      "title": "Set the Headers, the Footers, and the Page Numbers",
+      "tags": [
+        "Header",
+        "Footer",
+        "Page Numbers"
+      ],
+      "short": "Add headers, footers, and page numbers, and settle their position and format in one go.",
+      "content": "Add headers, footers, and page numbers to a document, so that the source and the order of every page are clear at a glance. Write the header content for each section, restart or continue the page numbering as needed, handle the cover and the contents pages the way they are meant to be handled, and state which pages the headers and footers apply to. Deliver the document with them added and a note on the settings."
+    },
+    "p-5d6e7f8012345678": {
+      "title": "Unify the Styles of the Body and the Headings",
+      "tags": [
+        "Styles",
+        "Fonts",
+        "Consistency"
+      ],
+      "short": "Use styles to unify the font, the size, and the spacing of the body text and the headings.",
+      "content": "Use styles to line up the body text and the headings, so that no page looks different from the next. Settle the font, the size, the line spacing, and the space before and after for each level of heading and for the body, then turn the scattered formatting into applied styles and clear the manual overrides. Deliver the document with the styles applied and a table of the styles used."
+    },
+    "p-6e7f801234567890": {
+      "title": "Number the Figures and Insert Captions",
+      "tags": [
+        "Figures",
+        "Numbering",
+        "Captions"
+      ],
+      "short": "Number the figures, add captions, and make the references in the text follow along.",
+      "content": "Number the figures and tables of a document and give them captions, so that the references in the text match automatically. Number them in the order they appear, set out the format of the caption and where the number goes, insert cross-references in the body, and confirm after a figure is changed that the numbering and the references follow. Deliver the document with the captions and a table of the numbering."
+    },
+    "p-7f80123456789012": {
+      "title": "Work with Tracked Changes and Then Merge Them",
+      "tags": [
+        "Tracked Changes",
+        "Comments",
+        "Merging"
+      ],
+      "short": "Edit the document with tracked changes and comments, and read every change before merging.",
+      "content": "Edit a document with tracked changes and comments, so that every change has a source and an explanation. Agree on the marking rules first, edit each place and write down the reason, and work through the comments one by one before merging, keeping a record of what was accepted and what was rejected. Deliver the document with the tracked changes and the record of how they were handled."
+    },
+    "p-8012345678901234": {
+      "title": "Fix the Formatting Problems in a Document",
+      "tags": [
+        "Formatting",
+        "Proofreading",
+        "Punctuation"
+      ],
+      "short": "Fix the formatting problems in a document: blank lines, stray spaces, and mixed full-width and half-width characters.",
+      "content": "Clean up the formatting problems in a document so that the layout is consistent everywhere. Check for blank lines and stray spaces, for full-width and half-width characters used side by side, for punctuation that is not written the same way, and for missing spaces between Chinese and English, then fix them class by class and say what was changed. Deliver the corrected document and the list of problems handled."
+    }
+  }
+}

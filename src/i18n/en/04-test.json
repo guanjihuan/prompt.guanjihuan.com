@@ -1,0 +1,62 @@
+{
+  "category": {
+    "name": "Testing and Verification",
+    "desc": "Add tests, run tests, address flaky tests, perform end-to-end and regression verification, and generate test data"
+  },
+  "prompts": {
+    "p029": {
+      "title": "Add Unit Tests",
+      "tags": ["Testing", "Unit Tests"],
+      "short": "Add unit tests for the module covering normal, boundary, and exceptional paths.",
+      "content": "Give the module's public behavior independently runnable tests as a safety net. First define the public behavior and dependency boundaries, cover normal, boundary, and exceptional paths, and isolate external dependencies with controllable test doubles. Deliver the test files and run command, and explain any uncovered branches."
+    },
+    "p030": {
+      "title": "Get the Full Test Suite Passing",
+      "tags": ["Testing", "Verification"],
+      "short": "Run the full test suite, locate the cause of each failure, and fix them until the tests genuinely pass.",
+      "content": "Make all tests genuinely pass rather than being skipped. Group errors to locate and fix root causes, distinguishing among product code, test code, and environment issues. Confirm the cause of each failure before changing anything, and do not make the results green by skipping or deleting test cases. Deliver a failure classification and the locations changed, with the complete run results."
+    },
+    "p-0d73469426537a9c": {
+      "title": "Eliminate Flaky Tests",
+      "tags": ["Testing", "Stability", "Troubleshooting"],
+      "short": "Find why tests fail randomly and fix them so they pass repeatedly.",
+      "content": "Make randomly failing tests stable instead of relying on reruns to pass. Collect failure samples and execution environments, reproduce the failures, and distinguish intermittent from consistent failures. Then investigate shared state, timing dependencies, and external dependencies. Deliver failure samples, the fixes, and records of consecutive runs, marking any cases that remain unstable."
+    },
+    "p031": {
+      "title": "Verify Feature Flows End to End",
+      "tags": ["Testing", "Verification", "End to End"],
+      "short": "Operate each feature for real according to the feature list, cover exceptions and boundaries, and record expected and actual results.",
+      "content": "Actually operate every feature instead of declaring it sound based only on reading code. Follow the feature list, covering main flows, exceptional paths, and key boundaries, and check interface feedback and recovery from dangerous operations. Deliver expected and actual results for every step, marking features that were not tested hands-on."
+    },
+    "p032": {
+      "title": "Add Regression Tests",
+      "tags": ["Testing", "Regression"],
+      "short": "Add regression tests that keep this change or defect from coming back, and confirm they reproduce the original problem before the fix.",
+      "content": "Add regression tests for this change or defect to prevent recurrence. Identify the affected public behavior and key boundaries, and confirm that the tests reproduce the original problem before the fix. Deliver the test cases and a list of affected behavior, with run results and remaining uncovered risks."
+    },
+    "p033": {
+      "title": "Fill Critical Test Coverage Gaps",
+      "tags": ["Testing", "Coverage"],
+      "short": "Add test cases for exceptions and boundaries based on business impact, with before-and-after coverage data.",
+      "content": "Find key branches not covered by tests and add the missing cases. Prioritize by business impact, cover exceptional paths and boundary conditions, and write the tests using the existing test structure. Deliver the new cases and before-and-after coverage data, and list the remaining gaps."
+    },
+    "p034": {
+      "title": "Establish Benchmarks",
+      "tags": ["Testing", "Performance", "Benchmarks"],
+      "short": "Write benchmarks for the module and record elapsed time and memory usage.",
+      "content": "Establish comparable time and memory benchmarks for the module's key paths. Fix the input size, runtime environment, and repetition count, record elapsed time and memory usage, and measure multiple times to distinguish trends from fluctuations. Deliver the benchmark code, run command, and raw results."
+    },
+    "p-43610bb4b5e15e90": {
+      "title": "Generate Test Data",
+      "tags": ["Testing", "Data", "Fixtures"],
+      "short": "Generate normal, boundary, exceptional, and large-volume test data for the feature, with repeatable generation.",
+      "content": "Generate reusable test data for the feature or tests. Define field constraints and relationships, fix the random seed, and cover normal, boundary, exceptional, and representative large-volume scenarios. Deliver the generation script and sample data, containing no real personal information or production credentials."
+    },
+    "p035": {
+      "title": "Write a Reproducible Verification Script",
+      "tags": ["Testing", "Scripts", "Reproduction"],
+      "short": "Write a reproducible verification script: pin dependency versions, execution order, and random seed, and return a nonzero status on failure.",
+      "content": "Make every run of the verification script reproduce the same conclusion. Accept input parameters and run the complete workflow, pin dependency versions, execution order, and random seed, and return a nonzero status on failure. Deliver the script and sample inputs, with the run command and expected output."
+    }
+  }
+}

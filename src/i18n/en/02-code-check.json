@@ -1,0 +1,123 @@
+{
+  "category": {
+    "name": "Code Quality Checks",
+    "desc": "Full checks, detailed error hunting, error-message interpretation, defect localization, fixing unreasonable code, quick lightweight checks, type checking, formatting rules, and error handling"
+  },
+  "prompts": {
+    "p012": {
+      "title": "Inspect the Whole Project and Fix Problems on the Spot",
+      "tags": [
+        "Inspection",
+        "Fixes"
+      ],
+      "short": "Inspect the entire project, fix issues that affect use immediately, and prioritize the rest by benefit and cost.",
+      "content": "Inspect the entire project and immediately fix any issues that affect use. Cover architecture, code, tests, and documentation. For every issue found, cite the code location or actual behavior, and prioritize by benefit and cost. Deliver a list of fixes and prioritized improvements, marking items that can be deferred."
+    },
+    "p013": {
+      "title": "Review Only, Do Not Modify",
+      "tags": [
+        "Review",
+        "Code"
+      ],
+      "short": "Review only the code and design without changing files, and list issues by severity.",
+      "content": "Produce a list of problems that can be scheduled for fixing directly, without modifying any file. Check the code and the design item by item, giving the location, trigger condition, real impact, and suggested fix for each, and mark the items without evidence as pending verification. Deliver the findings sorted by severity, an overall conclusion, and the order in which to handle them."
+    },
+    "p-f76eabe0e330dd84": {
+      "title": "Check for Errors in Detail and Fix Them",
+      "tags": [
+        "Inspection",
+        "Errors",
+        "Fixes"
+      ],
+      "short": "Inspect branches, boundaries, and state transitions module by module in detail; fix errors immediately and explain the reasons.",
+      "content": "Find the errors and unreasonable designs in the code and fix them. Go through branches, edge cases, and state transitions module by module: fix the errors on the spot, and for design problems explain the reason and fix them, confirming nothing is missed before wrapping up. Deliver the locations of the changes and the reason for each, with verification results for the main features after the change."
+    },
+    "p-a45e8ed4b8eb0e35": {
+      "title": "Interpret Error Messages and Fix the Problem",
+      "tags": [
+        "Errors",
+        "Debugging",
+        "Troubleshooting"
+      ],
+      "short": "Interpret the error: explain its cause and location, and fix it until the functionality is restored.",
+      "content": "Locate the real cause of the error instead of guessing. If the context contains no error, retrieve the error from the latest run log and reproduce it. Explain what the error means and the layer where it occurs, distinguish among environment, dependency, code, and data causes, and make the smallest fix at the identified location. Deliver an explanation of the cause, the locations changed, and retest results."
+    },
+    "p019": {
+      "title": "Locate and Fix Defects",
+      "tags": [
+        "Debugging",
+        "Defects"
+      ],
+      "short": "Reproduce the problem first, locate its root cause, make the smallest fix, and add a regression test.",
+      "content": "Get the defect properly fixed within the smallest change, so it does not come back. First reproduce it reliably and record the input, compare the expected and actual results, pin down the failing point along the call chain, then make the smallest fix and add a regression test that reproduces the original problem. Deliver the root cause, the fix location, and the regression test results after the fix."
+    },
+    "p015": {
+      "title": "Fix Unreasonable Code",
+      "tags": [
+        "Unreasonable Code",
+        "Maintainability",
+        "Refactoring"
+      ],
+      "short": "Find and fix unreasonable code that slows maintenance: duplicate implementations, overly long functions, vague names, and swallowed exceptions.",
+      "content": "Fix unreasonable code instead of explaining it away. Focus on duplicate implementations, overly long functions, hard-coded values, and vague names, then inspect swallowed exceptions and resources that are never released. Fix only issues whose impact can be explained. Deliver each issue, its rationale, and a list of changes, with verification results."
+    },
+    "p-89ca87640b156ded": {
+      "title": "Inspect Code Without Running Tests",
+      "tags": [
+        "Inspection",
+        "Lightweight",
+        "Quick"
+      ],
+      "short": "Perform only a code-level logic check and fix issues immediately; do not run tests or start the project.",
+      "content": "Catch the errors in the code without spending time running tests. Go through the code file by file, checking only logic-level problems in the code: fix the errors on the spot, without starting the project. Deliver a list of fix locations and reasons, and mark the doubtful points that need a test run to confirm."
+    },
+    "p018": {
+      "title": "Troubleshoot Defects in Complex Workflows",
+      "tags": [
+        "Workflows",
+        "Concurrency"
+      ],
+      "short": "Reconstruct the main workflow and external interactions, and fix defects in concurrency, repeated triggering, and interruption recovery.",
+      "content": "Find and fix the defects on the concurrent and interrupted paths by following the state changes of the flow. Reconstruct the main flow and the external interactions, trace the state changes to find the lost intermediate states, the deadlocks, and the race conditions, then cover the repeated-trigger and the failure-recovery paths. Deliver the flow description and the fix locations, with the test results."
+    },
+    "p020": {
+      "title": "Review the Current Changes",
+      "tags": [
+        "Review",
+        "Diff"
+      ],
+      "short": "Review only the current changes, and provide findings by severity and a conclusion on whether to merge.",
+      "content": "Give a verdict on whether the current changes can be merged, together with the problems sorted by severity, without changing any code. Check correctness and compatibility in context, look at security and test gaps, and give the file location and the triggering scenario for each item. Deliver the review findings and the merge verdict, marking the risks that need a human decision."
+    },
+    "p-2068fe1f05590088": {
+      "title": "Add Static Type Checking",
+      "tags": [
+        "Types",
+        "Inspection",
+        "Engineering"
+      ],
+      "short": "Add type checking to the project, identify type gaps, and complete the annotations.",
+      "content": "Get static type checking running effectively so it catches type errors. First enable the checking tool, distinguish genuine errors from legacy type gaps, and add annotations and external library declarations in batches. Deliver the checking configuration, annotation changes, and a list of fixes, with checker output after each fix."
+    },
+    "p-b960b1cc438e1b8c": {
+      "title": "Standardize Formatting and Static Analysis Rules",
+      "tags": [
+        "Formatting",
+        "Lint",
+        "Conventions"
+      ],
+      "short": "Standardize formatting and lint rules so check results are stable and reproducible.",
+      "content": "Make formatting and static analysis rules explicit so the team stops repeatedly reformatting code. Compare the existing configuration with the issues actually reported, establish the rule baseline and ignore list, and standardize how scripts and hooks invoke the checks. Deliver the rule files, ignore list, and one full check result, marking warnings that still require human judgment."
+    },
+    "p-d814578ba284752a": {
+      "title": "Standardize Error Handling and Logging",
+      "tags": [
+        "Error Handling",
+        "Logging",
+        "Conventions"
+      ],
+      "short": "Standardize error handling and logging for the module: classify errors and make logs useful for locating problems.",
+      "content": "Give the module consistent error-handling rules so problems can be located through logs. Review throw and catch sites, classify errors, standardize log levels and key fields, and attach a request identifier to each request. Deliver the shared wrapper and migration list, with a troubleshooting walkthrough for typical error scenarios."
+    }
+  }
+}

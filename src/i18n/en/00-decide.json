@@ -1,0 +1,88 @@
+{
+  "category": {
+    "name": "Breakdown and Decisions",
+    "desc": "Break vague big questions into smaller ones, move a rough idea to a deliverable, keep long tasks on goal, judge whether the work is worth doing, assess the current state and plan improvements, validate the direction with a minimum version, estimate the workload and build a schedule, and assess the impact of a requirement change"
+  },
+  "prompts": {
+    "p-d2bf0cf0d4b978cd": {
+      "title": "Break Down Vague Big Questions into Smaller Ones",
+      "tags": [
+        "Breakdown",
+        "Questions",
+        "Reasoning"
+      ],
+      "short": "Break a vague, big question into several smaller questions that can each be answered clearly.",
+      "content": "Turn a vague, big question into a checklist of items that can be resolved one by one. Split the problem along boundaries that allow each part to be answered independently. For each smaller question, state what needs to be answered and where the supporting evidence will come from, and mark which questions must be answered first. Deliver the breakdown, the dependency order, and the items to answer first."
+    },
+    "p-850b4077e5692373": {
+      "title": "Move a Vague Idea to a Deliverable",
+      "tags": [
+        "Requirements",
+        "Delivery",
+        "Execution"
+      ],
+      "short": "Move an idea that is only a rough outline to a deliverable state.",
+      "content": "Turn an idea that exists only as a rough outline into something that can be built on. Write down the problem to solve, the target users, and the criteria for deciding it is done, turn every part that is still undecided into a question that can be asked, and only then build it, checking each criterion at the end. Deliver the clarified requirements, the questions needing a decision, and the acceptance records."
+    },
+    "p-41964e7c5c9e9059": {
+      "title": "Stay on Goal During Long Tasks",
+      "tags": [
+        "Long Tasks",
+        "Alignment",
+        "Goals"
+      ],
+      "short": "Check against the goal regularly during long tasks and correct course whenever the work drifts.",
+      "content": "Keep a long task from drifting farther and farther away. After each stage, check the work against the original goal and acceptance criteria. List the gaps between the current output and the goal, and address the deviations before moving on to the next stage. Deliver a stage-by-stage comparison, the deviations, and the corrective actions."
+    },
+    "p-d92ed91809c109d6": {
+      "title": "Decide Whether This Is Worth Doing",
+      "tags": [
+        "Assessment",
+        "Trade-offs",
+        "Decision-making"
+      ],
+      "short": "Estimate the effort and payoff of this work, then decide whether to do it.",
+      "content": "Let work that is not worth doing be ruled out before it starts. List the headcount and time it will require, the concrete benefits it will deliver, and the consequences of not doing it. Give a conclusion and the least costly approach. Deliver a comparison of costs and benefits, the conclusion, and the basis for the judgment."
+    },
+    "p-1e9f12fef3b790dc": {
+      "title": "Assess the Current State and Plan an Improvement Roadmap",
+      "tags": [
+        "Assessment",
+        "Planning",
+        "Project"
+      ],
+      "short": "Understand the project's current state, then prioritize improvements and lay out a phased roadmap.",
+      "content": "Give the improvements an order and stages instead of a bare list of problems. First work out how far the current state is from the goal, list the matching improvements, order them by how quickly they pay off and by how much effort they take, then cut the list into stages that can actually be delivered. Deliver a table comparing the gaps with the improvements, the priority order, and the staged roadmap, with the completion criteria for each stage."
+    },
+    "p-4cd417f416483235": {
+      "title": "Validate the Direction with a Minimum Viable Version",
+      "tags": [
+        "Prototype",
+        "Validation",
+        "Trade-offs"
+      ],
+      "short": "Use the smallest working version to validate whether the direction is worth pursuing.",
+      "content": "Learn whether the direction is right as early as possible instead of discovering a wrong turn only after everything is built. First build the smallest working version using the least costly implementation, use it to test the key assumptions, and then decide whether to develop it further or change course. Deliver the minimum version, the validation conclusion, and the reasons for the subsequent trade-off."
+    },
+    "p-f27fa970299af276": {
+      "title": "Estimate the Workload and Build a Schedule",
+      "tags": [
+        "Workload",
+        "Scheduling",
+        "Estimation"
+      ],
+      "short": "Estimate how much time and effort each piece needs, then order them into a schedule that can actually be delivered.",
+      "content": "Give the schedule a basis instead of a hunch. Split the work into items that can be estimated on their own, estimate the time each one needs along with its prerequisites and the parts that can run in parallel, and give both an optimistic and a conservative timeline. Deliver the effort estimate table, the dependency order, and the phased schedule."
+    },
+    "p-f12138626809cfbe": {
+      "title": "Assess the Impact of a Requirement Change Before Deciding",
+      "tags": [
+        "Requirement Changes",
+        "Impact",
+        "Decision-making"
+      ],
+      "short": "When a requirement changes mid-flight, work out the impact first, then decide whether to accept it and how to adjust.",
+      "content": "Keep a change arriving midway from disrupting what is already planned. First establish what the new request is trying to achieve and whether it conflicts with the original goal, list the modules and connected areas it touches, and then recommend accepting, narrowing, or deferring it. Deliver the change impact list, the trade-off recommendation, and the adjusted plan."
+    }
+  }
+}

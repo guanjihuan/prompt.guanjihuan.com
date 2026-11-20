@@ -1,0 +1,56 @@
+{
+  "category": {
+    "name": "Performance and Optimization",
+    "desc": "In-depth optimization and bottleneck localization, runtime visualization, UI jank diagnosis, faster first-screen loading and application startup, memory optimization, and caching strategies"
+  },
+  "prompts": {
+    "p-90b1bf92e1d77db6": {
+      "title": "Optimize Program Performance in Depth",
+      "tags": ["Performance", "In-depth Optimization", "Efficiency"],
+      "short": "Improve overall program efficiency through algorithms, data structures, caching, and elimination of repeated computation while preserving behavior.",
+      "content": "Make the program faster overall instead of merely fixing its single slowest spot. First measure time and overhead at each stage, then improve algorithmic complexity, data structures, caching, and repeated computation item by item while preserving behavior. Deliver each change and before-and-after measurements under identical conditions, with verification that functionality is unchanged."
+    },
+    "p036": {
+      "title": "Locate and Optimize Performance Bottlenecks",
+      "tags": ["Performance", "Bottlenecks", "Speedup"],
+      "short": "Use data first to locate the bottleneck in a module, function, or interface, make a narrowly scoped optimization, and provide before-and-after comparisons.",
+      "content": "Base conclusions about where the program is slow on data instead of guesses. Under a representative workload, collect elapsed time and resource usage for each module, function, and interface. Use the evidence to make narrowly scoped changes to algorithms, caching, or data structures. Deliver evidence of the bottlenecks and the locations changed, with before-and-after comparison data."
+    },
+    "p038": {
+      "title": "Visualize Where the Program Spends Its Time",
+      "tags": ["Performance", "Visualization"],
+      "short": "Chart the time spent in each program stage so bottlenecks are immediately visible, with exportable data for verification.",
+      "content": "Turn the time each stage takes into a view that makes bottlenecks immediately visible. Collect start and end times, call relationships, and resource information for each stage, and retain data for individual runs as well as aggregated data across multiple runs. Deliver the visualization and collected data, and note the impact of sampling on the measured times."
+    },
+    "p-5c2053297e1c6187": {
+      "title": "Diagnose UI Jank and Unresponsiveness",
+      "tags": ["Jank", "Performance", "Troubleshooting"],
+      "short": "Diagnose occasional UI jank and unresponsive clicks: find and eliminate main-thread blocking.",
+      "content": "Fix occasional UI jank and clicks that get no response. Capture main-thread activity while reproducing the jank, and distinguish long-task blocking, synchronous waits, and frequent layout recalculation. Make time-consuming operations asynchronous or split them into chunks while preserving functionality. Deliver a list of jank sources and the locations changed, with before-and-after comparisons of the reproduction scenarios and records of continuous operation."
+    },
+    "p039": {
+      "title": "Optimize Above-the-Fold Loading and Page Performance",
+      "tags": ["Performance", "Frontend", "Loading"],
+      "short": "Reduce above-the-fold loading time: adjust resource loading strategies based on the bottlenecks and provide before-and-after data.",
+      "content": "Reduce the page's above-the-fold loading time. Use above-the-fold time, time to interactive, and layout shift as the baseline. Based on the bottlenecks, adjust image sizes, font loading, and caching strategies, and load resources on demand. Deliver before-and-after data from the same device and network, with the number of samples."
+    },
+    "p-c873dc6f8bdb08f7": {
+      "title": "Reduce Application Startup Time",
+      "tags": ["Performance", "Startup", "Speedup"],
+      "short": "Reduce the time from launching a local program to when it becomes usable: defer nonessential initialization and provide before-and-after data.",
+      "content": "Reduce the wait after opening the program. Record the time from launch to usability by stage, and identify slow items in dependency loading, configuration reading, and initialization. Defer nonessential work until first use, and retain clear error messages for startup failures. Deliver time data by stage and the locations changed, with before-and-after comparisons."
+    },
+    "p040": {
+      "title": "Reduce Memory Usage",
+      "tags": ["Performance", "Memory"],
+      "short": "Find memory leaks and reduce resident memory and large-array usage.",
+      "content": "Find memory leaks and reduce resident memory usage. Collect memory curves in repeatable scenarios, distinguish continuous growth from normal peaks, and release unused references according to object lifecycles. Switch large data sets to streaming. Deliver evidence of leaks and before-and-after memory data."
+    },
+    "p041": {
+      "title": "Design a Caching Strategy",
+      "tags": ["Performance", "Caching"],
+      "short": "Settle the cache key, invalidation conditions, capacity limit, and protection against cache penetration and breakdown in one pass.",
+      "content": "Design a ready-to-use caching strategy for the scenario to be accelerated. First describe the access patterns and consistency requirements, then define cache keys, invalidation conditions, capacity limits, and eviction methods. Add protection against cache penetration and cache breakdown. Deliver the caching flow and configuration options, with hit-rate and exceptional-scenario tests."
+    }
+  }
+}

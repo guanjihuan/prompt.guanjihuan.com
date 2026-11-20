@@ -1,0 +1,138 @@
+{
+  "category": {
+    "name": "Spreadsheets and Data Cleanup",
+    "desc": "Standardize spreadsheet fields and formats, replace manual calculation with formulas, consolidate and reconcile multiple sheets, remove duplicates and fill missing values, unify numbering and units, summarize with pivots, and export with the format intact"
+  },
+  "prompts": {
+    "p-2930415263748596": {
+      "title": "Standardize Spreadsheet Fields and Formats",
+      "tags": [
+        "Spreadsheet",
+        "Fields",
+        "Format"
+      ],
+      "short": "Unify the fields, types, and value ranges of a sheet so later statistics need no manual fixing.",
+      "content": "Turn a messy sheet into one that can be summarized directly, so that no manual fixing is needed later. Unify column names and data types, define the permitted value range and the way empty values are written for each column, remove repeated headers and merged cells, and keep a copy of the original sheet as a backup. Deliver the cleaned sheet, the field notes, and a record of the changes."
+    },
+    "p-3a41526374859607": {
+      "title": "Replace Manual Calculation with Formulas",
+      "tags": [
+        "Formulas",
+        "Calculation",
+        "Automation"
+      ],
+      "short": "Replace manual calculation with formulas so the results update automatically when the sheet changes.",
+      "content": "Replace the numbers that were worked out by hand with formulas, so that the sheet updates its results when the data changes. Confirm the calculation rules and the dependencies between fields first, then write the repeated calculations as formulas with consistent rounding and precision, avoiding references that break when copied. Deliver the revised sheet, the formula notes, and a before-and-after comparison of the values."
+    },
+    "p-4b52637485960718": {
+      "title": "Consolidate and Reconcile Multiple Sheets",
+      "tags": [
+        "Consolidation",
+        "Reconciliation",
+        "Merging"
+      ],
+      "short": "Combine sheets from different sources and check that the row counts, amounts, and totals match.",
+      "content": "Combine several sheets from different sources into one usable sheet, and make the merged result reconcile with the accounts. Align and merge on the shared fields, then check the row counts, the amounts, and the totals item by item, listing the records that do not match and giving the reason. Deliver the consolidated sheet, the reconciliation result, and the list of differences."
+    },
+    "p-5c63748596071829": {
+      "title": "Remove Duplicate Records",
+      "tags": [
+        "Deduplication",
+        "Records",
+        "Rules"
+      ],
+      "short": "Remove duplicate records by a rule that was agreed in advance, leaving a trace of both the merges and the removals.",
+      "content": "Remove duplicate records from a sheet without wrongly deleting two genuinely different rows. Compare every suspected duplicate field by field, settle the decision rule first, merge the rows that are exactly the same, and keep and annotate the ones whose fields differ, and write down the record counts before and after with the basis for each removal. Deliver the deduplicated result, the rules, and the change in record count."
+    },
+    "p-6d7485960718293a": {
+      "title": "Modify Spreadsheet Contents in Bulk",
+      "tags": [
+        "Bulk Edit",
+        "Modification",
+        "Spreadsheet"
+      ],
+      "short": "Apply a rule to change many cells at once and list exactly which fields were changed.",
+      "content": "Modify the contents of a sheet in bulk according to a given rule, and still be able to trace the result back to the original data. Back up the sheet before making changes, process it row by row under the rule while keeping the old values, then count the changes of each kind and spot-check a few rows for accuracy. Deliver the modified sheet, the change list, and the spot-check results."
+    },
+    "p-7e85960718293a4b": {
+      "title": "Fill Missing Values and Mark Them",
+      "tags": [
+        "Missing Values",
+        "Filling",
+        "Annotation"
+      ],
+      "short": "Fill the missing values with a documented basis and mark which ones were filled in.",
+      "content": "Fill in the missing values of a sheet so that the basis for every one of them is visible. Separate the values that genuinely do not exist from the ones that were simply left out, mark the former as not applicable, and fill the latter from verifiable data with the source noted, keeping genuinely unknown values empty. Deliver the filled sheet, the note on how missing values were handled, and the source records."
+    },
+    "p-8f960718293a4b5c": {
+      "title": "Summarize the Distribution with a Pivot",
+      "tags": [
+        "Pivot",
+        "Distribution",
+        "Summary"
+      ],
+      "short": "Use a pivot summary to see the distribution across dimensions and pull out the main contributors.",
+      "content": "Use a pivot summary to see how a dataset is distributed across its dimensions and to find the main contributors. Split the dimension combinations as needed, count the records and the shares, and list the combinations with a high share and those with an unusually low one separately. Deliver the pivot result, the key conclusions, and the note on the counting rules used."
+    },
+    "p-a0718293a4b5c6d": {
+      "title": "Export the Sheet and Keep the Formatting",
+      "tags": [
+        "Export",
+        "Format",
+        "Verification"
+      ],
+      "short": "Export to a common format, keeping the column widths and the date and number formats unchanged.",
+      "content": "Export a cleaned sheet to a common format that still matches the original when it is opened. Check the date, amount, and percentage formats column by column, fix the column widths and the header row, handle the values that fall outside the accepted range and the empty cells, and then open the exported file once more to check it. Deliver the exported file and the result of each check."
+    },
+    "p-db5e8f39a02c6345": {
+      "title": "Unify the Numbering and Coding Rules",
+      "tags": [
+        "Numbering",
+        "Coding",
+        "Rules"
+      ],
+      "short": "Unify the numbering and coding rules of a sheet so that one meaning has only one form.",
+      "content": "Unify the numbering and coding rules of a sheet, so that one and the same meaning is written in one and the same way. List the existing forms of each kind of number and code, settle on one rule and the number of digits it uses, then rewrite the columns one by one and keep the old values for comparison. Deliver the rewritten sheet, the note on the coding rules, and a table of the old values."
+    },
+    "p-ec6f9a4b13d7456": {
+      "title": "Convert the Units and Dimensions",
+      "tags": [
+        "Units",
+        "Dimensions",
+        "Conversion"
+      ],
+      "short": "Convert values in different units to one common basis and show the conversion.",
+      "content": "Convert values stated in different units to one common basis, so that the figures can be compared directly. Confirm the original unit, the target unit, and the conversion factor for each column, note the date and the source of the conversion, and set the values that cannot be converted apart. Deliver the converted sheet, the note on the conversion, and the list of values that could not be converted."
+    },
+    "p-5d3f6b7c8e9a0124": {
+      "title": "Set Up the Print Layout and the Print Area",
+      "tags": [
+        "Printing",
+        "Layout",
+        "Pagination"
+      ],
+      "short": "Adjust the print layout: fix the column widths, the pagination, and the repeated header row.",
+      "content": "Adjust a sheet so that the printed page can be read as it is, instead of being laid out by hand on paper. Set the paper orientation, the scale, and the print area, make the header row repeat on every page, leave the helper columns out of the print area, and deal with rows that break across pages. Deliver the print settings and a sample page."
+    },
+    "p-6e4a7c8d9f0b1235": {
+      "title": "Track Down the Errors in Spreadsheet Formulas",
+      "tags": [
+        "Formulas",
+        "Errors",
+        "Checking"
+      ],
+      "short": "Track down the formula errors: the cells that report errors, the ones that point at the wrong range, and the ones that were overwritten by hand.",
+      "content": "Track down the errors in the formulas of a sheet, so that the results stop jumping around. Check the cells that report an error, the ones where empty values take part in the calculation, and the formulas that were overwritten by hand with a number, verify that the referenced ranges and the relative addresses agree, and add a check where it is needed. Deliver the list of errors, the corrected sheet, and the way the check is done."
+    },
+    "p-9f70a2345678b90c": {
+      "title": "Build a Table Comparing Budget and Actual Costs",
+      "tags": [
+        "Budget",
+        "Costs",
+        "Comparison"
+      ],
+      "short": "Build a table comparing the budget with the actual costs, so that overspending and savings show at a glance.",
+      "content": "Build a table that compares a budget with the costs actually incurred, so that overspending and savings show at a glance. Settle the budget rules and the categories of cost first, put the actual spending into the same categories, work out the difference and the share, and mark the items that went over budget and the ones whose reason is still to be found. Deliver the table, the list of overspent items, and the note on the reasons."
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "category": {
+    "name": "Runtime and Operations",
+    "desc": "Local environments, configuration, data directories, domains and certificates, health monitoring, resilience and rate limiting, backups and data safety, 404s, network and production troubleshooting, and operations scripts"
+  },
+  "prompts": {
+    "p-9abdcdc543ff75e9": {
+      "title": "Set Up a Local Development Environment",
+      "tags": ["Environment", "Local", "Getting Started"],
+      "short": "Get the project running locally: install dependencies, configure environment variables, and verify core flows.",
+      "content": "Get the project's core flows running locally. Check dependencies and runtime versions; install dependencies; configure environment variables; prepare the local data; and record solutions to any blocking errors. Deliver a working local environment and documented steps, along with verification results for the core flows."
+    },
+    "p084": {
+      "title": "Document Configuration Across Environments",
+      "tags": ["Configuration", "Environment Variables", "Deployment"],
+      "short": "List configuration items for each environment, inject sensitive values through environment variables, and keep real values out of the examples.",
+      "content": "Make the sources of multi-environment configuration and how it takes effect clear and traceable. Record each item's purpose, default, required conditions, and where it takes effect; inject sensitive values through environment variables; and produce clear errors when key variables are missing. Deliver a configuration list, example files, and an explanation of reading precedence, along with startup verification results for each environment."
+    },
+    "p-4110f89851407cb9": {
+      "title": "Define Application Data Storage Locations",
+      "tags": ["Data Directories", "Desktop App", "Configuration"],
+      "short": "Define where application data is stored: default directories that follow system conventions, with customization support.",
+      "content": "Make application data storage locations clear and predictable. Choose and automatically create default directories according to platform conventions, distinguish where user data, caches, and configuration are stored, and allow paths to be viewed and changed in settings. Deliver directory conventions and read/write implementations, along with verification results for first launch, changing paths, and invalid paths."
+    },
+    "p076": {
+      "title": "Configure a Reverse Proxy and Encrypted Access",
+      "tags": ["Proxy", "HTTPS", "Deployment"],
+      "short": "Configure domain forwarding, enforce HTTPS, and set security response headers.",
+      "content": "Make the site reachable over encrypted connections only, and redirect every unencrypted request. Configure a reverse proxy for the site, point the domain at the server address, let the proxy listen on the public port and forward to the application port, and set up forced HTTPS and the security response headers. Deliver the proxy configuration, with measured results for the redirects and the response headers."
+    },
+    "p077": {
+      "title": "Configure Domains and Certificates",
+      "tags": ["Domains", "Certificates", "DNS"],
+      "short": "Configure DNS resolution, certificate issuance, and automatic renewal, choosing certificates according to domain scope.",
+      "content": "Keep the site reliably accessible through its domain, with certificates renewed automatically before expiry. Choose single-domain, multi-domain, or wildcard certificates according to domain scope; configure DNS records and automatic renewal; reload services after successful renewal; and alert on failure. Deliver DNS and certificate lists and configuration locations, along with verification results for access and simulated renewal."
+    },
+    "p082": {
+      "title": "Configure Static-Asset Caching",
+      "tags": ["Caching", "CDN", "Static Assets"],
+      "short": "Use long caching for hashed static assets, short or conditional caching for HTML, and a CDN for large files.",
+      "content": "Configure static-asset caching so updates take effect immediately after release. Add content hashes to asset filenames and cache them for a long time, use short or conditional caching for page entry points, serve large files through a content delivery network, and check cross-origin responses. Deliver caching rules and an asset list, along with retest results for first visits and version updates."
+    },
+    "p078": {
+      "title": "Configure Health Checks and Monitoring",
+      "tags": ["Monitoring", "Health Checks", "Operations"],
+      "short": "Configure health checks and monitoring: probes, alerts on key metrics, and thresholds with sustained durations.",
+      "content": "Detect service problems as soon as they arise rather than waiting for users to report them. Configure liveness and readiness probes separately, report request volume, error rates, latency, and queue lengths, and include sustained durations in alert thresholds. Deliver probe configuration and lists of metrics and alerts, along with verification records for dependency failures and recovery."
+    },
+    "p-9c77c42cf1885f9e": {
+      "title": "Improve Service Resilience",
+      "tags": ["Reliability", "Rate Limiting", "Circuit Breaking"],
+      "short": "Set up rate limiting, circuit breaking, and degradation as layers of protection, using fault injection to verify the service stays up.",
+      "content": "Make the service degrade as expected when dependencies fail rather than becoming entirely unavailable. Set timeouts and rate-limit thresholds along the call chain, define circuit-breaking and degradation strategies, use retries only for retryable errors, and combine them with backoff, jitter, and retry limits. Deliver policy configuration and its rationale, along with fault-injection results and verification records for downstream recovery."
+    },
+    "p079": {
+      "title": "Configure Scheduled Tasks",
+      "tags": ["Timed Jobs", "Scheduling", "Operations"],
+      "short": "Add scheduled tasks with failure retries, timeout protection, execution logs, and overlap prevention.",
+      "content": "Make scheduled tasks run reliably on time, with retries after failures that do not interfere with the next schedule. Define time zone, frequency, inputs, and completion criteria; configure failure retries, timeout protection, and logging for each task; and prevent overlapping runs. Deliver task configuration, a schedule list, and run records, along with recovery verification for failures, timeouts, and overlaps."
+    },
+    "p080": {
+      "title": "Design a Data Backup and Recovery Plan",
+      "tags": ["Backups", "Recovery", "Operations"],
+      "short": "Design a backup and recovery plan and write recovery-drill steps that can be verified.",
+      "content": "Design a backup and recovery plan that can actually be rehearsed. Define backup scope and frequency, storage locations, encryption, and retention periods, and write recovery steps that include prerequisites and consistency checks. Deliver the backup policy and recovery runbook, along with drill records, restoration results, and remediation items."
+    },
+    "p-b10873fe5552849d": {
+      "title": "Protect User Data During Writes",
+      "tags": ["Data Safety", "Writes", "Loss Prevention"],
+      "short": "Prevent data loss when the application writes user files: use atomic writes, warn about external modifications first, and preserve the original file on failure.",
+      "content": "Make sure every write of a user data file by the application loses nothing and can recover from a failure. Write to a temporary file first and then replace atomically, check before saving whether the file was changed outside the application and offer a choice, and keep the original file with a clear error when the write fails. Deliver the write flow and the protection logic, with verification results for concurrent modification and a full disk."
+    },
+    "p083": {
+      "title": "Troubleshoot 404s and Asset Paths",
+      "tags": ["404", "Debugging", "Assets"],
+      "short": "Investigate 404s and failed resource loads by checking request paths, the deployment root, and the path base.",
+      "content": "Find and fix the root causes of 404s and asset-loading failures. Identify failing URLs from request records and server logs, check the build manifest, deployment root, and base path, and verify access at both root and subpaths. Deliver root-cause evidence and the configuration fixes, along with retest results for every type of entry path."
+    },
+    "p-c58f35adece48a6d": {
+      "title": "Troubleshoot Network Connectivity",
+      "tags": ["Troubleshooting", "Networking", "Connections"],
+      "short": "Find why a connection fails by checking the network, ports, proxy, and certificates layer by layer.",
+      "content": "Find a concrete cause when a service cannot be reached, instead of retrying blindly. First determine whether the problem lies with the local machine, the local network, or the remote service, then check network reachability, port listening, proxies, and certificates layer by layer to locate the specific failing point. Deliver the cause, verification method, and corrective action, along with verification that the connection works after the fix."
+    },
+    "p085": {
+      "title": "Troubleshoot Production Incidents",
+      "tags": ["Operations", "Incidents", "Logs"],
+      "short": "Troubleshoot production incidents: mitigate first, correlate logs and metrics to find the root cause, and provide a timeline after fixing it.",
+      "content": "Restore production service as quickly as possible and keep the incident response well documented. First take reversible mitigation measures, then correlate logs, metrics, and recent changes to locate and fix the root cause, and confirm the affected users, functionality, and time range. Deliver an incident timeline, response steps, and root-cause evidence, along with verification results and preventive measures."
+    },
+    "p-4e5df5c82934bb01": {
+      "title": "Write Operations Automation Scripts",
+      "tags": ["Operations", "Scripts", "Automation"],
+      "short": "Turn repetitive operations tasks into parameterized scripts that can be rerun safely.",
+      "content": "Turn daily operations tasks into scripts that can be run repeatedly. First document the steps and prerequisites, parameterize target objects and time ranges, and support dry runs, aborting on failure, and idempotent reruns. Deliver the scripts, usage instructions, and execution records from the test environment, flagging actions that require manual confirmation."
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "category": {
+    "name": "Paper Structure and Writing",
+    "desc": "Distilling core arguments, research proposals, structural outlines, introductions and related work, section writing, discussions and abstracts, and length control"
+  },
+  "prompts": {
+    "p192": {
+      "title": "Distill a Paper's Core Argument",
+      "tags": ["Paper", "Core Argument", "Distillation"],
+      "short": "Distill this paper's core argument: claims, evidence, and the limits of its conclusions.",
+      "content": "Identify what this paper actually says within a few minutes. Distill its central claims, supporting evidence, and the limits of its conclusions. Read the full text and key figures and tables, distinguish the research question and central claims from secondary results, and summarize the core idea in 3–5 sentences. Deliver a statement of the core argument and the supporting figures and tables, explaining the scope of applicability and where the evidence is insufficient."
+    },
+    "p193": {
+      "title": "Explain the Main Findings in Plain Chinese",
+      "tags": ["Paper", "Findings", "Plain Language"],
+      "short": "Explain the main findings, evidence, and significance in plain Chinese, including the scope of applicability and limitations.",
+      "content": "Explain the main findings clearly in plain Chinese that non-specialists can understand. State what was found, what the evidence is, and why it matters. Use analogies to explain mechanisms where necessary, and retain qualifications that could change the conclusions. Deliver a plain-language explanation and pointers to the key supporting figures and tables, along with the scope of applicability, limitations, and unresolved questions."
+    },
+    "p-e76b1818f8d6ef2d": {
+      "title": "Write a Research Proposal and Plan",
+      "tags": ["Proposal", "Plan", "Degree"],
+      "short": "Write a research proposal covering the problem, literature, methods, and schedule.",
+      "content": "Make the research proposal clear about what will be studied, how, and when it will be completed. State the research question and background, the relevant work found in the literature and its shortcomings, then set out the proposed methods and experimental design, followed by milestones and deadlines. Deliver the proposal and a schedule, flagging assumptions that are not yet supported by preliminary results."
+    },
+    "p195": {
+      "title": "Structure the Paper Around Its Core Conclusion",
+      "tags": ["Paper", "Outline", "Structure"],
+      "short": "Structure the entire paper around its core conclusion, specifying the argument, evidence, and supporting figures for each section.",
+      "content": "Make every section of the paper serve the same conclusion. Structure the full text around the core conclusion, identify the key evidence supporting it, and specify the argument, evidence, and supporting figures and tables for each section. Combine routine result figures that serve similar purposes. Deliver an outline, a mapping of figures and tables to sections, and a list of section moves, noting the rationale for each adjustment and any items that cannot be compared."
+    },
+    "p196": {
+      "title": "Restructure the Paper Around a Theoretical Framework",
+      "tags": ["Paper", "Restructuring", "Narrative"],
+      "short": "Make the paper theory-driven: establish hypotheses and predictions first, then use the results to support or refute each one.",
+      "content": "Rewrite the paper into a structure led by a theoretical framework. Go through the existing theoretical assumptions, conceptual framework, and numerical results, first put forward testable hypotheses and predictions, then use the computed results to support or refute them one by one. Deliver the outline of the new structure, the rewritten text, and a move list, marking where the argument changed."
+    },
+    "p203": {
+      "title": "Write the Paper Introduction",
+      "tags": ["Paper", "Introduction", "Narrative"],
+      "short": "Write the introduction: present the core problem, explain why existing methods fall short, then introduce this paper's approach and results.",
+      "content": "Write the introduction of the paper around the core problem of the field. First explain why the problem matters, then compare the scope of the existing methods and the gaps they leave, and finally bring out this paper's approach and main results, marking where each result is supported in the text. Deliver the full introduction, the paragraph function table, and the key citation list."
+    },
+    "p204": {
+      "title": "Organize the Related Work",
+      "tags": ["Paper", "Related Work", "Literature"],
+      "short": "Organize related work by problem or method; begin each section with shared characteristics and limitations, then transition to this paper's contribution.",
+      "content": "Make the related-work section clearly position this paper among comparable studies. Organize it by research problem or method category. Begin each subsection by summarizing that category's shared characteristics, scope of applicability, and limitations, then explain the substantive differences between this paper and that body of work. Deliver the related-work text, a literature classification table, and a citation-checking checklist, flagging references that are difficult to classify."
+    },
+    "p199": {
+      "title": "Write a Paper Section",
+      "tags": ["Paper", "Writing", "Sections"],
+      "short": "Write a paper section: establish the conclusion the section must argue for, then organize the evidence and derivations.",
+      "content": "Write section text that can be placed directly into the paper. If no section is specified, first identify the section that most needs strengthening and explain why. Then state the conclusion that section must establish, and organize the data and derivations by strength of evidence. Deliver the section text, a concise argument map, and a list of references, with a separate list of statements that lack evidence."
+    },
+    "p205": {
+      "title": "Write the Discussion and Limitations",
+      "tags": ["Paper", "Discussion", "Limitations"],
+      "short": "Write the discussion and limitations: explain mechanisms, define the scope of applicability, and distinguish evidence from speculation.",
+      "content": "Help readers understand the conditions under which the results hold and where they cannot be extrapolated. Explain the mechanisms and how they agree with or depart from theoretical expectations, define the subjects and scope to which the conclusions apply, and distinguish interpretations supported by data from speculative ones. Deliver the discussion text, evidence locations, and a limitations table, listing conclusions that cannot be extrapolated and the reasons why."
+    },
+    "p194": {
+      "title": "Write the Paper Abstract",
+      "tags": ["Paper", "Abstract", "Writing"],
+      "short": "Write an abstract that explains the problem, methods, key results, and significance in 3–5 sentences.",
+      "content": "Write an abstract that can be used directly in the paper. Distill the research question, methods, key results, and significance into 3–5 sentences. Open with the problem or conclusion, and retain essential numerical values and qualifications. Deliver the abstract and a one-sentence statement of the core conclusion, with supporting passages from the main text and corresponding figures and tables for the key results."
+    },
+    "p198": {
+      "title": "Control and Balance the Paper's Length",
+      "tags": ["Paper", "Length", "Structure"],
+      "short": "Keep the main text within 5~6 pages and 3~5 figures and tables in total, retain the core argument, and move the rest into the supplementary material.",
+      "content": "Keep the main text within 5~6 pages and 3~5 figures and tables in total, with each section's length matching its argumentative task. Count the words per section and the number of figures and tables, and move repetitive or weakly connected content into the supplementary material. Deliver the main text, the length breakdown, and the change list, marking the basis for each addition and removal and the content that moved."
+    },
+    "p200": {
+      "title": "Rewrite a Tighter Version",
+      "tags": ["Paper", "Concision", "Rewriting"],
+      "short": "Shorten the target section by 30 percent, removing repeated setup and merging similar paragraphs while retaining conclusions and qualifications.",
+      "content": "Shorten the target section by 30 percent while retaining its conclusions and qualifications. If no section is specified, first identify the section that most needs shortening and explain why. Remove repeated setup, merge similar paragraphs, and move key derivations earlier. Deliver the tightened text and a list of changes, marking merged and deleted passages and reporting the revised word count."
+    }
+  }
+}

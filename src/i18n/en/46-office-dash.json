@@ -1,0 +1,88 @@
+{
+  "category": {
+    "name": "Reports and Metric Dashboards",
+    "desc": "Choose the metrics a dashboard shows, build the dashboard, produce routine reports, add reading notes to charts, merge several reports into one view, generate reports on a schedule, use charts instead of long tables, and say how each anomaly is handled"
+  },
+  "prompts": {
+    "p-1d9f2a3b4c5d678a": {
+      "title": "Choose the Metrics a Dashboard Shows",
+      "tags": [
+        "Metrics",
+        "Dashboard",
+        "Definitions"
+      ],
+      "short": "Choose the metrics a dashboard shows, and write the definition and the source of each one.",
+      "content": "Choose the metrics a dashboard is to show, so that the people looking at it get the figures they need at a glance. List the questions the dashboard is used to answer, put a metric to each of them, and write down its definition, its source, and how often it is refreshed, and cut the metrics nobody will look at. Deliver the list of metrics, the note on the definitions, and a suggestion for their placement."
+    },
+    "p-2e0a3b4c5d6e789b": {
+      "title": "Build a Metric Dashboard",
+      "tags": [
+        "Dashboard",
+        "Layout",
+        "Anomalies"
+      ],
+      "short": "Build a dashboard where the key figures fit on one screen and the odd ones stand out at once.",
+      "content": "Build a metric dashboard that tells the people looking at it at a glance how things stand. Place the metrics in the order they are read, mark each one with its current value, its change since the last period, and a flag when it is off, and put the definition and the time of the last update next to it. Deliver the dashboard layout, the metric configuration, and the rules for flagging."
+    },
+    "p-3f1b4c5d6e7f890a": {
+      "title": "Produce a Routine Operating Report",
+      "tags": [
+        "Report",
+        "Operations",
+        "Layout"
+      ],
+      "short": "Produce a report that is issued daily or monthly, with a fixed layout and every figure traceable.",
+      "content": "Produce an operating report that is issued every day or every month, in a layout people get used to. Set out the key figures and the comparisons in a fixed layout, mark the source of each cell and the period it covers, and write down the reason for missing data instead of leaving it blank. Deliver a sample of the report, the note on how the data is taken, and the list of missing items."
+    },
+    "p-4a2c5d6e7f8091b": {
+      "title": "Add a Reading Note to Each Chart",
+      "tags": [
+        "Chart",
+        "Note",
+        "Conclusion"
+      ],
+      "short": "Add a reading note to every chart that states the conclusion, the basis, and the exception.",
+      "content": "Add a reading note to every chart, so that nobody has to guess what it says. Write one paragraph stating what the chart shows, which figures it rests on, and whether there is an exception or a reversal, then list one or two points to watch. Deliver the reading notes and the highlights for each chart."
+    },
+    "p-5b3d6e7f80912c3": {
+      "title": "Merge Several Reports into One View",
+      "tags": [
+        "Reports",
+        "Merging",
+        "View"
+      ],
+      "short": "Merge several scattered reports into one view that can be read together.",
+      "content": "Merge several scattered reports into one view that can be read together, so nobody has to turn pages back and forth. Align the time range and the counting rules of each sheet, merge the content that is repeated into a single place, and mark the source table of each block. Deliver the merged view, the note on the alignment, and the mapping to the sources."
+    },
+    "p-6c4e7f8091234d5": {
+      "title": "Generate the Reports on a Schedule",
+      "tags": [
+        "Automatic",
+        "Reports",
+        "Schedule"
+      ],
+      "short": "Have the reports generated on a fixed schedule and delivered to a given place, with a warning when it fails.",
+      "content": "Have the reports generated on a fixed schedule and delivered to a given place, instead of having a person do it by hand. Write down the time the data is taken, the frequency of the run, and the way it is delivered, run it once to confirm the figures are right, and record and warn about every failure to fetch the data or a run that runs long. Deliver the generation process, the verification record, and the way the warning is raised."
+    },
+    "p-7d5f80912345e6f": {
+      "title": "Use Charts Instead of Long Tables",
+      "tags": [
+        "Chart",
+        "Table",
+        "Readability"
+      ],
+      "short": "Replace the parts of a report that should be charts, instead of spreading a screen of figures.",
+      "content": "Pick the parts of a report that should be shown as charts, and replace a screen of figures with something that can be understood at a glance. Choose the chart that matches the relationship the data is meant to show, bring out the key items with colour and labels, and keep the underlying numbers so they can still be checked. Deliver the revised report, the note on the charts, and the data behind them."
+    },
+    "p-8e609123456f70a": {
+      "title": "Say How Each Anomalous Figure Is Handled",
+      "tags": [
+        "Anomalies",
+        "Handling",
+        "Thresholds"
+      ],
+      "short": "Pair every anomalous figure in a report with how it is handled, and who follows it up.",
+      "content": "Pair every anomalous figure in a report with the way it is handled, so that the person who sees it knows what to do next. Set the rule that decides an anomaly and the threshold at which it is flagged, state for each one who follows it up, what is done, and how often there is feedback, and keep the basis for the judgement. Deliver the list of anomalies, the handling note, and the feedback interval."
+    }
+  }
+}

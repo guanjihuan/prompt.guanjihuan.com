@@ -1,0 +1,80 @@
+{
+  "category": {
+    "name": "Computational Workflows and Reproducibility",
+    "desc": "Workflow abstraction and parameterization, step-by-step logging, checkpoint resumption, caching, reproducible environments, validation and benchmarking, divergence diagnosis, and archiving and publication"
+  },
+  "prompts": {
+    "p254": {
+      "title": "Abstract a General-Purpose Computational Workflow",
+      "tags": ["Computation", "Workflow", "Abstraction"],
+      "short": "Break a computational workflow into general-purpose steps, specifying only inputs, outputs, and completion criteria for each step.",
+      "content": "Break the computational workflow into reusable, general-purpose steps. Divide the steps according to data transformations and execution order, specifying only inputs, outputs, and completion criteria for each. Use configuration to describe connections and parameter injection. Deliver a workflow definition, interface documentation, and an assembly example."
+    },
+    "p-ba633f7d295274b7": {
+      "title": "Turn Notes into a Runnable Script",
+      "tags": ["Notes", "Script", "Reproducibility"],
+      "short": "Turn notes or an interactive notebook into a runnable script: clear away the trial and error, centralize the parameters, and make it run end to end.",
+      "content": "Turn notes or an interactive notebook into a directly reusable script. Remove trial-and-error code and repeated calculations, consolidate the code into functions or steps in execution order, and move parameters to the beginning. After reorganizing, run the script successfully from start to finish. Deliver the script and run instructions, including verification that its results match the original results."
+    },
+    "p258": {
+      "title": "Implement Parameterized Runs",
+      "tags": ["Computation", "Parameterization", "Experiments"],
+      "short": "Centralize parameter configuration, support command-line input and batch parameter sweeps, and record parameter combinations and run identifiers.",
+      "content": "Centralize the variable parameters of the computational program in configuration. Specify types and default values and validate ranges. Support input through the command line or configuration files, and record parameter combinations and run identifiers during batch parameter sweeps. Deliver a configuration template, batch entry point, and a run index table."
+    },
+    "p255": {
+      "title": "Log Run Information for Every Step",
+      "tags": ["Computation", "Traceability", "Logging"],
+      "short": "Record input parameters, environment versions, runtime, and output files for every step so the run remains traceable.",
+      "content": "Generate a traceable run record for every step of the computational workflow. Save input parameters, environment versions, runtime, and run identifiers, and register output files and key intermediate quantities with status markers. Deliver a record format, step-by-step logs, and an example showing how to read them."
+    },
+    "p256": {
+      "title": "Implement Checkpoint Resumption",
+      "tags": ["Computation", "Resumption", "Caching"],
+      "short": "Support checkpoint resumption by saving each step's completion state and continuing from the first incomplete step after an interruption.",
+      "content": "Allow a long workflow to continue after an interruption instead of starting over. Save completion state and artifact validation information for each step. On recovery, continue from the first incomplete step and recompute steps whose artifacts are missing or fail validation. Deliver the resumption implementation, recovery instructions, and test records."
+    },
+    "p262": {
+      "title": "Manage Caches and Artifacts",
+      "tags": ["Caching", "Artifacts", "Management"],
+      "short": "Include every input that affects results in cache keys, isolate artifacts by run, and provide a safe cleanup command.",
+      "content": "Keep the cache and the outputs of a computation controlled and cleanable. The cache key must include the code version, the parameters, and a checksum of the input data, and the output directories are separated by run identifier. Deliver the directory layout, a cleanup command that only deletes the named directory, and the verification record."
+    },
+    "p259": {
+      "title": "Iterate Through an Idea List",
+      "tags": ["Iteration", "Ideas", "Logging"],
+      "short": "Pursue only one idea per round, save outputs as numbered documents, and build each round on the previous one.",
+      "content": "Land the ideas one by one, each with a number to look up and a result to rely on. Work through the research questions in rounds, taking on one idea per round: first write down the hypothesis to be tested and the stopping condition, then do the analysis or experiment, and save the output as a numbered document with the result recorded. Deliver the document list and the status index."
+    },
+    "p260": {
+      "title": "Build a Reproducible Environment",
+      "tags": ["Reproducibility", "Environment", "Dependencies"],
+      "short": "Pin dependencies and record random seeds and data versions, giving the shortest steps to run successfully from scratch.",
+      "content": "Enable the computational project to produce the same results on a clean machine. Pin dependency versions, record random seeds, data versions, and key environment variables, and give the shortest steps from an empty environment to the target results. Deliver a dependency manifest and run instructions."
+    },
+    "p261": {
+      "title": "Validate and Benchmark Results",
+      "tags": ["Validation", "Benchmarking", "Correctness"],
+      "short": "Add checks to the computation for dimensions, conservation, and valid ranges, and compare against known limits.",
+      "content": "Expose computational errors immediately rather than discovering them after the paper is written. Add automated checks for key results in the computational workflow, checking dimensions, conservation relationships, and valid ranges for both intermediate quantities and final results. Compare against known limits or analytical solutions and specify tolerances. Deliver the validation implementation and test records."
+    },
+    "p-ba994e6aafaa5f45": {
+      "title": "Diagnose and Fix Numerical Divergence",
+      "tags": ["Computation", "Stability", "Debugging"],
+      "short": "Stop the simulation from diverging: locate where the divergence starts, adjust the step size and the formulation, and verify convergence.",
+      "content": "Make the simulation or computation converge to a stable result instead of diverging. Locate the time step and variable where divergence begins and check the stability conditions of the step size and time-stepping scheme. Rule out causes one by one, for example by reducing the step size or switching to an implicit scheme. Deliver a diagnostic log and parameter comparison with convergence verification, flagging scenarios that remain unresolved."
+    },
+    "p257": {
+      "title": "Archive Computational Results",
+      "tags": ["Storage", "Archiving", "Results"],
+      "short": "Document the reasoning, parameters, results, and conclusions in one explanatory file, storing data in structured files with full traceability.",
+      "content": "Establish a single traceable archive for the computational results. Save the data and metadata as structured files, record the approach, parameters, and conclusions in a README, and assign a unique identifier to every run. Deliver the archive directory and the run list."
+    },
+    "p-f45123ad873c2775": {
+      "title": "Publish a Preprint and Open Code and Data",
+      "tags": ["Preprint", "Open Source", "Archiving"],
+      "short": "Publish the preprint, code, and data so they are discoverable and reproducible.",
+      "content": "Make the preprint, code, and data discoverable, downloadable, and reproducible by others. Confirm versions and licenses, check the repository for secrets and local paths, and add run instructions and data provenance. After publication, verify links and search indexing. Deliver a release checklist, archival identifiers, and accessible links, flagging anything that cannot yet be made public."
+    }
+  }
+}

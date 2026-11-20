@@ -1,0 +1,56 @@
+{
+  "category": {
+    "name": "Research Proposals and Grants",
+    "desc": "Proposal revision, experimental plans, feasibility arguments, and final project reports"
+  },
+  "prompts": {
+    "p246": {
+      "title": "Revise a Research Proposal from a Reviewer's Perspective",
+      "tags": ["Research Proposal", "Grant Application", "Peer Review"],
+      "short": "Provide specific comments on the proposal from a strict reviewer's perspective and revise it accordingly.",
+      "content": "Make the research proposal withstand reviewers' scrutiny and form a verifiable, closed chain of reasoning. Check the scientific question, incremental innovation, and research objectives, and assess whether the technical route and preliminary foundation align with them. Deliver prioritized review comments and a revised proposal, explaining the rationale for each change. Recheck whether the budget and assessment metrics have been updated accordingly."
+    },
+    "p247": {
+      "title": "Improve the Experimental Plan",
+      "tags": ["Experiment", "Plan", "Rationale"],
+      "short": "Provide a prioritized list of improvements to the experimental plan, each with its rationale, steps, and any new requirements.",
+      "content": "Propose actionable improvements to the experimental plan that can be ranked by priority. Cover variable control, measurement methods, and process improvements while retaining cost constraints. Include the theoretical rationale and implementation steps for each item. Deliver a ranked list noting any new requirements and risks."
+    },
+    "p249": {
+      "title": "Check Whether the Proposal Is Internally Consistent",
+      "tags": ["Grant Application", "Structure", "Review"],
+      "short": "Check for conflicts among the proposal's sections and provide a consistency matrix and rewriting suggestions.",
+      "content": "Make every part of the application line up, so that no contradiction can be picked out in the review. Map the research content, the novelty points, and the objectives onto the technical route, check whether the groundwork and the conditions can support the tasks, and locate the gaps in the route or the conflicts in the indicators. Deliver the self-consistency comparison table and the rewriting suggestions, explaining item by item how each change affects the tasks, the schedule, and the link to the deliverables."
+    },
+    "p250": {
+      "title": "Distill Credible Innovations",
+      "tags": ["Grant Application", "Innovations", "Distillation"],
+      "short": "Distill innovations from existing work that can withstand scrutiny, without relying on empty claims.",
+      "content": "Distill verifiable innovations from the existing work. For each one, explain what is new, which prior work it differs from, and why it matters. Do not substitute claims such as \"the first\" or \"fills a gap\" for an argument, and include the available supporting evidence. Deliver a list of innovations and an evidence-mapping table, flagging entries with insufficient evidence."
+    },
+    "p251": {
+      "title": "Strengthen the Feasibility Argument",
+      "tags": ["Grant Application", "Feasibility", "Argumentation"],
+      "short": "Add a feasibility argument for each task, including risk trigger signals and alternatives.",
+      "content": "Demonstrate that every task in the proposal can be carried out under the current conditions. Map key steps to technical capabilities, available resources, and preliminary verification results. Identify major risks and provide trigger signals and alternatives. Deliver a task-to-conditions matrix, a risk-response table, and a deliverables timetable, including acquisition plans for any missing conditions."
+    },
+    "p252": {
+      "title": "Write Research Significance and Innovation Separately",
+      "tags": ["Grant Application", "Significance", "Innovation"],
+      "short": "Write research significance and innovation as two separate sections, removing repetition and empty claims.",
+      "content": "Give distinct answers when reviewers ask \"Why does this matter?\" and \"What is new?\" Write the proposal's significance and innovation as separate sections. In the significance section, explain why the problem matters; in the innovation section, compare how this work specifically differs from existing methods. Deliver revised versions of both sections and an explanation of how repeated content was handled, deleting unsupported empty claims."
+    },
+    "p253": {
+      "title": "Prepare the Budget and Assessment Metrics",
+      "tags": ["Grant Application", "Budget", "Metrics"],
+      "short": "Add a budget table and measurable quantitative metrics, with every metric corresponding to the research content.",
+      "content": "Provide a budget and measurable quantitative metrics for the proposal. In the budget table, list expense categories, amounts, and calculation bases, and verify the totals. Break the metrics down into quantities, quality criteria, or deadlines that can be verified. Deliver the budget table and a metric-to-task mapping table, flagging unit prices requiring confirmation and risks that cannot be quantified."
+    },
+    "p-8b2b51bafe222949": {
+      "title": "Write the Final Project Report",
+      "tags": ["Project Completion", "Report", "Project"],
+      "short": "Write the final project report against the task agreement's metrics, mapping each one to its completion status and supporting evidence.",
+      "content": "Account for every metric in the task agreement. Write the final project report according to the agreement's requirements. For each assessment metric, state the completion status and supporting evidence. Map every outcome to its corresponding metric, and explain any incomplete items. Deliver the final project report and a list of supporting materials, check the formatting requirements, and flag areas where additional documentation is needed."
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "category": {
+    "name": "Build and Release",
+    "desc": "CI pipelines, container images, versioned packaging and release, exports that run standalone, feature flags, desktop installers and tray autostart"
+  },
+  "prompts": {
+    "p073": {
+      "title": "Configure a CI Pipeline",
+      "tags": ["CI", "Pipelines", "Automation"],
+      "short": "Configure CI: install dependencies → check → test → build → upload reports, stopping immediately on failure.",
+      "content": "Configure a continuous-integration pipeline that stops immediately on failure. Run dependency installation and static type checks, tests and builds, and report uploads in sequence; parallelize independent steps and cache dependencies. Deliver the pipeline configuration and trigger conditions, explain where artifacts are stored, and include run records for both a successful run and an intentionally failed run."
+    },
+    "p074": {
+      "title": "Fix CI Failures",
+      "tags": ["CI", "Fixes", "Debugging"],
+      "short": "Find the first real error in the pipeline logs, reproduce it, and fix the root cause.",
+      "content": "Locate the step where the pipeline failed and fix the root cause. Extract the first real error from the complete logs, check the runtime environment, dependency versions, and recent changes, and reproduce the failure in an environment matching the pipeline. Deliver the root cause and supporting evidence, explaining the changes made and the local reproduction results."
+    },
+    "p075": {
+      "title": "Write Container Configuration",
+      "tags": ["Containers", "Deployment", "Configuration"],
+      "short": "Write container build, ignore, and orchestration configuration, using an unprivileged user and configuring health checks.",
+      "content": "Write the container configuration that builds a runnable image. Use a multi-stage build to separate the build-time and the run-time dependencies, run as a non-privileged user with a health check configured, and add the build ignore rules and the orchestration configuration. Deliver the build, ignore, and orchestration configuration, with the image size comparison and the health check results."
+    },
+    "p081": {
+      "title": "Package and Release with Rollback Support",
+      "tags": ["Releases", "Rollback", "Versions"],
+      "short": "Package and release the project, write release notes, and define rollback criteria in advance.",
+      "content": "Package the project and publish it, so it can fall back to the previous version if something goes wrong. Set the version number and the changes, clear the development artefacts, confirm that the build, install, and run steps are reproducible, and write the release notes with only the user-visible changes, each tied to a specific change. Deliver the release package, the build verification record, and the criteria for rolling back."
+    },
+    "p-068b36c4673fd61e": {
+      "title": "Export Artifacts That Run Standalone",
+      "tags": ["Export", "Release", "Standalone"],
+      "short": "What gets exported should run on its own away from the original environment, so anyone can pick it up and use it.",
+      "content": "Let exported files run on someone else's machine without the original environment. Check whether the exported code, data, and dependency declarations are complete and whether the artifact executes independently in a clean environment, adding whatever is missing. Deliver a list of runnable artifacts and the record of running them in a clean environment, marking the steps that still need manual handling."
+    },
+    "p-63a5c912b7575191": {
+      "title": "Control Release Rollout with Feature Flags",
+      "tags": ["Feature Flags", "Releases", "Rollback"],
+      "short": "Use feature flags to decouple new functionality from releases so it can be turned off independently if problems arise.",
+      "content": "Allow new functionality to be deployed before being gradually enabled, and turned off immediately if problems arise. Define flag granularity, defaults, and scope; integrate configuration reading and a cleanup plan; and verify the fallback path when a flag is off. Deliver a flag list, integration changes, and verification results with flags both on and off, flagging changes not protected by a feature flag."
+    },
+    "p-b10fee3c9c77634a": {
+      "title": "Package a Desktop Application Installer",
+      "tags": ["Desktop App", "Packaging", "Releases"],
+      "short": "Package the desktop application as an installer for the target platform, including signing, auto-updates, and rollback after failed updates.",
+      "content": "Package the desktop application as an installer for the target platform so users can install, upgrade, and uninstall it. Distinguish between installed and portable versions, handle code signing and explain false positives, include auto-updates and rollback after failed updates, and preserve existing data during upgrades. Deliver the installer, update configuration, and hands-on test records."
+    },
+    "p-734b58acd2b4aaeb": {
+      "title": "Configure System Tray and Launch at Startup",
+      "tags": ["System Tray", "Auto-Start", "Desktop App"],
+      "short": "Add a system tray icon and launch-at-startup support to the desktop application, with settings to toggle both.",
+      "content": "Keep the desktop application resident in the system tray and support launch at startup, with both behaviors controlled by the user in settings. The tray should offer opening the main window and quitting; closing the window should minimize to the tray by default and be configurable; and launch at startup should be off by default. Deliver the tray and startup implementations, along with verification results for restarts, repeated launches, and disabling startup."
+    }
+  }
+}

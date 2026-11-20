@@ -1,0 +1,68 @@
+{
+  "category": {
+    "name": "Project Governance and Handover",
+    "desc": "Establish a project's basic checks and conventions, hand the project over to the next person, record key decisions, turn past mistakes into project rules, run regular inspections that explain what changed, and list the risks along with how to handle them"
+  },
+  "prompts": {
+    "p-02752688b0fcf3c9": {
+      "title": "Establish a Solid Foundation for the Project",
+      "tags": [
+        "Conventions",
+        "Baseline",
+        "Sustainability"
+      ],
+      "short": "Settle the directory responsibilities, the dependencies and how to run, and the environment and version baseline in one go, so anyone picking it up can get it running.",
+      "content": "Make the project steady to work on later. Sort out the directory responsibilities, the dependency list, and the way to run it, fix the environment and version baseline, write all of that into a project baseline note, and get it running once from that note. Deliver the baseline note, the version baseline, and the record of the first successful run."
+    },
+    "p-f70dbfc635f4f307": {
+      "title": "Hand the Project Over to the Next Person",
+      "tags": [
+        "Handoff",
+        "Documentation",
+        "Onboarding"
+      ],
+      "short": "Write a handover note covering where the project stands, how to run it, and which pitfalls to avoid.",
+      "content": "Let the next person start working without figuring everything out from scratch. Write down how far the project has come, how to install dependencies and run the verification, which conventions must not be broken, the known problems, and the planned next steps. Deliver the handover note, the list of files to read first, and the open issues."
+    },
+    "p-e8b008e6c4fddc55": {
+      "title": "Record Key Decisions",
+      "tags": [
+        "Decision-making",
+        "Records",
+        "Traceability"
+      ],
+      "short": "Record key decisions and the reasons behind them for future reference.",
+      "content": "Make it possible to understand later why each decision was made. Record every key decision, the options considered at the time, and the reasons the alternatives were rejected, and store the supporting evidence in the project along with them. Deliver the decision records, the rationale for each item, and their storage location."
+    },
+    "p-066f90aa7c9df36d": {
+      "title": "Turn Lessons Learned into Project Rules",
+      "tags": [
+        "Retrospective",
+        "Rules",
+        "Prevention"
+      ],
+      "short": "Turn past pitfalls into rules that prevent the same mistakes next time.",
+      "content": "Prevent the same kinds of problems from recurring. Review records of fixed failures and rework, group the recurring causes, and write the corresponding constraints into the project's checks or conventions. Deliver the lessons-learned list, the new rules, and verification that they are in effect."
+    },
+    "p-182e705e0fe4ae": {
+      "title": "Check the Project Regularly and Explain What Changed",
+      "tags": [
+        "Inspection",
+        "Recheck",
+        "State"
+      ],
+      "short": "Run the project again on a schedule and compare with the last run to show what broke.",
+      "content": "Catch the project's problems before they grow. Each inspection covers the build and tests, a smoke check of the critical paths, dependency security updates, and configuration drift; every run follows the same steps and is compared with the previous result. Deliver the result of each inspection, the list of changes, and the issues that need handling."
+    },
+    "p-e3372821894d4c36": {
+      "title": "List the Risks and Set Out How to Handle Them",
+      "tags": [
+        "Risks",
+        "Response",
+        "Contingency"
+      ],
+      "short": "Name the things most likely to go wrong ahead of time and attach a concrete response to each.",
+      "content": "Have a plan in place before a risk turns into an incident. List the risks that could slow the progress or make this delivery fail, and sort them by impact and by how likely they are. Give each one a workable response and a trigger signal, and mark who watches it. Deliver the risk list, the responses, and the owner for each."
+    }
+  }
+}

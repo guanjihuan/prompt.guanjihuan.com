@@ -1,0 +1,68 @@
+{
+  "category": {
+    "name": "Version Control and Commits",
+    "desc": ".gitignore rules, pre-commit checks, branches, PR descriptions, conflicts, history cleanup, reverts, recovery, and change verification"
+  },
+  "prompts": {
+    "p-e1b8e87637824332": {
+      "title": "Optimize .gitignore",
+      "tags": ["git", "gitignore", "Configuration"],
+      "short": "Optimize .gitignore for the project's actual needs: add the missing entries and remove the redundant ones.",
+      "content": "Align .gitignore with the project's actual needs. Add missing entries based on the technology stack and build artifacts, and remove irrelevant template rules. Deliver the changes and reasons for each addition and removal, use git check-ignore -v to check which rule matched, and confirm that files that should be committed have not been ignored by mistake."
+    },
+    "p051": {
+      "title": "Review the Full Diff Before Committing",
+      "tags": ["git", "Inspection", "Commits"],
+      "short": "Review the full diff before committing, excluding accidental edits, debug code, temporary files, secrets, and unusually large files.",
+      "content": "Make this commit contain only intentional changes, and review the complete diff file by file before committing. Exclude mistaken and missing changes, look for debug code, temporary files, secrets, and unusually large files, and confirm that renames and deletions were intentional. Deliver the diff-review conclusion and the reason for each exclusion, with the verification commands and their results."
+    },
+    "p050": {
+      "title": "Create a Branch and Commit Changes",
+      "tags": ["git", "Commits"],
+      "short": "Create a new branch and commit the current changes, staging only related files and not pushing.",
+      "content": "Land this change on a branch of its own, without pushing and without dragging in unrelated work. Confirm the starting point of the branch and the changes that are not committed yet, name the branch so it says what the change does, and stage only the files this change touches. Deliver the branch name and its starting point, the commit hash, and the result of comparing the branch."
+    },
+    "p-62687d66a2557fbe": {
+      "title": "Commit Current Changes",
+      "tags": ["git", "Commits"],
+      "short": "Commit the current changes on the current branch: stage only related files, explain the reason in the commit message, and do not push.",
+      "content": "Commit the current changes on the current branch without creating a new branch or pushing. Review the diff file by file and stage only paths related to this change; leave unrelated changes in the working tree and explain them; and write a commit message that clearly states what changed and why. Deliver the commit hash and file list, along with a status check after committing."
+    },
+    "p053": {
+      "title": "Draft a Pull Request",
+      "tags": ["git", "PR", "Descriptions"],
+      "short": "Draft a PR: make the title clear about the change, and explain what changed, why, and how it was verified in the body.",
+      "content": "Draft a pull request based on the complete diff and commit history. Put the core change in the title; explain what changed, why, and the scope of impact in the body; and list the commands actually run and their results in the verification section. Deliver a draft title and body, identifying what has been verified and any uncovered risks."
+    },
+    "p055": {
+      "title": "Resolve Merge Conflicts",
+      "tags": ["git", "Conflicts", "Merges"],
+      "short": "Understand both sides' intent before merging conflicts, preserving the semantics both sides need.",
+      "content": "Resolve merge conflicts so the result satisfies the intent of both sides. Analyze the background and data semantics of each conflict, retain the parts both sides need, and search for leftover conflict markers after resolving them. Deliver the rationale for each trade-off and the locations changed, along with verification results and any disagreements that still require business confirmation."
+    },
+    "p054": {
+      "title": "Clean Up Commit History",
+      "tags": ["git", "History", "Cleanup"],
+      "short": "Clean up only unshared local commits, combine them logically and rewrite their messages, while preserving working-tree changes.",
+      "content": "Organize unshared local commits into a logically clear sequence. First list the range to be rewritten and how commits will be combined, confirm a recovery point, and protect working-tree changes; then combine commits into logical units and rewrite their messages. Deliver the new commit sequence, before-and-after diff verification results, and the recovery method."
+    },
+    "p057": {
+      "title": "Revert Changes Safely",
+      "tags": ["git", "Reverts", "Recovery"],
+      "short": "Safely undo a commit or mistaken operation, explaining its impact and recovery point first.",
+      "content": "Safely roll back a commit or mistaken operation without losing existing work. First check the branch, whether it is shared, and uncommitted content; explain the impact and recovery point; and distinguish between a revert commit and rewriting history. Deliver an operation log and recovery point, along with diff verification results and anything requiring cooperation from collaborators."
+    },
+    "p-6b10830f1ff7e341": {
+      "title": "Recover Lost Commits",
+      "tags": ["git", "Recovery", "Commits"],
+      "short": "How to recover a deleted branch or lost commits: inspect read-only first, then restore to a new branch.",
+      "content": "Recover a deleted branch or a commit lost to a reset, without touching the current working state. First list the recoverable sources in a read-only way (git reflog entries and dangling commits), then restore to a new branch once confirmed, and check that the content is complete. Deliver the recovery location and the content check results, with advice on avoiding the same loss again."
+    },
+    "p-7c2da417e3b50fa1": {
+      "title": "Verify Changes Are Still Present",
+      "tags": ["git", "Verification", "Loss Prevention"],
+      "short": "Verify earlier changes against version history; find the cause of any loss before restoring them, and stop if the cause cannot be determined.",
+      "content": "Make sure the changes that have been done are all still there. First settle the baseline to compare against, such as the difference between the target branch and the merge base. Then check file by file whether the changes are still there, put back the ones that were reverted or overwritten as they were, and redo the lost ones after finding out why they were lost. Deliver the check results and the hashes added back, and stop and explain when the reason cannot be found."
+    }
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "category": {
+    "name": "UI and Visual Design",
+    "desc": "Visual consistency, layout, themes and a full style system, multi-device adaptation, a component library, unified wording and naming, trimming redundant text, readability tuning, fixing display defects, accessibility and desktop helpers"
+  },
+  "prompts": {
+    "p086": {
+      "title": "Unify UI Visuals and Component States",
+      "tags": ["UI", "Design", "Themes"],
+      "short": "Unify the interface and component states around a clear visual direction, preserving existing functionality and testing the result.",
+      "content": "Give the interface a consistent visual language where the hierarchy is readable at a glance. Keep the features, set the scale values for layout, colour, and typography, unify the specs for spacing, corner radius, and shadows, write them out as design tokens, and add the state colours, empty states, and loading and error states. Deliver the design tokens and the state table, with measured results at the different sizes."
+    },
+    "p087": {
+      "title": "Reduce Icon Clutter and the AI-Generated Look",
+      "tags": ["UI", "Style", "Reduce AI Look"],
+      "short": "Make the interface about content and typography, removing superfluous icons, gradients, rounded corners, and templated cards while keeping the essentials.",
+      "content": "Return the interface to a content- and typography-first design by removing purely decorative elements. Review every page to identify unnecessary icons, gradients, rounded corners, and formulaic cards, while retaining elements required by the brand and interactions. Deliver before-and-after comparisons, with checks of readability and all interaction states."
+    },
+    "p088": {
+      "title": "Test and Redesign the Interface",
+      "tags": ["UI", "Design", "Testing"],
+      "short": "Open the actual interface and try each page through real tasks, then redesign based on the findings and test again.",
+      "content": "Base interface design on real use rather than assumptions. Open the actual interface and try every page, recording issues and reproduction steps for navigation, content viewing, editing and submission, and error recovery, then redesign accordingly. Deliver a page-by-page issue list and a comparison of the changes, with test results for each feature and items still requiring confirmation."
+    },
+    "p089": {
+      "title": "Restructure the Two-Column Layout",
+      "tags": ["UI", "Layout", "Sidebar"],
+      "short": "Restructure the left and right panes: merge entries on the left by task frequency, reduce complexity on the right by priority, and unify hierarchy and spacing.",
+      "content": "Make frequently used entry points easy to find and declutter the detail pane. Restructure the left navigation and right detail pane: merge duplicate or low-frequency entry points on the left by task frequency, reduce complexity on the right by priority, and unify hierarchy and spacing. Deliver the layout and component states, with verification across content of different lengths and on narrow screens."
+    },
+    "p094": {
+      "title": "Implement Multiple Themes and Dark Mode",
+      "tags": ["UI", "Themes", "Dark Mode"],
+      "short": "Use design tokens to implement multiple themes and dark mode, overriding tokens only and never components.",
+      "content": "Support multiple themes and dark mode, with each theme changing only tokens, not structure. Extract colors, corner radii, shadows, and typography into tokens, with automatic device-based or manual switching. In dark mode, readjust the contrast of text and state colors, and check chart legibility. Deliver token configuration, page screenshots, and preference verification."
+    },
+    "p-0fd8d5f68cd187d7": {
+      "title": "Design a Full Range of Theme Styles",
+      "tags": ["Themes", "Colors", "Style"],
+      "short": "Design several additional complete themes beyond the existing interface, covering the overall visual style rather than just colors.",
+      "content": "Produce several complete styles for users to choose from. Each one is a style for the whole page rather than just a palette, covering density, corner radius, shadow, and typographic character; the main color may differ from the default theme, while the brand color and readability stay consistent. Deliver several theme proposals and preview images, with a display check for each theme."
+    },
+    "p096": {
+      "title": "Design UI Motion and Transitions",
+      "tags": ["UI", "Motion", "Interaction"],
+      "short": "Add motion only for state changes, hierarchy transitions, and loading feedback, with durations of 150–300ms and reduced-motion support.",
+      "content": "Design restrained motion for state changes. Define trigger conditions, animated properties, and interruption behavior; keep durations within 150–300ms and support the reduced-motion preference. Deliver motion parameters and component changes, with verification for normal use, rapid consecutive actions, and reduced-motion mode."
+    },
+    "p100": {
+      "title": "Adapt Layouts for Narrow Screens and Multiple Devices",
+      "tags": ["UI", "Responsive Design", "Multiple Devices"],
+      "short": "Adapt the interface for phones, tablets, and desktops, checking overflow, touch interaction, orientation, and text scaling.",
+      "content": "Make the interface usable on phones, tablets, and desktops. Adjust the layout for typical viewports, prevent horizontal overflow, keep wide tables scrollable within their containers, make touch targets at least 44px, and allow navigation to collapse on small screens. Deliver screenshots at key sizes and a record of fixes, with verification of orientation changes and text enlargement."
+    },
+    "p-ebdbcccbd6e1366d": {
+      "title": "Build a Component Library and Usage Documentation",
+      "tags": ["Components", "Design System", "Documentation"],
+      "short": "Turn common UI elements into a component library with usage guidance and examples.",
+      "content": "Give similar UI elements consistent implementations instead of writing a separate version for every page. Group existing buttons, forms, lists, and overlays; distill common components and variants; and define their properties, states, and accessibility requirements. Deliver component code, usage documentation, and example pages, marking exceptions that will remain unstandardized for now."
+    },
+    "p-8d74a5d0a0454c93": {
+      "title": "Standardize UI Copy and Message Tone",
+      "tags": ["Copy", "Tone", "Consistency"],
+      "short": "Standardize UI copy and message tone so users know what to do.",
+      "content": "Make UI copy and message tone consistent, with a clear next step whenever user action is required. Collect buttons, headings, empty states, and error messages page by page, and rewrite them using a consistent tone and terminology. Remove sentences that only describe a problem without explaining how to resolve it. Deliver a list of rewrites and a standardized glossary, marking wording that needs product confirmation."
+    },
+    "p-545e4ac985bd0ae6": {
+      "title": "Name the Same Object the Same Way Everywhere",
+      "tags": ["Interface", "Naming", "Consistency"],
+      "short": "The same thing should carry the same name in lists, details, and side panels instead of a different name in each place.",
+      "content": "Make users recognise the same thing everywhere in the interface. Collect the object names used across the interface, including list items, detail panels, sidebar titles, and hint text, unify them against one name table, and keep the language versions matched to each other. Deliver the name reference table and the list of change locations, marking the old names kept for now."
+    },
+    "p-ad49fde269a5370d": {
+      "title": "Remove Redundant Interface Text",
+      "tags": ["Copy", "Conciseness", "UI"],
+      "short": "Remove unnecessary explanations, numbering, and repeated messages from the interface, keeping the text concise and precise.",
+      "content": "Make the interface text short and accurate. Go through and delete explanations users already understand, implementation details, repeated hints, and made-up labels, keeping the version that one sentence can carry, and leave every functional entry point untouched. Deliver a deletion list and a before-and-after comparison, with a whitespace check after walking through the main pages."
+    },
+    "p-190231abc58b3c8e": {
+      "title": "Improve Interface Readability",
+      "tags": ["UI", "Readability", "Density"],
+      "short": "Standardize font sizes, weights, and contrast so text is clear and information density does not become overwhelming.",
+      "content": "Make interface text and controls clear at a glance. Check font size, weight, and text darkness area by area; keep secondary information muted but still legible, and avoid abrupt local changes in size. Deliver before-and-after comparisons and a parameter table, with checks of the main pages at different zoom levels."
+    },
+    "p-2126b575719d316c": {
+      "title": "Fine-Tune Interface Details",
+      "tags": ["UI", "Details", "Fine-Tuning"],
+      "short": "Adjust only spacing, alignment, and whitespace; do not change font sizes, layout, or functionality.",
+      "content": "Align the details without changing layout or functionality. Adjust spacing and whitespace throughout, maintain a consistent overall style, and provide before-and-after screenshot comparisons. Deliver a list of adjustments and comparison images, with display checks of the main pages after the changes."
+    },
+    "p-675821adecda256c": {
+      "title": "Handle Long Content Overflow",
+      "tags": ["Overflow", "Ellipsis", "Long Content"],
+      "short": "Give long content consistent display rules: wrap where possible, and use an ellipsis that preserves the beginning and end when it does not fit.",
+      "content": "Establish consistent display rules for long filenames, paths, and text. Wrap automatically where possible; when a single line cannot fit, use an ellipsis while preserving key information at the beginning and end. Let users view the full content on hover or click, and apply the same truncation rules throughout the product. Deliver overflow handling rules and a list of changes, with checks using the longest content and on narrow screens."
+    },
+    "p-ac0b9e114f39306e": {
+      "title": "Add Click-to-Enlarge Image Viewing",
+      "tags": ["Images", "Zoom", "Preview"],
+      "short": "Open a large image on click, with scroll-wheel and button zoom, drag-to-pan, and double-click or Esc to close.",
+      "content": "Let users click an image in an image list to view it full size. Clicking a thumbnail opens an enlarged overlay, with scroll-wheel and button zoom, drag-to-pan, and double-click or Esc to close; users can switch between images when multiple images are present. Deliver the viewer component and an explanation of where it is triggered, with verification for small images, tall images, and narrow screens."
+    },
+    "p092": {
+      "title": "Fix Local Display Issues",
+      "tags": ["UI", "Fixes", "Display"],
+      "short": "Fix overflow, occlusion, and stacking issues in panels, dialogs, and tables at different sizes.",
+      "content": "Ensure panels, dialogs, and tables neither overflow nor obscure content at any size, and prevent dialogs from being covered by page content. Reproduce the issues and record the triggering sizes, content lengths, and related styles, then identify the underlying layout or rendering cause. Deliver the fix locations and before-and-after images, with retest results at different sizes and with long content."
+    },
+    "p-0aad11c5093a9f8d": {
+      "title": "Troubleshoot Blank Pages and Errors",
+      "tags": ["Blank Page", "Errors", "Troubleshooting"],
+      "short": "Troubleshoot blank pages and console errors, identify the root cause, and fix it.",
+      "content": "Fix blank pages or errors so functionality returns to normal. Start with console errors and network requests to identify the root cause; check resource loading, API data, and the runtime environment; then fix the issue and regression-test the main operations. Deliver a root-cause explanation and the fixes, with retest results for the scenarios that produced the errors."
+    },
+    "p093": {
+      "title": "Check and Fix Accessibility Issues",
+      "tags": ["UI", "Accessibility", "Usability"],
+      "short": "Check keyboard reachability, semantic labels, form names, and contrast against accessibility standards.",
+      "content": "Resolve accessibility issues one by one so keyboard and screen-reader users can complete every operation. Verify keyboard access, visible focus, semantic labels, and form names against accessibility standards, and check alternative text, contrast, and click target sizes. Deliver an issue list, the corresponding standards, and the fixes, with records of keyboard and screen-reader retesting."
+    },
+    "p099": {
+      "title": "Customize the Desktop Window Title Bar",
+      "tags": ["UI", "Desktop App", "Window"],
+      "short": "Customize the desktop title bar only when necessary, following platform conventions and handling multiple displays and scaling.",
+      "content": "Customize the title bar only when the existing one cannot meet the requirements, and make its behavior follow the conventions of the target platform. Preserve dragging, resizing, and keyboard operation; set default and minimum dimensions; and handle multiple displays and scaling. Deliver the window controls and size constraints, with test results for multiple displays, scaling, and restart."
+    },
+    "p-cc3d057d9e81587b": {
+      "title": "Build a Floating Desktop Widget",
+      "tags": ["Floating Window", "Desktop App", "Widget"],
+      "short": "Build a floating desktop widget that stays on top, can be dragged, and updates its status in real time.",
+      "content": "Build a small always-on-top desktop widget that shows the key status at any time. The window stays on top, can be dragged and collapsed, its content updates in real time, it does not get in the way of other windows, and its position is remembered. Deliver the widget implementation and its settings, with verification results for occlusion, multiple monitors, and long running."
+    },
+    "p-68a40b7d227bd249": {
+      "title": "Remember Window and Layout State",
+      "tags": ["Window", "Layout", "Desktop App"],
+      "short": "Remember window size and position and panel layout so the application restores them exactly on the next launch.",
+      "content": "Restore the application to its previous appearance after relaunch. Remember window size and position, panel widths and collapsed states, and the display containing the window on multi-display setups. Restore the state even after an abnormal exit, and provide an option to reset the default layout. Deliver state persistence, with verification for restarts, connecting and disconnecting displays, and abnormal exits."
+    }
+  }
+}

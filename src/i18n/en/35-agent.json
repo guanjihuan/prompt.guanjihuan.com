@@ -1,0 +1,158 @@
+{
+  "category": {
+    "name": "Agents and Authorization",
+    "desc": "Project conventions, roles and authorization boundaries, tool integrations, skills and commands, output structure, quality baselines and budgets, memory and context, collaboration, and background tasks"
+  },
+  "prompts": {
+    "p273": {
+      "title": "Create a Project Guidelines File",
+      "tags": ["Agent", "Guidelines", "Context"],
+      "short": "Create a project guidelines file covering directory responsibilities, build and test commands, and commit conventions.",
+      "content": "Enable an agent to take over the project without having to figure out its conventions. After reviewing the project structure, dependency manifest, and existing scripts, document directory responsibilities, how to build and run the project, how to run tests, and commit conventions. Deliver the guidelines file and a verification log for the key commands."
+    },
+    "p281": {
+      "title": "Audit Existing Configuration",
+      "tags": ["Agent", "Configuration", "Audit"],
+      "short": "Audit the agent configuration and use reference relationships to identify duplicate, conflicting, and obsolete rules, skills, and hooks.",
+      "content": "Ensure the agent configuration contains no entries that conflict with one another or have become obsolete. Cover rule files, skills, commands, and hooks; identify problems through reference relationships and actual behavior, and do not merge configurations that are still in use merely because their names are similar. Deliver an issue list and a cleanup plan."
+    },
+    "p-f940e8f67ac90d76": {
+      "title": "Define the Agent's Role and Overall Requirements",
+      "tags": ["Agent", "Prompt", "Role"],
+      "short": "Define the agent's role and overall requirements for a scenario: goals, boundaries, and how to express uncertainty.",
+      "content": "Make the agent work to the same set of requirements reliably in a fixed scenario. Write out the role objective, the boundary between what it may do and what it may not, the known information and the default assumptions, and say how to express uncertainty. Deliver the requirements text and the usage notes, and mark the clauses that duplicate or conflict with the rule files, skills, or commands already in the project."
+    },
+    "p011": {
+      "title": "Define Authorization Boundaries",
+      "tags": ["Authorization", "Constraints", "Collaboration"],
+      "short": "You decide implementation details; ask me before deleting files, changing interfaces, adding dependencies, or performing irreversible operations.",
+      "content": "Set the authorization boundaries for this task upfront: you decide implementation details, but ask me before going beyond them. Before deleting files, changing public interfaces, introducing new dependencies, or performing irreversible data operations, explain the reasons and impact. Deliver two lists of operations: those you can perform directly and those that require prior confirmation. Stop before proceeding with anything outside the boundaries."
+    },
+    "p-13f07ae5d5f90dca": {
+      "title": "Use the Most Reasonable Approach",
+      "tags": ["Authorization", "Approach", "Autonomy"],
+      "short": "Use your judgment: decide the implementation trade-offs, choose a conventional and defensible approach, and make the changes verifiable.",
+      "content": "Use your judgment on this task; there is no need to ask me at every step. Decide the implementation trade-offs yourself, with only one requirement: the result must stand up to scrutiny. The approach must be conventional and defensible, and the changes must be verifiable. Deliver the approach ultimately adopted and the reasons for it, listing the key trade-offs you decided yourself."
+    },
+    "p009": {
+      "title": "Work Autonomously and Record Assumptions",
+      "tags": ["Authorization", "Autonomy", "Assumptions"],
+      "short": "Work autonomously within the established goals and record assumptions; ask me before irreversible operations or external publication.",
+      "content": "Work autonomously within the established goals, and check back only when a key goal or constraint is missing. Stop and explain the impact before any irreversible operation or external publication. For other choices, default to existing project practices and document the assumptions. Deliver an assumption list and verification evidence."
+    },
+    "p-d240e5e3a85d27c6": {
+      "title": "Integrate External Tools with an Agent",
+      "tags": ["Agent", "Tools", "Integration"],
+      "short": "Integrate external tools with the agent, specifying confirmation points and failure fallbacks.",
+      "content": "Enable the agent to call external tools to complete tasks. Define the operations it may call, their parameters, and their return values; specify confirmation points before calls and fallbacks for failures; and limit the scope of accessible data. Deliver the integration configuration, invocation examples, and failure scenario records, flagging calls that require human confirmation."
+    },
+    "p274": {
+      "title": "Turn Repeated Workflows into Skills",
+      "tags": ["Agent", "Skills", "Standardization"],
+      "short": "Turn repeated workflows into skills or commands, with clear trigger conditions and steps.",
+      "content": "Turn repeated workflows into reusable skills or commands so that one trigger produces the complete output. List the workflow's repeated steps and decision points, and specify trigger conditions, execution order, and permission boundaries. Deliver the configuration and invocation examples."
+    },
+    "p278": {
+      "title": "Write Prompt Cards",
+      "tags": ["Agent", "Prompt", "Cards"],
+      "short": "Derive categories from real, high-frequency scenarios and write prompt cards that work as soon as they are pasted.",
+      "content": "Give common tasks ready-made prompts that work as soon as they are pasted. Create directly paste-ready prompt cards for high-frequency task scenarios, first grouping task types to determine how many categories to use. Provide examples for input fields in the form \"(e.g., ...)\", and specify constraints, steps, and delivery format. Deliver the categorized cards and a usage index."
+    },
+    "p277": {
+      "title": "Create a Task Checklist",
+      "tags": ["Agent", "Tasks", "Planning"],
+      "short": "Break the requirements into a task checklist with deliverables, acceptance criteria, and dependencies.",
+      "content": "Break the requirements into a checklist of tasks that can be accepted independently. Specify each task's actions, scope, deliverables, and acceptance criteria, and identify dependencies, tasks that can run in parallel, and alternative paths when blocked. Deliver the prioritized task checklist and a blank template."
+    },
+    "p276": {
+      "title": "Tier the Agent's Checks",
+      "tags": ["Agent", "Workflow", "Efficiency"],
+      "short": "Tier checks and select a path based on the scope of changes, avoiding repeated full runs.",
+      "content": "Tier the agent's checks to reduce repeated full runs within the same round. Determine how frequently existing checks are triggered, distinguish quick self-checks, targeted checks, and full regression testing, and select paths based on the scope of changes and the risk of failure. Deliver a tiered checklist and routing examples."
+    },
+    "p275": {
+      "title": "Design Pre-commit Automated Checks",
+      "tags": ["Agent", "Hooks", "Automation"],
+      "short": "Design pre-commit hooks that run formatting, type checks, lint, and tests, blocking the commit on failure.",
+      "content": "Design pre-commit hooks so that substandard changes cannot enter the repository. Use the existing toolchain to run formatting, type checks, lint, and relevant tests, covering only staged changes; failure of any required check must block the commit. Deliver the hook configuration and instructions for bypassing it."
+    },
+    "p-fba3212dbf78ba83": {
+      "title": "Standardize the Agent's Output Structure",
+      "tags": ["Agent", "Output", "Standards"],
+      "short": "Define a fixed structure for every agent delivery and check each item after delivery.",
+      "content": "Make every delivery checkable item by item without having to describe the requirements again each time. Specify fixed output sections and their order, including conclusions, change notes, verification results, and outstanding issues, with an example and minimum information requirements for each section. Deliver an output template and a sample output, flagging exceptional outputs that are difficult to standardize."
+    },
+    "p-4c6e7921eab86b6b": {
+      "title": "Create a Pre-delivery Self-checklist for Agents",
+      "tags": ["Agent", "Self-check", "Acceptance"],
+      "short": "Give the agent a pre-delivery self-checklist and require it to confirm every item before delivering.",
+      "content": "Have the agent check its work before delivery to reduce rework. List required checks by task type, including whether the changes are complete, whether tests were actually run, and whether outstanding issues have been explained, and require a conclusion for every item. Deliver the self-checklist and a completed example, flagging items that cannot be self-checked and require human confirmation."
+    },
+    "p-4ad46fb5d3682909": {
+      "title": "No Half-Baked Solutions",
+      "tags": ["Quality", "Baseline", "Rework"],
+      "short": "A barely adequate solution is unacceptable: explain the gaps and the cost of closing them rather than using temporary workarounds to get by.",
+      "content": "Do not pass off a half-done solution: the result has to actually run and hold up at the edges. First sort out whether the current approach is missing features, missing edge-case handling, or missing error handling, and if it is, point out the gap and the cost of closing it instead of passing off a temporary measure. Deliver a point-by-point conclusion and gap list, marking the conditions still missing and the effort left."
+    },
+    "p-8a2b957d8e39fbc4": {
+      "title": "Set Agent Budgets and Timeouts",
+      "tags": ["Agent", "Budget", "Timeout"],
+      "short": "Set budget and timeout limits for agent tasks, and require the agent to stop and report when a limit is reached.",
+      "content": "Keep long tasks running without letting them get out of control. Specify each round's goals, available time, and consumption limits, and define how to stop and what to report when a limit is reached; do not use infinite loops to conceal a lack of progress. Deliver the budget and timeout rules and the wrap-up format to use after they are triggered, flagging steps that are prone to timing out."
+    },
+    "p279": {
+      "title": "Design a Memory and Context Strategy",
+      "tags": ["Agent", "Memory", "Context"],
+      "short": "Design a memory and context strategy covering persistent information, on-demand loading, persistence to disk, and cleanup.",
+      "content": "Ensure that a long-running agent does not lose key information or become overloaded with irrelevant content. Design a memory and context strategy that specifies what remains loaded and what is loaded on demand. For each item, specify its source, scope of applicability, update responsibility, and retention period; note versions and priorities for conflicting information. Deliver an information classification table and workflows for loading and cleanup."
+    },
+    "p-0516287c23175975": {
+      "title": "Generate Handoff Context",
+      "tags": ["Agent", "Context", "Handoff"],
+      "short": "Organize goals, changes, verification, blockers, and next steps into paste-ready handoff text.",
+      "content": "Turn the current task into a handover context that can be pasted as is. Write down the goal and the constraints, what has been done and which decisions were made, and list the changed files, the verification commands, the current blockers, and the next step, with the uncommitted changes in a separate section. Deliver the handover text and the list of uncommitted changes."
+    },
+    "p280": {
+      "title": "Divide Responsibilities Among Multiple Agents",
+      "tags": ["Agent", "Division of Labor", "Collaboration"],
+      "short": "Distribute the workflow among multiple agents working in parallel, defining responsibilities and input/output contracts.",
+      "content": "Break the workflow into modules that can produce independent outputs, and assign them to multiple agents to complete in parallel. Define each role's responsibilities, inputs, outputs, and completion criteria; run only mutually independent tasks in parallel; and mark which files each one is responsible for. Deliver a responsibility matrix and input/output contracts."
+    },
+    "p283": {
+      "title": "Consolidate Background Agent Results",
+      "tags": ["Agent", "Background", "Collaboration"],
+      "short": "Consolidate background agent results, merging and deduplicating them into unified conclusions and pending changes.",
+      "content": "Multiple agents work independently, but only one set of conclusions should remain at the end. Consolidate the outputs of all background agents or subtasks and read their results and verification records; for tasks that are still running, note their progress and dependencies. Group conclusions by topic and deduplicate them while preserving their source mappings. Deliver unified conclusions and a list of changes still to be implemented."
+    },
+    "p-ae7316f1c092ce31": {
+      "title": "Check Background Tasks and Artifacts",
+      "tags": ["Background Tasks", "Artifacts", "Verification"],
+      "short": "Check whether background tasks have completed and verify artifacts against their specifications, reporting completion, failure, or timeout truthfully.",
+      "content": "Make the wrap-up of background tasks verifiable. Use task identifiers to check completion and exit status, and verify every artifact against the specifications established in advance, such as duration, resolution, and file count. Report failures and timeouts truthfully. Deliver task status, artifact verification results, and a report; do not fabricate conclusions for unfinished work."
+    },
+    "p284": {
+      "title": "Define Collaboration Change Boundaries",
+      "tags": ["Agent", "Collaboration", "Boundaries"],
+      "short": "When sharing a repository, state which files you intend to change upfront and avoid conflicts.",
+      "content": "When sharing a repository with other sessions, define each session's scope of changes first. Before making changes, list the paths you intend to modify, your intent, and the expected deliverables; inspect existing working-tree changes and flag files outside this task's scope. Deliver the list of paths to be changed and the results of the working-tree review."
+    },
+    "p282": {
+      "title": "Help the Agent Improve from Failures",
+      "tags": ["Agent", "Self-improvement", "Improvement"],
+      "short": "Help the agent improve from failure cases and validate the improvements with a fixed regression set.",
+      "content": "Improve the agent from its failure cases without losing the abilities it already has. Sort the failures into three kinds — receiving information, remembering context, and producing text — and build reproducible examples and quantified metrics for them; after the improvement, compare the success rate and the cost on a fixed regression set. Deliver the case set and the evaluation report."
+    },
+    "p285": {
+      "title": "Evaluate Prompt Quality",
+      "tags": ["Agent", "Prompt", "Evaluation"],
+      "short": "Build an evaluation set for a prompt, score the results, and compare outputs before and after modification.",
+      "content": "Build a small evaluation set for the prompt and compare output quality before and after modification. Cover common inputs, difficult examples, and edge cases; break accuracy, completeness, and formatting into independently scoreable criteria; and retain unmodified examples as controls. Deliver the examples and an itemized scoring table."
+    },
+    "p010": {
+      "title": "Complete the Entire Research Project with Full Autonomy",
+      "tags": ["Authorization", "Paper", "Research"],
+      "short": "Autonomously break down and advance this research, recording key assumptions and verification results.",
+      "content": "Advance this research independently until it yields deliverable conclusions. Break down the tasks and determine their order yourself, provide the basis for key assumptions, and substantiate important conclusions with reproducible calculations or literature. Deliver the research results, verification records, and outstanding issues."
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "category": {
+    "name": "Teaching and Learning",
+    "desc": "Concept explanations and comparisons, plain-language explanations, question writing and problem solving, guided paper reading, learning assessment and study paths, and flashcards"
+  },
+  "prompts": {
+    "p170": {
+      "title": "Explain a Concept Clearly",
+      "tags": ["Explanation", "Teaching", "Concepts"],
+      "short": "Explain a concept in accessible language: start with an intuitive analogy, then give a precise definition and positive and negative examples.",
+      "content": "Help learners build intuition before mastering a rigorous definition. Begin with an analogy grounded in familiar experience, then give a precise definition, explain any symbols used, and provide concrete positive and negative examples. Explain where the analogy breaks down. Deliver an explanatory write-up, a summary of relationships between concepts, and one self-test question with a worked explanation."
+    },
+    "p174": {
+      "title": "Distinguish Commonly Confused Concepts",
+      "tags": ["Concepts", "Comparison", "Commonly Confused"],
+      "short": "Distinguish two commonly confused concepts through definitions, criteria, use cases, points of confusion, and memory anchors.",
+      "content": "Make it possible to tell two commonly confused concepts apart the next time they appear. When no pair is specified, first choose the two concepts that are easiest to confuse and explain why they were picked. Define both using the same criteria and state their necessary conditions. Use positive examples and boundary cases with identical inputs to show when they are equivalent and when they differ. Deliver a comparison table, examples, and memory anchors, listing situations that require contextual interpretation."
+    },
+    "p-9a03d7f3395a367c": {
+      "title": "Explain Unclear Content in Plain Language",
+      "tags": ["Explanation", "Plain Language", "Rewriting"],
+      "short": "Re-explain a convoluted explanation in plain language, giving the conclusion before the reasons and avoiding jargon.",
+      "content": "Help someone who did not understand the original grasp it in one pass. Identify convoluted wording, missing prerequisites, and stacked jargon in the original explanation, then rewrite it in everyday language, giving the conclusion before the reasons. Add a concrete example if needed. Deliver the revised explanation and note any remaining uncertainties."
+    },
+    "p171": {
+      "title": "Create Practice Questions with Detailed Solutions",
+      "tags": ["Questions", "Practice", "Solutions"],
+      "short": "Write a set of practice questions of increasing difficulty for the topic, with step-by-step solutions in a separate section and the common mistakes.",
+      "content": "Create 10 practice questions of increasing difficulty covering the topic's core concepts, basic applications, and integrative reasoning. Provide all given conditions for each question, followed by a step-by-step solution, answer verification, and common mistakes. Deliver a document with questions and answers in separate sections, including an explanation of the difficulty levels."
+    },
+    "p-9e75832737beddb4": {
+      "title": "Guide Independent Step-by-Step Problem Solving",
+      "tags": ["Teaching", "Problem Solving", "Guidance"],
+      "short": "Give layered hints based on the problem and my current approach, without directly providing the full answer.",
+      "content": "Use my current approach to identify where I am stuck, and give only one level of hint at a time. First confirm the given conditions, the goal, and the steps already attempted, then adjust the hint level based on my responses. Deliver a hint log and a final review summarizing key misconceptions and transferable methods."
+    },
+    "p173": {
+      "title": "Guide Paragraph-by-Paragraph Paper Reading",
+      "tags": ["Papers", "Explanation", "Guided Reading"],
+      "short": "Guide me through a paper paragraph by paragraph in its original order, asking a question before explaining each passage and advancing one segment at a time.",
+      "content": "Help the reader follow every part of the paper rather than skimming through it. Proceed in the original order, covering only one segment at a time: first check understanding with a question, then explain what the authors are doing, why they are doing it, and the meaning of key formulas and experiments. Deliver a log of questions, an index of formulas and figures, and a summary of understanding."
+    },
+    "p176": {
+      "title": "Assess Learning",
+      "tags": ["Learning", "Quiz", "Feedback"],
+      "short": "Test what I am learning through a question-by-question dialogue, asking me to explain my reasoning before giving feedback on each question.",
+      "content": "Assess whether I have truly mastered what I am learning and identify weak concepts. Work through questions one at a time in a dialogue, stopping at 10 questions or 15 minutes. For each question, first ask me to explain my reasoning, then adjust the difficulty based on my answer and probe any gaps. Deliver a question-by-question record identifying where and why errors occurred, along with a list of weak concepts and review recommendations."
+    },
+    "p172": {
+      "title": "Create a Progressive Learning Path",
+      "tags": ["Learning", "Roadmap", "Planning"],
+      "short": "Create a phased learning path based on my current foundation and goals, with exercises, resources, and acceptance criteria.",
+      "content": "Break the gap between my current foundation and learning goal into a phased path. For each phase, specify prerequisites, core concepts, and skills to develop, and provide materials, hands-on projects, and acceptance criteria. Deliver a roadmap and resource list, including the conditions for advancing to the next phase."
+    },
+    "p-b705c6440b026d61": {
+      "title": "Create Flashcards",
+      "tags": ["Memory", "Flashcards", "Review"],
+      "short": "Turn learning material into Q&A cards with one question per card, plus answers and sources.",
+      "content": "Make it possible to self-test and retain key points in spare moments. Organize the learning material into flashcards for repeated self-testing, with each card testing only one point. Make questions specific and answers concise, and include a source or supplementary note. Create comparison cards for similar concepts. Deliver a card list and an importable format, and spot-check the cards to confirm answer accuracy."
+    }
+  }
+}

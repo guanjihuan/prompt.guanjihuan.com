@@ -1,0 +1,98 @@
+{
+  "category": {
+    "name": "Lists and Search",
+    "desc": "Search, suggestions, full-text search, sorting, filtering, pagination, tags, recent items and favorites, batch selection, and export"
+  },
+  "prompts": {
+    "p103": {
+      "title": "Implement Keyword Search for Lists",
+      "tags": ["Search", "Lists", "Frontend"],
+      "short": "Add keyword search to the list page: search the title, body, and tags, highlight the matches, and debounce the input.",
+      "content": "Let users locate the right entry on a list page quickly with a keyword. First settle which fields to search (title, body, tags) and how to match, highlight the matched terms, and debounce the input at 300ms. Deliver the search component and the test record, verifying continuous typing and the empty-result case."
+    },
+    "p-ce73bf6e817d3a42": {
+      "title": "Implement Search Suggestions and Input Recommendations",
+      "tags": ["Search", "Suggestions", "Recommendations"],
+      "short": "Add suggestions to the search box so typing a few characters produces candidates and highlighted snippets.",
+      "content": "Help users find their target after typing just a few characters, without waiting for a complete keyword. Define matching fields and ranking rules, provide a candidate list and highlighted snippets, throttle requests, and handle no results and overly long terms. Deliver the suggestion API and interaction documentation, with verification for continuous typing and cold-start scenarios."
+    },
+    "p-d0874b8a512cd750": {
+      "title": "Implement Full-Text Search Across Files",
+      "tags": ["Full-Text Search", "Retrieval", "Efficiency"],
+      "short": "Search all content files, with a list of matches, context previews, and click-to-jump navigation.",
+      "content": "Let one search find keywords across all content files. Build a local full-text index that updates with the content; group results by file and show matching lines and context previews; and jump to the original location and highlight the match on click. Deliver the indexing and search implementation, with verification after content updates and for large collections and no-result scenarios."
+    },
+    "p104": {
+      "title": "Implement List Field Sorting",
+      "tags": ["Sorting", "Lists", "Interaction"],
+      "short": "Add ascending and descending sorting to list fields, indicating the active column and default sorting rules.",
+      "content": "Allow every field on the list page to reorder entries in ascending or descending order. Use arrows to indicate the current column and direction, define the default sorting rules, and preserve the original order for equal values. Deliver the sorting rules and implementation, and test sorting with duplicate and empty values."
+    },
+    "p105": {
+      "title": "Implement Combined List Filters",
+      "tags": ["Filtering", "Lists", "Interaction"],
+      "short": "Add combined filters to lists, using AND between fields and OR for multiple selections within a field, with individual removal and clear-all support.",
+      "content": "Produce accurate results when multiple filter conditions are combined, and make it immediately clear which conditions have changed. Design combined filtering for the list page, using AND between fields and OR for multiple selections within the same field. Display selected options together and support removing them individually or clearing them all, with results and total counts updating in sync. Deliver the implementation and state documentation, and verify combined results and restoration after refresh."
+    },
+    "p109": {
+      "title": "Synchronize Search and Filter Conditions",
+      "tags": ["Search", "Filtering", "State"],
+      "short": "Apply search and filters together, store their state in the URL, and restore it after refresh or sharing.",
+      "content": "Make search terms and filter conditions shareable and restorable. When either condition changes, write both into the URL so a shared link or refresh restores the same result set. Deliver the state mapping rules and implementation, and verify restoration after sharing."
+    },
+    "p106": {
+      "title": "Implement Stable List Pagination",
+      "tags": ["Pagination", "Lists", "Performance"],
+      "short": "Add pagination to lists, preserving filters and sorting across pages and using server-side pagination or cursors for large datasets.",
+      "content": "Keep list pagination stable, with consistent ordering and complete entries when data changes. Preserve search, filter, and sort conditions across pages, and use server-side pagination or cursors for large datasets. Deliver the pagination component and test records, with retest results for data changes, filter changes, and out-of-range paging."
+    },
+    "p107": {
+      "title": "Implement a Tag System",
+      "tags": ["Tags", "Categories", "Data"],
+      "short": "Create a tag system for content with naming conventions, multiple tags per item, and filtering by tag.",
+      "content": "Sort the content into topics by tag so users can filter for the entries they want at any time. Define the naming rules and the create, update, and delete operations, let one piece of content carry several tags, and merge tags that mean the same thing. Deliver the data structure and the migration result, and verify it with duplicate-name and empty-tag cases."
+    },
+    "p-ae7537dde2524359": {
+      "title": "Implement Recently Opened Items",
+      "tags": ["History", "Recently Opened", "Interaction"],
+      "short": "Record recently opened content with the most recent first, with click-to-return navigation and clear-all support.",
+      "content": "Let users continue where they left off. Record recently opened content and timestamps in reverse chronological order; reopening an item only updates its timestamp. Support clicking to return and clearing history, and cap the number of entries. Deliver the history implementation and storage documentation, with verification for restoration after restart, deduplication, and clearing."
+    },
+    "p108": {
+      "title": "Implement Content Favorites",
+      "tags": ["Favorites", "Interaction", "Persistence"],
+      "short": "Implement favorites: prompt logged-out users to sign in, and persist favorites and synchronize counts for logged-in users.",
+      "content": "Let users favorite content with one click and find it again at any time. Allow users to favorite content and see favorite status and counts in lists. Prompt logged-out users to sign in; for logged-in users, persist favorites and synchronize favorite counts. Deliver the state conventions and implementation, and test concurrent clicks and network failures."
+    },
+    "p110": {
+      "title": "Improve Long List Rendering Performance",
+      "tags": ["Performance", "Lists", "Frontend"],
+      "short": "Use virtual scrolling and lazy image loading for long lists, split long tasks, and provide before-and-after timing comparisons.",
+      "content": "Keep long lists with large datasets scrolling smoothly. Use virtual scrolling and lazy image loading, and split long main-thread tasks to avoid dropped frames. Deliver the changed code and before-and-after comparison data, and verify that content is not lost during fast scrolling."
+    },
+    "p111": {
+      "title": "Complete List Empty and Error States",
+      "tags": ["Lists", "Edge Cases", "Experience"],
+      "short": "Add empty-data, no-result, error, and loading states, each with a next action.",
+      "content": "Never leave users waiting without explanation or feeling confused, regardless of list state. Add empty-data, error, and loading states, each with a next action; distinguish initially empty data from no search results; and present network errors separately. Deliver state components and scenario tests, and check copy and buttons."
+    },
+    "p-3168d81d0a0ee015": {
+      "title": "Implement Batch Selection and Actions for Lists",
+      "tags": ["Lists", "Batch Operations", "Interaction"],
+      "short": "Add multi-select, select all, and batch actions to list pages, keeping the selection state across pages and verifying how failures behave.",
+      "content": "Let users process multiple records in a list in batches. Support multi-select, select all, and selection across pages, and display the selected count. Explain the scope of impact before executing a batch operation. Deliver selection state and implementation, and verify cancellation and partial failures."
+    },
+    "p-7791d7c7b2adbd5e": {
+      "title": "Implement Drag-and-Drop Sorting and Batch Adjustment",
+      "tags": ["Drag and Drop", "Sorting", "Interaction"],
+      "short": "Let users sort and adjust items in batches by dragging, with saved order and undo support.",
+      "content": "Let users reorder by dragging instead of editing the numbers one by one, and let several selected rows move as one group. Define the draggable range and the disabled cases, handle auto-placement, moving across groups, and undo, and sync the order change to the server. Deliver the interaction implementation and the persistence approach, with test results for failed drags and concurrent changes."
+    },
+    "p-18e75c73c2c1921b": {
+      "title": "Implement List Data Export",
+      "tags": ["Export", "Lists", "Tables"],
+      "short": "Add data export to list pages, following filters and sorting and generating large datasets in the background.",
+      "content": "Let users export the data currently visible on the list page to a file. Exports follow the active filter and sort conditions, fields and headers are configurable, and large datasets are generated in batches or in the background with a download notification. Deliver the export functionality and a sample file, with verification for large datasets and special characters."
+    }
+  }
+}

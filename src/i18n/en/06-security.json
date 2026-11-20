@@ -1,0 +1,68 @@
+{
+  "category": {
+    "name": "Security and Dependencies",
+    "desc": "Sensitive-data cleanup, input validation, least-privilege controls, compliance self-checks and data-exposure checks, dependency upgrades, size audits, and risk"
+  },
+  "prompts": {
+    "p043": {
+      "title": "Scan for Sensitive Information",
+      "tags": ["Security", "Sensitive Information"],
+      "short": "Find and replace keys and private data left in code, configuration, and logs, including unstaged content.",
+      "content": "Find and replace sensitive items left in code, configuration, and logs. Cover secrets, user data, internal network addresses, and real identities, including unstaged content, and handle each item according to its sensitivity. Deliver the locations of sensitive items and how each was handled, along with rescan results and anything that still requires manual attention."
+    },
+    "p044": {
+      "title": "Change How Secrets Are Injected",
+      "tags": ["Security", "Secrets", "Configuration"],
+      "short": "Inject secrets through environment variables or a secrets manager; rotate exposed credentials first, and explain the impact before cleaning up history.",
+      "content": "Make sure no plaintext key is left in the code or the configuration. Switch to injecting the keys through environment variables or a secret manager, keep only the samples without real values in the repository, and revoke and rotate the credentials that have been exposed first. Then do a history cleanup, remove the keys that were committed from the history, and explain the effect of rewriting the history. Deliver the list, the rotation status, and the cleanup result."
+    },
+    "p046": {
+      "title": "Input Validation and Injection Prevention",
+      "tags": ["Security", "Validation", "Injection"],
+      "short": "Validate external input at every entry point, parameterize queries, escape output for its context, and restrict paths to allowed directories.",
+      "content": "Validate all external input to block injection and path traversal. Validate each field by type, length, and range, parameterize queries, escape output for its context, and restrict file paths to allowed directories. Deliver a mapping of entry points to risks, along with test results for attack cases."
+    },
+    "p047": {
+      "title": "Enforce Least-Privilege Controls",
+      "tags": ["Security", "Permissions"],
+      "short": "Tighten permissions for sensitive operations and deliver verification results for allowed and denied scenarios.",
+      "content": "Identify every sensitive operation and reduce its permissions to the minimum necessary. Cover file reads and writes, process execution, and network access; flag access allowed by default and cross-resource access; and remove redundant grants. Deliver a permissions matrix and the rationale for revoking access, along with verification results for allowed, denied, and boundary scenarios."
+    },
+    "p048": {
+      "title": "Privacy Compliance Self-Check",
+      "tags": ["Privacy", "Compliance", "Data"],
+      "short": "Check privacy compliance: whether field purposes, storage locations, consent notices, encryption, and deletion are properly addressed.",
+      "content": "Check the compliance status of data collection, storage, and external transfers. Follow the data flow to review field purposes, storage locations, retention periods, and access roles, then check consent notices, encryption, deletion, and auditing item by item. Deliver a checklist that can be ticked off item by item, with evidence and remediation actions for anything that fails."
+    },
+    "p-81e5ef04d21dcaeb": {
+      "title": "Check Applications for User Data Exposure",
+      "tags": ["User Data", "Leaks", "Inspection"],
+      "short": "Check logs, errors, the interface, exports, and caches, and fix every point where user data leaks.",
+      "content": "Keep user data from leaking out of any exit. Go through the log output, the error messages, the interface display, and the exported files one by one, find the places where the data leaks and fix them on the spot, and check the user data held in the caches as well. Deliver a list of exposure points and the fixes, with the check results for each exit."
+    },
+    "p049": {
+      "title": "Redact Sensitive Data for External Use",
+      "tags": ["Redaction", "Privacy", "Data"],
+      "short": "Delete, generalize, or replace sensitive fields in externally shared data according to its purpose, keeping the same placeholder for each original value.",
+      "content": "Keep externally shared data useful without exposing sensitive information. Cover public data, attachments, and log examples; delete, generalize, or replace values with placeholders according to their purpose; and keep the same placeholder for each original value. Deliver a field list and processing rules, along with sample-check results and an assessment of residual re-identification risk."
+    },
+    "p021": {
+      "title": "Upgrade Dependencies and Resolve Compatibility Issues",
+      "tags": ["Dependencies", "Upgrades", "Compatibility"],
+      "short": "Upgrading dependencies means handling the breaking changes, running verification, and keeping a rollback plan.",
+      "content": "Update the required dependencies to new versions while keeping the project runnable. Check current usage, the runtime environment, and breaking changes between versions, and update lockfiles, configuration, and affected code accordingly. Deliver a list of changes and the compatibility issues resolved, along with verification results and an actionable rollback method."
+    },
+    "p042": {
+      "title": "Dependency Size Audit",
+      "tags": ["Performance", "Dependencies", "Size"],
+      "short": "Identify large packages and duplicate versions in the dependency tree and evaluate replacement, removal, or on-demand loading.",
+      "content": "Find out which packages in the dependency tree take up space and where duplicate versions come from. Measure the size of direct and indirect dependencies split by production and development use, and locate the large packages and the paths that pull them in. Evaluate replacement, removal, or on-demand loading options, giving the expected benefit and change scope of each, without changing the dependencies themselves. Deliver a dependency size list and a comparison of the options."
+    },
+    "p045": {
+      "title": "Check Dependencies for Security Risks",
+      "tags": ["Security", "Dependencies", "Vulnerabilities"],
+      "short": "Check dependencies for security vulnerabilities and license issues, and propose upgrades or replacements.",
+      "content": "Assess known vulnerabilities, maintenance status, and license requirements across the dependency tree. Use call sites to determine which features are affected and the conditions for exploitation, note compatibility and cost, then propose upgrades, replacements, or isolation. Deliver a prioritized risk list, along with recommended versions and the basis for retesting."
+    }
+  }
+}

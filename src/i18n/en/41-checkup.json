@@ -1,0 +1,88 @@
+{
+  "category": {
+    "name": "Inspection and Improvement",
+    "desc": "Run a dimension-by-dimension inspection of a project, find and fix real errors on the spot, tidy up right after fixing, tell real defects from personal preferences first, assess the blast radius before changing anything, confirm no new problems appear afterward, get it right in one pass to avoid rework, and bring the project up to all four standards"
+  },
+  "prompts": {
+    "p-3f7c1a92be40d568": {
+      "title": "Inspect Dimension by Dimension and Rank the Fixes",
+      "tags": [
+        "Inspection",
+        "Checklist",
+        "Diagnosis"
+      ],
+      "short": "Run a dimension-by-dimension inspection of the project, produce a tiered list of problems and the order to fix them, without changing any files.",
+      "content": "Lay out the project's current problems in one pass and put them in order of handling. First examine the project along several dimensions — structure, correctness, performance, maintainability, and documentation — and give evidence, triggering conditions, impact, and a severity rating for every problem. Inspect only, without changing any files. Deliver the inspection report, the fix order, and the basis for each item, marking the judgments that need human confirmation."
+    },
+    "p-6b2d07e5f3c91a4d": {
+      "title": "Find Errors with Real Inputs and Fix Them",
+      "tags": [
+        "Error Hunting",
+        "Fixes",
+        "Verification"
+      ],
+      "short": "Run the project with real inputs and boundary conditions, fix the errors that reproduce, and re-test each one to confirm recovery.",
+      "content": "Get the errors that genuinely exist in the project found and fixed, not merely listed. Run the project with real inputs and boundary conditions, tell functional bugs apart from data bugs and missing error handling, and fix every error that reproduces reliably. Deliver the error list, the locations changed, and the re-test result for each one, stating which errors could not be reproduced and were therefore left alone."
+    },
+    "p-9c4e18b37a05d2f6": {
+      "title": "Tidy Up Right After Fixing",
+      "tags": [
+        "Optimization",
+        "Fixes",
+        "Follow-up"
+      ],
+      "short": "After fixing an error, improve the places it touched in the same pass, keeping external behavior unchanged.",
+      "content": "Leave no half-finished implementation behind a fix. Once the fix is confirmed correct, tidy up the places it touched: naming, duplicated logic, and unnecessary detours, removing calls that no longer earn their keep. Deliver the reason for each change and a before-and-after comparison, with verification that external behavior is unchanged."
+    },
+    "p-5e8a63c1d70f9b24": {
+      "title": "Tell Real Problems from Preferences Before Acting",
+      "tags": [
+        "Judgment",
+        "Triage",
+        "Fixes"
+      ],
+      "short": "Separate genuine defects from personal preferences, fix only the problems backed by evidence, and explain why the rest were left alone.",
+      "content": "Work out what is actually worth changing before touching anything. Check each reported problem one by one for whether it reproduces reliably and has concrete evidence, separate functional defects from personal style preferences, and fix only the part backed by evidence. Deliver the classification of problems, the locations changed, and the reasons for not changing the rest, with verification results."
+    },
+    "p-2f70b9d4c8a1e635": {
+      "title": "Assess the Blast Radius Before Changing Anything",
+      "tags": [
+        "Impact",
+        "Changes",
+        "Assessment"
+      ],
+      "short": "Work out what a change would ripple through before making it, narrow the blast radius, and only then act.",
+      "content": "Keep a change from pulling the whole project down with it. Before acting, find out who calls the target code, where the data flows, and which configuration and documentation depend on it, and list the affected parts. Deliver the blast-radius list, the locations changed, and verification results, marking the impacts that are not yet covered."
+    },
+    "p-8d36a05b2f7c491e": {
+      "title": "Confirm No New Problems Appear After the Change",
+      "tags": [
+        "Self-Check",
+        "Regression",
+        "Changes"
+      ],
+      "short": "Walk through the existing behavior again after the change to confirm nothing new was introduced.",
+      "content": "Make sure no change leaves a new problem behind. After the change, walk through the affected existing features the way they are really used, confirm that the behaviour is unchanged, that the edge cases still work, and that the error messages are still there, and add a test that stops the problem from coming back if needed. Deliver the self-check coverage, the result of each item, and the run record of the new tests."
+    },
+    "p-47c9e5b0a3d86f12": {
+      "title": "Get It Right in One Pass to Avoid Rework",
+      "tags": [
+        "Approach",
+        "Completeness",
+        "Rework"
+      ],
+      "short": "Work out the full approach before starting, get it right in one pass, and avoid patching the same thing repeatedly.",
+      "content": "Stop a single problem from needing several rounds of fixing. First settle where to change, which files are involved, and what the result should look like, including the calls, configuration, and documentation that go with it, then carry out that approach in one pass. Deliver the full description of the approach, the list of changes, and the verification results."
+    },
+    "p-07665fea286a10fa": {
+      "title": "Bring the Project Up to All Four Standards",
+      "tags": [
+        "Inspection",
+        "Optimization",
+        "Project"
+      ],
+      "short": "Check the project's structure, performance, consistency, and maintainability, improve each one, and keep external behavior unchanged.",
+      "content": "Bring the project up to standard on all four dimensions: structure, performance, consistency, and maintainability. First define the target state for each of the four, then work out the gap between the current state and the target, fix the gaps one by one, and confirm the external behaviour is unchanged. Deliver the target comparison for the four dimensions, the change list, and the verification results."
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "category": {
+    "name": "Presentations and Slides",
+    "desc": "Slide generation, style, text-to-visual balance and script adjustments, multiple versions, video scripts, and academic posters"
+  },
+  "prompts": {
+    "p163": {
+      "title": "Create a Complete Slide Deck",
+      "tags": ["PPT", "Slides"],
+      "short": "Create a slide deck for your audience based on your topic and planned duration, with details in the speaker notes.",
+      "content": "The audience should remember the key points afterward, and the presenter should not have to read the slides aloud. Create slides around the topic and duration, setting the narrative arc and slide count according to the presentation goal. Give each content slide one core message and put details in the speaker notes. Deliver an openable file, slide-by-slide titles and a speaker script, and check for text overflow and layout consistency."
+    },
+    "p164": {
+      "title": "Restyle a Slide Deck",
+      "tags": ["PPT", "Style", "Multiple Versions"],
+      "short": "Restyle the entire slide deck and produce several distinct versions.",
+      "content": "Give the existing slide deck the target visual style and provide several versions for comparison. Preserve the content scope, slide order, and information hierarchy; vary only the layout structures, font combinations, and color schemes. Deliver openable files, side-by-side comparisons of key slides, and style notes."
+    },
+    "p166": {
+      "title": "Revise Content and the Text-to-Visual Balance",
+      "tags": ["PPT", "Layout", "Content"],
+      "short": "Review the argument slide by slide, turn long passages into key points, and move details into the notes.",
+      "content": "Make every slide something the presenter can speak to rather than read aloud. Review the flow of the argument slide by slide, distill long passages into speakable key points, and move necessary details into the notes. Add diagrams, data charts, or short phrases as appropriate to the content. Deliver the revised deck and a slide-by-slide list of changes, marking where slides were merged or content was moved into notes."
+    },
+    "p167": {
+      "title": "Turn Content Slide Titles into Claims",
+      "tags": ["PPT", "Titles", "Narrative"],
+      "short": "Turn content slide titles into evidence-backed claim sentences that match the evidence on each slide.",
+      "content": "A quick scan of the titles should reveal the conclusion of every slide. Check whether each title expresses its slide's conclusion, and replace topic-only titles with complete sentences that make a clear claim and correspond directly to the evidence on the slide. Keep the original titles on the cover, agenda, and section-divider slides. Deliver a comparison of old and new titles and the revised file, listing any slides that require source verification."
+    },
+    "p168": {
+      "title": "Add Speaker Scripts and Notes",
+      "tags": ["PPT", "Speaker Script", "Notes"],
+      "short": "Add speaker notes to the entire deck, with 2–3 sentences per slide, plus likely questions and answers.",
+      "content": "Enable the presenter to deliver the entire talk without memorizing a script. Add a speaker script to every slide, with 2–3 sentences per slide. Identify information that should be explained aloud rather than crowded onto the slide, and prepare evidence-based answers to likely audience follow-up questions. Deliver the file with notes added and a Q&A list, flagging any data inconsistencies."
+    },
+    "p169": {
+      "title": "Create Presentation and Archival Versions",
+      "tags": ["PPT", "Presentation", "Archiving"],
+      "short": "Create two versions: a concise version for live presentations and a complete version for the archive.",
+      "content": "The live version should be easy to present, and the archived version should remain useful for later reference. Create separate live-presentation and archival slide decks that share the same core conclusions and figure numbers. Streamline the text in the presentation version and ensure each slide makes one point; retain the full data and methods in the archival version. Deliver both files, a table of version differences, and timing recommendations."
+    },
+    "p-0b40c8ac358d8e0e": {
+      "title": "Write a Video Script and Storyboard",
+      "tags": ["Video", "Script", "Storyboard"],
+      "short": "Write a script and storyboard for a video, specifying visuals and voiceover.",
+      "content": "Create a script that can actually be filmed. Organize the sections according to the goal and duration, specifying the visuals, voiceover, and on-screen text for each section, and identify the required assets and filming approach. Deliver a storyboard table and voiceover script, marking any sections that exceed the time limit."
+    },
+    "p-4100a70f49e249f2": {
+      "title": "Create an Academic Poster",
+      "tags": ["Poster", "Academic", "Conference"],
+      "short": "Create a poster for an academic conference that explains the problem, methods, and results at a glance.",
+      "content": "Turn a paper or research project into an academic poster suitable for display and discussion. Organize it around the problem, methods, results, and conclusions, prioritizing figures and keeping text concise. Use type sizes that remain legible from a distance. Deliver the poster file and talking points, and verify the target conference's size and layout requirements."
+    }
+  }
+}

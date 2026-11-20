@@ -1,0 +1,128 @@
+{
+  "category": {
+    "name": "Office Documents and Correspondence",
+    "desc": "Draft notices and official letters, lay out documents in the standard official format, write work plans and policy documents, check contract clauses and attachments, describe how a procedure is carried out, list an outline with a summary, and mark sources and citations"
+  },
+  "prompts": {
+    "p-a1b2c3d4e5f60718": {
+      "title": "Draft a Notice or Official Letter",
+      "tags": [
+        "Notice",
+        "Official Letter",
+        "Drafting"
+      ],
+      "short": "Draft a notice or letter stating the subject, the requirements, the deadline, and a contact.",
+      "content": "Draft a notice or letter that can be sent as it is, so the recipient knows what to do after reading it. State the subject of the message, the specific requirements, the deadline, and a contact, and keep the wording and format in line with official practice. Deliver the full text and the list of materials that go out with it."
+    },
+    "p-c41b8d2e6f70a319": {
+      "title": "Lay Out a Document According to the Official Format",
+      "tags": [
+        "Official Document",
+        "Format",
+        "Required Parts"
+      ],
+      "short": "Lay out the official parts of a document: title, addressee, body levels, attachment notes, signature, and date.",
+      "content": "Lay a document out as an official document that follows the standard, so the place of every part is fixed. Check the title and the addressee against the standard, then the levels of the body, and then the attachment notes, the signature, and the date, fill in what is missing, and cut what does not belong. Deliver the laid-out text and a table checking each required part."
+    },
+    "p-c3d4e5f607182930": {
+      "title": "Draft a Work Plan",
+      "tags": [
+        "Plan",
+        "Schedule",
+        "Division of Work"
+      ],
+      "short": "Draft a work plan: the goal, the steps, the owners, and the deadlines written out at once.",
+      "content": "Draft a work plan that can be carried out directly, so that whoever picks it up does not have to ask questions. Break the work into steps and state the owner, the completion time, the prerequisite, and the deliverable of each step, and list the risks with the way to handle them. Deliver the plan text and the division-of-work table."
+    },
+    "p-d4e5f60718293041": {
+      "title": "Write a Policy or Procedure Document",
+      "tags": [
+        "Policy",
+        "Procedure",
+        "Standard"
+      ],
+      "short": "Write down the scope, the steps, the time limits, and the decision criteria of a policy.",
+      "content": "Write a policy or procedure document that can be executed, so that people following it do not each do it their own way. State the scope of application and the roles involved, list the operation steps, the processing time limits, and the decision criteria for each stage, and specify how abnormal cases are handled. Deliver the document text and a table of procedure steps."
+    },
+    "p-e5f6071829304152": {
+      "title": "Polish the Wording of Official Text",
+      "tags": [
+        "Polishing",
+        "Wording",
+        "Format"
+      ],
+      "short": "Rewrite official text in a formal and clear way, dropping the filler that says nothing.",
+      "content": "Rewrite a passage in formal and clear official wording, so that the reader knows what to do. Remove the filler that carries no information, replace the vague statements with ones that can be judged and acted on, and unify the forms of address, the tense, and the way numbers are written. Deliver the rewritten text and a note on every change."
+    },
+    "p-f607182930415263": {
+      "title": "Check Contract Clauses and Attachments",
+      "tags": [
+        "Clauses",
+        "Attachments",
+        "Checking"
+      ],
+      "short": "Check contract clauses one by one: whether the parties, amounts, deadlines, and liabilities are complete and consistent.",
+      "content": "Check the clauses of a contract or attachment one by one and find the places where disagreement would arise later. Examine the parties, the amounts, the deadlines, the rights and obligations, and the liability terms, and compare the body text with the attachments, marking anything missing, contradictory, or vaguely worded. Deliver a checking list and suggested revisions."
+    },
+    "p-0718293041526374": {
+      "title": "Write Up How a Matter Progressed",
+      "tags": [
+        "Explanation",
+        "History",
+        "Conclusion"
+      ],
+      "short": "Write a plain account of a matter: its cause, its course, its conclusion, and the next step.",
+      "content": "Write a matter up as a plain explanation, so that someone who has not seen the original records still understands it. Give the cause, the key course of events, the current conclusion, and the next step, keep facts and judgments apart, and mark the source of any figure that is mentioned. Deliver the explanation and a list of the bases it rests on."
+    },
+    "p-1829304152637485": {
+      "title": "Explain the Procedure and the Required Materials",
+      "tags": [
+        "Procedure",
+        "Materials",
+        "Handling"
+      ],
+      "short": "Explain how a task is handled: the order of steps, the required materials, the time limit, and who to ask.",
+      "content": "Explain how a task is completed so that the person doing it does not have to make extra trips. Write each stage in the real order with the materials it requires, mark the receiving party, the processing time limit, and the contact, and point out the usual reasons for a submission to be returned. Deliver the handling guide and the list of required materials."
+    },
+    "p-b93c6e17d80a4123": {
+      "title": "List an Outline and Write a Summary",
+      "tags": [
+        "Outline",
+        "Summary",
+        "Structure"
+      ],
+      "short": "Give a long document an outline and a summary, so the reader sees the backbone first.",
+      "content": "Give a long document an outline and a summary of its key points, so the reader sees the backbone before the details. List the section titles by level, summarize each section in two or three sentences, and mark the sections worth reading closely. Deliver the outline, the summary, and the marks on the sections worth reading closely."
+    },
+    "p-ca4d7e28f91b5234": {
+      "title": "Mark the Sources and Citations",
+      "tags": [
+        "Citations",
+        "Sources",
+        "Marking"
+      ],
+      "short": "Mark the source of every citation, conclusion, and figure, so others can check them one by one.",
+      "content": "Mark the source of every citation, conclusion, and figure in a piece of material, so that others can check them one by one. Mark the location of the source and the form of the citation for each one, tell direct quotation from paraphrase, and mark the ones whose source cannot be found as pending confirmation. Deliver the marked text and the list of pending items."
+    },
+    "p-3b1d4f5a6c7e8092": {
+      "title": "Number the Files and Keep a Register",
+      "tags": [
+        "Numbering",
+        "Register",
+        "Circulation"
+      ],
+      "short": "Number the files and keep a register, so that every document is traceable in and out.",
+      "content": "Number the files and keep a register, so that every document can be traced when it is sent and when it comes back. Settle the numbering rule and the fields of the register first, then record the number, the subject, the person responsible, and the state in date order, and mark every missing or returned item. Deliver the numbering rule, the register template, and a filled-in example."
+    },
+    "p-4c2e5a6b7d8f9013": {
+      "title": "Draft an Authorization or Delegation Note",
+      "tags": [
+        "Authorization",
+        "Delegation",
+        "Note"
+      ],
+      "short": "Draft an authorization note stating the scope, the period, and who is responsible.",
+      "content": "Draft an authorization or delegation note, so that the person taking over has a basis for acting. State who is authorized, the scope of the authorization, the start and end dates, what may be done and what may not be touched, and how responsibility and handover are arranged. Deliver the note and the list of authorized matters."
+    }
+  }
+}

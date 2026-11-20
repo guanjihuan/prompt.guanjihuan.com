@@ -1,0 +1,116 @@
+{
+  "category": {
+    "name": "Interaction and Forms",
+    "desc": "Dialogs and drawers, form validation and density, undo and redo, edit/preview switching, keyboard shortcuts and quick text input, draft saving, save status, role-based visibility, context menus, file trees, dual modes and collapsible panels, and task run controls"
+  },
+  "prompts": {
+    "p-ac107e41b07bfc5d": {
+      "title": "Refine Dialog and Drawer Interactions",
+      "tags": ["Dialog", "Drawer", "Interaction"],
+      "short": "For dialogs or drawers in operational flows, handle focus, close confirmation, long content, and narrow screens.",
+      "content": "Handle the focus in and out, the close confirmation, and the unsaved-changes prompt of dialogs and drawers by explicit rules. Choose a dialog or a drawer for the flow according to the complexity of the task, move focus into the panel and keep it there once it opens, return focus to the trigger when it closes, and confirm unsaved content by rule. Deliver the component and state spec, with verification results for long content, narrow screens, keyboard use, and screen readers."
+    },
+    "p101": {
+      "title": "Implement Form Validation and Error Messages",
+      "tags": ["UI", "Forms", "Validation"],
+      "short": "Complete form validation and messaging: associate errors with fields and explain how to correct them.",
+      "content": "Point both form validation and error messages to the relevant fields. Add required, format, range, and cross-field validation; align client-side messages with server-side rules; and display errors near their fields with instructions for correcting them. Deliver the validation rules and test results, plus verification records for keyboard and screen-reader workflows."
+    },
+    "p098": {
+      "title": "Organize Parameter Form Help and Density",
+      "tags": ["UI", "Forms", "Parameters"],
+      "short": "Organize parameter help and grouping, make help available on touchscreens and keyboards, and control per-screen complexity.",
+      "content": "Make parameter explanations easy to find and limit the amount of information shown on a single screen. Organize parameters by frequency of use and dependencies, use collapsible groups to control per-screen complexity, and make the explanations help popups that open on click or focus so both touch and keyboard users can read them. Deliver the information grouping and interaction design, with usability verification on desktop and touchscreen devices."
+    },
+    "p102": {
+      "title": "Implement Undo and Redo for Editing",
+      "tags": ["UI", "Undo", "State"],
+      "short": "Add undo and redo to editing, merging consecutive typing and keeping keyboard shortcuts synchronized.",
+      "content": "Let users reverse mistakes and support continuous undo and redo during editing. Define which operations enter history and how consecutive typing is merged. After undo, a new operation truncates the redo branch. Keep button states and keyboard shortcuts synchronized. Deliver interaction documentation and state management changes, with test results for consecutive operations and editing across objects."
+    },
+    "p-affef6325ca25977": {
+      "title": "Implement Multi-Step Forms and Process Wizards",
+      "tags": ["Forms", "Wizard", "Workflow"],
+      "short": "Split long forms into a multi-step wizard that preserves progress and allows users to go back at any time.",
+      "content": "Help users complete processes with many steps and varied information. Split steps by business stage, request only necessary information at each step, and make cross-step validation and draft saving work. Allow users to go back and edit while preserving entered content. Deliver the step definitions, validation rules, and resumption records, marking steps that can only be determined with backend support."
+    },
+    "p-2ab71490fcfc7f96": {
+      "title": "Integrate Rich Text Editing and Sanitize Pasted Content",
+      "tags": ["Rich Text", "Editor", "Security"],
+      "short": "Integrate a rich text editor, sanitizing styles and scripts on paste and standardizing the format before saving.",
+      "content": "Let users create well-structured rich text while keeping saved content clean and controlled. Choose an editor and supported formats, sanitize styles and scripts on paste, and standardize heading, list, and link formats before saving. Deliver the editor integration, sanitization rules, and sample documents, marking complex formatting that still requires manual handling."
+    },
+    "p-24067fac8aeaa115": {
+      "title": "Implement Edit and Preview Switching",
+      "tags": ["Editing", "Preview", "Split Pane"],
+      "short": "Add edit, preview, and split-pane modes to content editing, with draggable pane widths and synchronized scrolling.",
+      "content": "Let users switch freely between editing and previewing without losing context while checking how their writing will look. Provide edit, preview, and split-pane views; make split-pane widths draggable and support scroll synchronization; and preserve unsaved content when switching. Deliver the three-mode switching implementation, with verification for long documents, narrow screens, and repeated switching back and forth."
+    },
+    "p-bae84a128cb1228f": {
+      "title": "Implement Global Shortcuts and a Command Palette",
+      "tags": ["Keyboard Shortcuts", "Command Palette", "Efficiency"],
+      "short": "Add global keyboard shortcuts and a command palette for frequent operations to reduce reliance on the mouse.",
+      "content": "Let users perform common operations without leaving the keyboard. List high-frequency operations and their default key bindings, avoid browser- and platform-reserved shortcuts, support customization and conflict warnings, and provide a searchable command palette. Deliver a shortcut reference, the command palette, and conflict detection results, marking combinations that only work in specific environments."
+    },
+    "p-c51d11d8ff03fb5c": {
+      "title": "Implement Quick Input for Text Snippets",
+      "tags": ["Quick Input", "Snippets", "Efficiency"],
+      "short": "Build a library of frequently used phrases for one-click insertion or copying, with grouping and search.",
+      "content": "Store frequently used phrases once and insert them with one click instead of retyping them. Turn repeatedly entered phrases into a snippet library with support for adding, grouping, and searching. Clicking a snippet inserts it at the cursor or copies it to the clipboard, and data is stored locally. Deliver snippet management and input integration, with verification of create, read, update, and delete operations and insertion positions."
+    },
+    "p-9a8193e1a513dacc": {
+      "title": "Implement Draft Autosave",
+      "tags": ["Drafts", "Autosave", "Editing"],
+      "short": "Add draft autosave to editing: save with debouncing and preserve content through interruptions.",
+      "content": "Let users resume writing after an interruption in any editing feature. Automatically save a draft after typing pauses, preserve content and retry if saving fails, and offer to restore the draft when the user returns to the page. Deliver autosave and the restoration flow, with verification for network disconnection and page closure."
+    },
+    "p097": {
+      "title": "Fix Saving and Status Feedback",
+      "tags": ["UI", "Saving", "Feedback"],
+      "short": "Fix failed saves and inaccurate states so the interface matches what was actually persisted.",
+      "content": "Keep save results and the UI state consistent. Trace editing, saving, refreshing, and leaving to identify nonfunctional buttons, content not persisted, and inaccurate states, using the server-side or local persistence result as the source of truth. Deliver the root causes and fixes, with test results for network disconnection, conflicts, and repeated clicks."
+    },
+    "p-f08263c95a1d7b04": {
+      "title": "Show Save Status and Warn Before Leaving",
+      "tags": ["Save Status", "Unsaved Changes", "Reminders"],
+      "short": "Keep users informed of whether changes have been saved, and warn them before they leave with unsaved changes.",
+      "content": "Let users know at all times whether they have made changes and whether those changes have been saved. Display save status persistently in the interface and clearly mark unsaved changes. Prompt for confirmation before leaving or closing the page with unsaved changes, and provide feedback for both successful and failed saves. Deliver the status design and reminder implementation, with verification for leaving after editing, network disconnection, and save failures."
+    },
+    "p-7f315e947e2451e0": {
+      "title": "Control UI Visibility by Role",
+      "tags": ["Permissions", "Roles", "UI"],
+      "short": "Control menu and button visibility by signed-in role, with backend validation as the authority for critical operations.",
+      "content": "Ensure each role sees only the functions it is authorized to use. List roles and functions; control route and button visibility by role on the frontend; rely on backend validation for critical operations; and provide a clear message when access is denied. Deliver permission configuration and visibility implementation, with verification by signing in as each role."
+    },
+    "p-5c5a7b7483a90986": {
+      "title": "Add Context Menus to Lists",
+      "tags": ["Context Menu", "Lists", "Interaction"],
+      "short": "Add context menus to list items so common actions are close at hand and visibility follows item state.",
+      "content": "Make common list-item actions available via right-click without searching for buttons elsewhere. Select and order menu items by frequency of use, show, hide, or disable them according to item state, preserve equivalent keyboard operations, and follow platform conventions for styling. Deliver the menu implementation and a table of menu items in each state, with verification for keyboard operation and narrow screens."
+    },
+    "p-dcdaad90a98052fe": {
+      "title": "Implement File Tree Management",
+      "tags": ["File Tree", "Sidebar", "File Management"],
+      "short": "Support common sidebar file tree operations: create, rename, delete, drag to move, and sort.",
+      "content": "Make the sidebar file tree behave the way common file managers do. Support creating files and folders, renaming, deleting, and dragging to move, let the tree collapse and expand and sort by name or time when there are many files, and update the tree right after each operation. Deliver the file tree implementation and the operating notes, with verification results for deep hierarchies, long file names, and concurrent changes."
+    },
+    "p-7a682db3c01925ed": {
+      "title": "Implement Dual Interface Modes",
+      "tags": ["Dual Modes", "UI", "Usability"],
+      "short": "Add simple and professional interface modes, retaining only core operations in simple mode.",
+      "content": "Enable users who do not understand the underlying details to use the interface smoothly. Provide simple and professional modes: simple mode retains only core operations and default parameters, while professional mode exposes all configuration. Make the mode switch take effect immediately and remember the user's choice. Deliver a list defining the two modes and the switching implementation, with an item-by-item check of both modes."
+    },
+    "p-1768a86c16f7e068": {
+      "title": "Implement Collapsible Panels",
+      "tags": ["Collapse", "Sidebar", "Panels"],
+      "short": "Make sidebars or panels collapsible and expandable, with clear icons, fixed button positions, and remembered state.",
+      "content": "Allow sidebars or output panels to collapse to make room for content. Keep the collapse and expand buttons in the same fixed position with consistently oriented icons, leave a narrow strip or handle for re-expansion after collapsing, and remember the state for the next launch. Deliver the collapse implementation and button position documentation, with verification for repeated toggling, narrow screens, and relaunching."
+    },
+    "p-39582bdd42d6d4b0": {
+      "title": "Design Run Controls for Long-Running Tasks",
+      "tags": ["Run Controls", "Pause", "Status"],
+      "short": "Add run, pause, stop, and rerun controls for time-consuming tasks, with button icons and labels following the actual state.",
+      "content": "Give users direct control over starting, pausing, and stopping time-consuming tasks. While running, replace the Run button with Pause; allow resuming after pausing and restarting from the beginning after stopping; and keep button icons and labels aligned with the actual state at all times. Deliver the control button implementation and a state mapping table, with verification for pause/resume, stop/restart, and switching among multiple entry points."
+    }
+  }
+}

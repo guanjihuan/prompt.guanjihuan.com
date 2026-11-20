@@ -1,0 +1,98 @@
+{
+  "category": {
+    "name": "Websites and Visualization",
+    "desc": "Static sites, personal homepages, galleries and link directories, formula visualization, interactive canvases, SEO, page interactions and 404 pages, visitor analytics, and print and export"
+  },
+  "prompts": {
+    "p130": {
+      "title": "Rebuild an Existing Website as a Static Site",
+      "tags": ["Website", "Static site", "Refactoring"],
+      "short": "Rebuild the existing website as a static site, manage content in Markdown, and centralize styles in CSS.",
+      "content": "Remove the site's dependency on a backend and database so deployment is simply a matter of copying files. Convert the existing website into a static site, manage content in Markdown, centralize styles in CSS, and use a build script to generate the site directory. Deliver the source code, build script, and migration instructions, with verification results for site generation and access."
+    },
+    "p-c833f204407e0dfa": {
+      "title": "Build a Personal Homepage",
+      "tags": ["Personal homepage", "Website", "Portfolio"],
+      "short": "Build a personal homepage with an introduction, representative work, and contact information, usable on mobile devices.",
+      "content": "Build a personal homepage that clearly explains who I am and what I have done. Include a self-introduction, representative work or articles, and contact information, with a clean style and mobile support. Deliver the site and deployment instructions, with access verification in major browsers."
+    },
+    "p-e280f68efe6945e1": {
+      "title": "Build an Image Gallery Site",
+      "tags": ["Gallery", "Images", "Static site"],
+      "short": "Build an image gallery site: scan folders to generate groups and thumbnails, and click to view full-size images.",
+      "content": "Turn folders of images directly into a browsable gallery site. Scan the directories at build time to generate groups and thumbnails, and adjust grouping and ordering in a configuration file. Let users click to view full-size images and switch between them. Use thumbnails generated within the site rather than hotlinking external image URLs. Deliver the site and configuration instructions, with verification results for grouping and mobile devices."
+    },
+    "p-e02ff738fb386aa1": {
+      "title": "Build a Link Directory Site",
+      "tags": ["Link directory", "Links", "Bookmarks"],
+      "short": "Build a link directory site: place frequently used links in grouped cards and maintain them through configuration.",
+      "content": "Organize frequently used URLs into a searchable, single-page link directory. Place links in cards by group, take names and addresses from one configuration file, and support collapsing groups, keyword filtering, and theme switching. Display card text and links in full. Deliver the site, sample configuration, and instructions for adding and editing links, with mobile display verification."
+    },
+    "p131": {
+      "title": "Build a Cited Long-Form Educational Page",
+      "tags": ["Website", "Educational content", "Animation"],
+      "short": "Research the selected topic and build a long-form educational page, citing sources at key points and using animation only to explain the main ideas.",
+      "content": "Build a cited long-form educational page about the selected topic, explaining its background and evolution. Verify key milestones and representative figures, distinguish established consensus from claims that remain disputed, and organize the page by concepts and their development. Use animation only to explain the main ideas. Deliver the cited long-form page and source materials."
+    },
+    "p132": {
+      "title": "Build a Formula Visualization Website",
+      "tags": ["Website", "Formulas", "Visualization"],
+      "short": "Build a formula visualization website with formula parsing, parameter adjustment, and export, plus clear error messages.",
+      "content": "Make formulas readable, adjustable, and exportable on the web. Implement parsing for common formula formats, parameter adjustment, and result export, and provide messages for invalid formulas and numerical errors. Deliver the website and examples, and verify the calculation results."
+    },
+    "p133": {
+      "title": "Implement an Interactive Canvas Tool",
+      "tags": ["Website", "Canvas", "Interaction"],
+      "short": "Implement an interactive canvas with draggable nodes, connections, and zooming, undoable and redoable history, and import and export support.",
+      "content": "Let users build flow relationships by dragging, with smooth canvas interactions. Support node dragging, connections, zooming, and in-node editing. Make operations undoable and redoable, and support JSON import and export plus PNG export. Deliver the canvas tool and operating instructions, with verification results for connections, undo and redo, and import and export."
+    },
+    "p-569908f36cdc5067": {
+      "title": "Implement Smart Chart Recommendations",
+      "tags": ["Charts", "Recommendations", "Visualization tool"],
+      "short": "Let the visualization tool read data and automatically recommend charts: identify the structure, offer candidates, and render a chart with one click.",
+      "content": "After users paste or upload data, let the tool propose chart options without requiring them to know how to choose. Parse the row-and-column structure and field types, determine whether the data is two-dimensional, multidimensional, or time-series, and provide candidate charts ranked by fit with explanations. Render the selected chart with adjustable parameters. Deliver the detection and recommendation implementation, with verification for typical data shapes and malformed input."
+    },
+    "p135": {
+      "title": "Improve Page SEO",
+      "tags": ["Website", "SEO", "Content"],
+      "short": "Improve website SEO: heading hierarchy, a unique description for each page, image alt text, and a sitemap.",
+      "content": "Ensure pages are represented accurately in search results and crawled correctly. Reorganize the heading hierarchy, write a title and description for each page, add alt text to content images, and use empty alt attributes for decorative images. Deliver the title and description changes for every page and the sitemap, with records verifying crawling and indexing results."
+    },
+    "p137": {
+      "title": "Polish Key Interaction Details",
+      "tags": ["Website", "Interaction", "Details"],
+      "short": "Polish waiting and error feedback in core flows, roll back failed optimistic updates, and list all uncovered branches and empty states.",
+      "content": "Give users guidance and a way forward during waits and failures in core flows. Use skeleton screens while waiting and actionable messages on failure. Roll back failed optimistic updates and preserve user input. Deliver the changes and scenario tests, marking branches and empty states that still lack feedback."
+    },
+    "p-9b4d78f2c1e630a5": {
+      "title": "Improve Page Transition Experience",
+      "tags": ["Transitions", "Navigation", "No reload"],
+      "short": "Make in-site navigation avoid full-page reloads while keeping the address and forward/back navigation working correctly.",
+      "content": "Make navigation between pages feel like moving within a single application, without full-page reloads. Update only the parts that change during in-site navigation, leaving the site navigation bar and shared areas untouched. Synchronize the address and title, and ensure forward/back navigation and direct links work. Deliver the transition implementation and routing conventions, with retest results for page-by-page navigation, going back, and refreshing."
+    },
+    "p122": {
+      "title": "Build a 404 Error Page",
+      "tags": ["404", "Error page", "User experience"],
+      "short": "Build a 404 error page explaining that the address does not exist, with options to return home, go back, and search the site.",
+      "content": "Show users who visit an invalid address a useful error page and help them find a way forward. Match the main site's visual style, explain that the address does not exist, and provide three options: return to the homepage, return to the previous page, and search the site. Deliver the error page and route."
+    },
+    "p139": {
+      "title": "Integrate Analytics and Third-Party Scripts",
+      "tags": ["Website", "Analytics", "Scripts"],
+      "short": "Integrate analytics or third-party scripts: load asynchronously, do not block above-the-fold content on failure, and send no data before privacy consent.",
+      "content": "Integrate analytics or third-party scripts without affecting above-the-fold content, and allow them to be disabled at any time. Use asynchronous or deferred loading. If loading fails, the above-the-fold content and main features must continue to work normally. Send no data before privacy consent. Deliver the integration configuration and privacy toggle, with verification that above-the-fold content is not blocked and no data is sent before consent."
+    },
+    "p-4f8c1e62a09d5b73": {
+      "title": "Implement Visitor Analytics and Identification",
+      "tags": ["Visitors", "Analytics", "Website"],
+      "short": "Separate page views from unique visitors, and write the deduplication rule down clearly.",
+      "content": "Make analytics distinguish page views from unique visitors, and do not treat the number of identifiers as the number of real people. Record visits by period and deduplicate using visitor identifiers, counting repeat visits from the same identifier only once. When visitors cannot be identified across browsers or private windows, state the counting basis explicitly. Deliver the analytics implementation and trend display, with verification results for repeat visits."
+    },
+    "p-04ca6ea9479aaafe": {
+      "title": "Create Print and PDF Export Layouts",
+      "tags": ["Print", "PDF", "Layout"],
+      "short": "Make pages directly printable or exportable to PDF without breaking the layout.",
+      "content": "Keep pages neat and readable when printed or exported to PDF. Add print styles, hide navigation and decorative elements, and control paper size, margins, and page breaks so long tables and charts are not clipped. Deliver the print stylesheet and export samples, marking pages that still require manual adjustment."
+    }
+  }
+}

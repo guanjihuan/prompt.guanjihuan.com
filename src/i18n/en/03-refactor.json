@@ -1,0 +1,86 @@
+{
+  "category": {
+    "name": "Refactoring and Architecture",
+    "desc": "Consolidate duplicate implementations and extract modules, file structure, simplification, design optimization using standard approaches, migration to a new technology stack, plugin integration, renaming, and explanatory comments"
+  },
+  "prompts": {
+    "p005": {
+      "title": "Consolidate Duplicate Implementations",
+      "tags": ["Refactoring", "Consolidation"],
+      "short": "Find and consolidate duplicate implementations, and provide a consolidation list and verification results.",
+      "content": "Give each piece of functionality a single implementation. Find duplicate sources and overlapping responsibilities, confirm them through call relationships, and then consolidate duplicate implementations and configuration options. Check entry points that serve the same purpose and preserve differences that have a real business reason. Deliver a list of issues and consolidations, with verification results."
+    },
+    "p023": {
+      "title": "Extract Core Code into a Module",
+      "tags": ["Refactoring", "Extraction"],
+      "short": "Extract the core logic into a module with clear interfaces while keeping results consistent.",
+      "content": "Make the core logic an independent module so it can be reused in multiple places without copy-pasting. Extract the logic that should be separated from the workflow code into an independent module, define its inputs and outputs clearly, and delineate errors and side effects. Keep the interface stable and update all callers to use the module. Deliver the module location and interface documentation, with caller changes and test results."
+    },
+    "p024": {
+      "title": "Design the File Structure",
+      "tags": ["Refactoring", "Directories"],
+      "short": "Reorganize directories by responsibility, classify files, and update references and scripts.",
+      "content": "Make the directory structure correspond directly to responsibilities so file locations are predictable. First confirm reference relationships, distinguish source code, tests, documentation, and temporary artifacts, and follow the project's naming conventions. After moving files, update references and scripts. Deliver the directory tree and a list of moves, with verification results."
+    },
+    "p025": {
+      "title": "Simplify the Implementation and Remove Dead Code",
+      "tags": ["Simplification", "Cleanup"],
+      "short": "After confirming there are no callers, delete dead code and obsolete dependencies, remove ineffective configuration, preserve external behavior, and run regression checks.",
+      "content": "Delete unused implementations and dead code, retire dependencies that are no longer maintained, remove ineffective configuration, and keep external behavior unchanged. Confirm call relationships using both static references and dynamic loading, delete in batches, and update lockfiles. Deliver a list of removals and open questions, with regression results."
+    },
+    "p-15f9af44201124a3": {
+      "title": "Optimize the Design Using Standard Approaches",
+      "tags": ["Design", "Approach", "Optimization"],
+      "short": "Check designs that depart from convention, replace them with mature approaches only where there is a clear maintenance benefit, and retain justified project-specific designs.",
+      "content": "Make the existing project's design easier to maintain while retaining justified project-specific approaches. Examine designs that depart from convention and the reasons for them, and change only those with a clear maintenance benefit to mature approaches. Do not introduce obscure dependencies. Deliver a list of design changes and the rationale for each, with functional regression results."
+    },
+    "p-ffc4f81f22a65c65": {
+      "title": "Migrate to a New Framework or Technology Stack",
+      "tags": ["Migration", "Framework", "Compatibility"],
+      "short": "Migrate the project to a new technology stack while preserving functionality and data.",
+      "content": "Keep the project usable after moving it to a new framework or technology stack. First compare the old and new stacks for differences in dependencies, build setup, and how the project is run, then list the interfaces, configuration, and data that need to change. Migrate module by module with verification at each step. Deliver a migration list and the scope of changes, with verification that functionality and data remain consistent after migration."
+    },
+    "p026": {
+      "title": "Refactor and Optimize a Single Module",
+      "tags": ["Refactoring and Optimization", "Cohesion", "Modules"],
+      "short": "Reorganize responsibilities within the module for high cohesion and low coupling while preserving external behavior.",
+      "content": "Make the inside of a module cohesive and its dependencies clear, with the outward interface unchanged. Pick the module whose responsibilities are most tangled, sort out its internal responsibilities and call relationships, rearrange the internal structure towards high cohesion and low coupling, remove the circular dependencies, and do not split it into submodules. Deliver the internal responsibility breakdown and the dependency list, with the impact on the callers and the verification results."
+    },
+    "p027": {
+      "title": "Split Up a Giant Module",
+      "tags": ["Refactoring", "Decomposition"],
+      "short": "Split an oversized module into submodules by responsibility and define clear public interfaces.",
+      "content": "Split the oversized module into cohesive submodules with clear boundaries. Before splitting, confirm its size and mixed responsibilities. Define clear public interfaces, maintain shared types and constants centrally, and avoid circular dependencies. Update callers and verify them. Deliver a responsibility table and dependency relationships."
+    },
+    "p028": {
+      "title": "Audit the Plugin System",
+      "tags": ["Plugins", "Architecture"],
+      "short": "Inspect plugin interfaces, registration and discovery, and exception isolation, and fix issues supported by evidence.",
+      "content": "Keep plugin integration from overstepping its boundaries, and keep plugin errors from affecting the main program. Check the plugin interface and the responsibility boundaries, verify the registration and discovery flow and the error isolation, and confirm that every plugin is wired up. Fix the problems that have evidence behind them, and deliver the plugin list with verification results."
+    },
+    "p-42dcf934fe894219": {
+      "title": "Design a Plugin Integration Mechanism",
+      "tags": ["Plugins", "Interfaces", "Extensibility"],
+      "short": "Design plugin interfaces and a minimal skeleton: a plugin placed in the designated directory is discovered automatically, and developers can write a plugin by following the template.",
+      "content": "Enable third parties to write a working plugin by following the template. Define the plugin interfaces and configuration options clearly, and provide a minimal skeleton and an example plugin. Specify that a plugin placed in the directory is automatically discovered and registered, and ensure plugin exceptions do not affect the main program. Deliver the interface contract, skeleton template, and integration guide, with verification of a new plugin integrated from scratch."
+    },
+    "p-dea8f9ac1696db10": {
+      "title": "Remove Unneeded Features",
+      "tags": ["Removal", "Features", "Simplification"],
+      "short": "Retire unused features: preserve core functionality, and clean up entry points, configuration, and documentation together.",
+      "content": "Retire unused features and return the project to a small, focused state. Check recent usage and maintenance costs and preserve core functionality. Before removal, keep a way back: put the change on a separate branch, or export the parts to be removed. Deliver a keep-or-remove list, the removal changes, and the rollback method, with verification of core functionality regression."
+    },
+    "p-5b2e9184705f9754": {
+      "title": "Batch-Rename Files",
+      "tags": ["Renaming", "Batch", "Consistency"],
+      "short": "Batch-rename files or directories to a consistent naming style and update all references.",
+      "content": "Rename a group of inconsistently named files or directories using a consistent convention. First establish the naming rule and create a mapping table, then rename each item and update references in code, configuration, and documentation at the same time. The project must run both before and after the renaming. Deliver the renaming map and a list of reference changes, with build and test verification results."
+    },
+    "p-b12c83610e513b18": {
+      "title": "Add Comments and Documentation for Key Logic",
+      "tags": ["Comments", "Documentation", "Readability"],
+      "short": "Add comments to key logic explaining why it is written this way rather than what it does.",
+      "content": "Let future readers understand the intent of key logic without guessing. Add comments to complex branches, boundary handling, and temporary compromises, explaining why the code works this way instead of repeating what the code does. Remove outdated comments and comments that add no information. Deliver a list of comment changes and the locations where documentation still needs to be added, marking anything that requires confirmation from the author."
+    }
+  }
+}

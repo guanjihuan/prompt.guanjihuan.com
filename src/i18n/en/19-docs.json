@@ -1,0 +1,134 @@
+{
+  "category": {
+    "name": "Documentation and Guides",
+    "desc": "README drafting and streamlining, design documents, API docs and format notes, tutorials and examples, FAQs, licenses and attribution, source-material summaries, image-document and structured extraction, translation and proofreading"
+  },
+  "prompts": {
+    "p141": {
+      "title": "Streamline and Consolidate a Document Collection",
+      "tags": ["Documentation", "Streamlining", "Consolidation"],
+      "short": "Merge documents with overlapping topics, remove vague and repetitive passages, add the missing topics, and update the index entries.",
+      "content": "Give each document its own clear scope so users do not have to search back and forth among repetitive pages. Consolidate documents with overlapping topics, remove vague, repetitive, and outdated passages, and add frequently needed but missing topics while maintaining clear category boundaries. Deliver the consolidated document set, a list of added documents, and a topic-coverage table, explaining the reason for keeping or removing each item and the link-check results."
+    },
+    "p-fe2719f854f5ece9": {
+      "title": "Draft a Project README",
+      "tags": ["README", "Documentation", "Getting Started"],
+      "short": "Write a user-friendly README for the project: what it is, how to install it, how to use it, and how to verify it.",
+      "content": "Enable someone unfamiliar with the project to get it running on their own after reading the README. Organize it in this order: what the project is, what problem it solves, installation and basic usage, and how to verify it. All commands must be executable. Put background links and contribution instructions at the end. Deliver the README and command-verification records, marking any content that is still missing."
+    },
+    "p-4f54c5a273fa05c7": {
+      "title": "Streamline the README",
+      "tags": ["README", "Streamlining", "Reduce AI Look"],
+      "short": "Streamline the README: keep only important content, remove decorative icons and badges, and reduce the AI-generated feel.",
+      "content": "Make the README lean, with the important content stated up front. Delete the long passages that are unrelated to using the project, the filler, and the decorative icons and badges, so the structure can be scanned at a glance. Deliver the trimmed README and the list of what was cut, marking where the content moved to."
+    },
+    "p142": {
+      "title": "Complete the Design Documentation",
+      "tags": ["Documentation", "Architecture"],
+      "short": "Add a design document covering architecture and module boundaries, key data flows, extension points, and the directory structure.",
+      "content": "Enable future developers to understand the design without reading the code. Based on the existing implementation, explain the project architecture, module responsibilities, and directory structure. Use data-flow diagrams to show key inputs and outputs, and record trade-offs and extension points. Deliver the design document and architecture diagrams, ensuring every path and interface mentioned can be located."
+    },
+    "p143": {
+      "title": "Write API Documentation",
+      "tags": ["Documentation", "API"],
+      "short": "Write API documentation for the module, explaining its purpose, inputs and outputs, errors, and minimal examples.",
+      "content": "Enable API callers to write correct requests without reading the source code. Check the purpose and parameters of every public interface in the module one by one, and document return values, side effects, and possible errors. Provide a minimal runnable example for every interface and actually execute it. Deliver the API documentation and example files, marking interfaces that could not be verified."
+    },
+    "p-68df4427ced08c26": {
+      "title": "Document What Each Format Supports",
+      "tags": ["Documentation", "Format", "Compatibility"],
+      "short": "Write down in the documentation what each format supports, what software it is compatible with, and where the differences lie.",
+      "content": "Let users know what they will lose before choosing a format. Check the actual information range, the applicable scenarios, and the corresponding tools for every format, and list the differences and limits in a comparison table in the documentation. Deliver a format capability document and mark the measured basis for each conclusion."
+    },
+    "p144": {
+      "title": "Update the Changelog",
+      "tags": ["CHANGELOG", "Documentation"],
+      "short": "Update the changelog by additions and changes, fixes and removals, making the impact on users clear.",
+      "content": "Let people upgrading see at a glance how these changes affect them. Record this round of changes under additions, changes, fixes, and removals, specifying behavioral changes and applicable versions. Where configuration or data migration is involved, provide the required actions. Deliver the changelog and check every entry against its corresponding change, marking the version number and release status."
+    },
+    "p145": {
+      "title": "Check and Update Project Documentation",
+      "tags": ["Documentation", "Consistency", "README"],
+      "short": "Check whether the documentation matches the code, treating the code as authoritative when correcting obsolete instructions.",
+      "content": "Ensure users following the documentation are no longer misled by outdated instructions. Check commands, paths, configuration options, and defaults in the documentation against the code, and execute them in a clean environment. Treat the code as authoritative when correcting obsolete instructions. Add common questions, an explanation of the directory structure, and ways to extend it. Deliver the revisions, a verification checklist, and link-check records, marking unverified items."
+    },
+    "p146": {
+      "title": "Write an Installation and Usage Tutorial",
+      "tags": ["Tutorial", "Documentation", "Getting Started"],
+      "short": "Write an installation and usage tutorial from scratch, with commands, expected output, and common errors for every step.",
+      "content": "Enable new users to install and run the project by following the tutorial. Start with environment dependencies and minimum versions, then organize the steps from environment preparation through first run. Give commands, expected output, and common errors for every step. Deliver the tutorial and a troubleshooting table, rehearse the entire process in a clean environment, and record any steps that do not match."
+    },
+    "p147": {
+      "title": "Design and Streamline Runnable Examples",
+      "tags": ["Examples", "Use cases", "Documentation"],
+      "short": "Design a minimal example and typical-scenario use cases, each with code, explanations, dependencies, and inputs.",
+      "content": "Let users get the project running with minimal effort and understand typical usage. Start with a minimal runnable example, then provide independent use cases for typical scenarios, each with code, explanations, dependencies, and inputs. Deliver the examples directory, a scenario-coverage table, a unified entry point for running them, and verification results from running each one."
+    },
+    "p-7eb2c34e8253fa01": {
+      "title": "Write a User Operations Manual",
+      "tags": ["Documentation", "Tutorial", "Users"],
+      "short": "Write an operations manual for the target readers, organizing steps and troubleshooting by task.",
+      "content": "Enable target readers to independently complete typical product or feature tasks by following the manual. Start with a task list, then organize each task by prerequisites, operating steps, and expected results, covering common errors and recovery methods. Deliver the manual, a task-coverage checklist, and a troubleshooting table, marking unverified steps and usage limitations."
+    },
+    "p-aa1da45d28d4022f": {
+      "title": "Create a Learning Tutorial with Examples",
+      "tags": ["Tutorial", "Examples", "Learning"],
+      "short": "Create a learning tutorial with runnable examples: one concept and one example per lesson.",
+      "content": "Enable new users to get started after working through the tutorial step by step. Arrange lessons from basic to advanced, with each lesson explaining one concept and including one runnable example file. Number the example files by lesson and place them in the tutorial directory, and leave an exercise after each lesson. Deliver the tutorial manuscript, examples directory, and lesson-by-lesson run records, marking steps that depend on a specific environment."
+    },
+    "p-36823623fc52bd82": {
+      "title": "Write FAQ and Help Content",
+      "tags": ["FAQ", "Help", "Documentation"],
+      "short": "Turn frequent questions and errors into an FAQ, with a solution for every entry.",
+      "content": "Enable users to find answers on their own when they encounter common problems. Group frequent questions from support tickets and user feedback into questions and answers. For each entry, describe the symptoms and cause and provide an actionable solution, including a minimal example where code is involved. Deliver the FAQ document and a list of covered questions, marking questions that still require a human response."
+    },
+    "p150": {
+      "title": "Write Contribution Guidelines",
+      "tags": ["Contributing", "Open Source", "Documentation"],
+      "short": "Write contribution guidelines covering branches and commits, check commands, changelog entries, and the review process.",
+      "content": "Enable external contributors to submit qualified PRs by following the guidelines. Explain the process from forking and creating a branch through submitting a PR, and list local check commands, how to write changelog entries, and the review process. Deliver the contribution guidelines, verify all commands in a clean environment, and record any failed steps and required permissions."
+    },
+    "p151": {
+      "title": "Write License and Citation Instructions",
+      "tags": ["License", "Copyright", "Open Source"],
+      "short": "Check the license and citation instructions, confirm the authority to select or change the license before modifying them, and check compatibility.",
+      "content": "Make the project's licence and citation notice lawful and unambiguous. First confirm that you have the right to choose or change the licence, propose an option and wait for confirmation, then add the full licence text and check compatibility with the dependencies. Deliver the authorisation file and the compatibility list, marking any point where ownership cannot be confirmed as pending verification."
+    },
+    "p160": {
+      "title": "Standardize Attribution and Copyright Information",
+      "tags": ["Attribution", "Copyright", "Information"],
+      "short": "Unify the attribution and copyright information everywhere, take it from the sources that already hold it, and pick the fields by use case.",
+      "content": "Keep the attribution in one place and make it consistent everywhere. Take the attribution details that already exist in the README, package.json, and similar places, choose the author, organisation, licence, and year fields for each use case, and leave a field out when it is empty. Deliver the single source of the information, the updated content, and a spot-check record comparing the formats."
+    },
+    "p152": {
+      "title": "Summarize Long-Form Source Materials",
+      "tags": ["Summary", "Source materials", "Key points"],
+      "short": "Summarize the materials: give the conclusion first, then list key points, evidence, and action items, preserving sources.",
+      "content": "Turn lengthy materials into directly usable conclusions and key points. Give the core conclusion first, then organize key arguments, data, and action items by topic. Preserve a reference back to the original location for every item and distinguish facts from opinions. Deliver the summary and a list of items pending verification, listing information gaps and contradictions."
+    },
+    "p-0af3588768a2590b": {
+      "title": "Extract Text and Tables from Image Documents",
+      "tags": ["Extraction", "Images", "Tables"],
+      "short": "Extract text and tables from images or PDFs into usable structured content.",
+      "content": "Make content in images and documents directly usable. Extract text and tables page by page, preserving heading levels and row-and-column relationships. Mark blurry or missing content as uncertain, and check numbers and units against the originals exactly as written. Deliver the extraction results and any portions that could not be confirmed, with sample comparisons against the source."
+    },
+    "p-54927342dd418789": {
+      "title": "Extract Structured Information",
+      "tags": ["Information extraction", "Structured data", "Source materials"],
+      "short": "Extract target fields from the materials, organize them consistently, and mark sources, missing values, and conflicts.",
+      "content": "Turn information scattered across the material into structured data that can be used directly. Collect the target fields into a definite output format such as JSON, a table, or a checklist, keep the context around each field, and check for conflicts where the same information appears in more than one place. Deliver the structured result with a list of missing and conflicting items, and mark the source of each."
+    },
+    "p-b6527e8bee891619": {
+      "title": "Translate While Preserving Structure",
+      "tags": ["Translation", "Terminology", "Documentation"],
+      "short": "Translate the source text into the target language, preserving its structure and consistent terminology without unauthorized additions or omissions.",
+      "content": "Make the translation ready to use as delivered, without reformatting. Translate the source text into the target language for the target readers. Preserve the structure of headings, lists, links, and placeholders, and use consistent translations for terminology and proper nouns. Where the source is ambiguous, retain the original text and add a note. Deliver the translation and a terminology glossary."
+    },
+    "p-8b56ecbbeda5c935": {
+      "title": "Proofread Typos and Punctuation",
+      "tags": ["Proofreading", "Typos", "Punctuation"],
+      "short": "Proofread only typos, punctuation, and grammar in the manuscript, without changing its style or rewriting it.",
+      "content": "Correct typos, punctuation, and grammatical errors in the manuscript without changing the author's sentence structures or writing style. Check paragraph by paragraph for homophone errors, missing or extra characters, mixed Chinese and English punctuation, and number and unit formatting. Where uncertain, preserve the original text and mark it. Deliver the proofread manuscript and a comparison table of changes, listing questionable items that require the author's confirmation separately."
+    }
+  }
+}

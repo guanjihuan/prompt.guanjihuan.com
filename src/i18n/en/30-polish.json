@@ -1,0 +1,68 @@
+{
+  "category": {
+    "name": "Polishing and Academic Style",
+    "desc": "Journal-style review, making the language read naturally, structural repair, terminology unification, mechanism explanation, formatting repair, reference formatting, and reducing textual overlap"
+  },
+  "prompts": {
+    "p211": {
+      "title": "Review the Full Manuscript Against the Target Journal's Style",
+      "tags": ["Polishing", "Style", "Journal"],
+      "short": "Review the full manuscript against the target journal's publicly available writing requirements and provide a revised manuscript.",
+      "content": "Review the full manuscript according to the target journal's publicly available writing requirements. Address language, structure, and content separately. Preserve facts, data, and citations, and eliminate mechanical phrasing. Deliver a polished manuscript, a list of changes grouped by layer (language, structure, and content), and a before-and-after length comparison, flagging edits that could change the original meaning and places where evidence is insufficient."
+    },
+    "p212": {
+      "title": "Rewrite a Passage in Academic Style",
+      "tags": ["Polishing", "Concision", "Academic"],
+      "short": "Rewrite this passage to be more academic and concise, reducing redundancy and keeping terminology consistent.",
+      "content": "Make this passage read as academic writing without losing its original meaning. Remove repeated setup and redundant modifiers, standardize terminology and notation, and preserve facts, data, qualifications, and citations. Do not turn correlations into causal relationships. Deliver the polished passage and an explanation of the changes, separately listing sentences whose edits could change the original meaning and terms that require the author's confirmation."
+    },
+    "p217": {
+      "title": "Remove Stock Phrases and Repetition",
+      "tags": ["Polishing", "Reduce AI Look", "Concision"],
+      "short": "Remove stock phrases and repetition while retaining necessary transitions and qualifications, so that every sentence serves a purpose.",
+      "content": "Remove stock phrases and repetition that add no information throughout the manuscript. Assess each sentence's function, then rewrite, merge, or delete it as appropriate. Retain necessary transitions and qualifications so that every sentence serves a purpose. Deliver the cleaned-up text and a list of deletions and revisions, noting where repeated content has been consolidated and separately identifying the places where content still needs to be written."
+    },
+    "p218": {
+      "title": "Fix Logical Gaps Throughout the Manuscript",
+      "tags": ["Polishing", "Logic", "Argumentation"],
+      "short": "Check and repair logical gaps throughout the manuscript, supply missing premises and reasoning steps, and flag circular reasoning and unsupported causal claims.",
+      "content": "Repair the broken links in the argument before a reviewer calls it insufficient. Reconstruct the chain of premises, reasoning, and conclusions. Check that definitions, assumptions, and evidence appear before the conclusions that depend on them, and flag missing steps, circular reasoning, and unsupported causal claims. Deliver a revised manuscript and a table of logical issues, giving the location, issue type, and rationale for each revision."
+    },
+    "p215": {
+      "title": "Standardize Terminology and Phrasing",
+      "tags": ["Polishing", "Terminology", "Consistency"],
+      "short": "Standardize terminology, notation, and phrasing throughout, using only one expression for each concept.",
+      "content": "Use only one expression for each concept throughout the manuscript so readers do not have to guess whether different wording refers to the same thing. Read the full text and build a correspondence table, then standardize terminology, notation, and phrasing, including subscripts and superscripts, singular and plural forms, and Chinese and English renderings. Deliver the revised manuscript and a table of standardization rules. List substantive replacements and their locations, and flag terms with multiple meanings or conflicting symbols."
+    },
+    "p216": {
+      "title": "Translate Chinese into Academic English",
+      "tags": ["Polishing", "Translation", "English"],
+      "short": "Rewrite this Chinese passage in academic English with accurate terminology, restrained sentence structures, and no word-for-word translation.",
+      "content": "Make this Chinese passage read as academic English once translated, rather than as a word-for-word rendering. Recast it according to English argumentative conventions. Preserve technical details, logical relationships, and citations, standardize terminology, and control sentence length and tone. Deliver the English text and a table of key terminology, with a separate explanation of how ambiguities, sentences without explicit subjects, and passages where the translation could change the original meaning were handled."
+    },
+    "p-7330603263e7ae4a": {
+      "title": "Explain Mechanisms and Concepts Clearly",
+      "tags": ["Polishing", "Mechanism", "Expression"],
+      "short": "Explain the mechanism and core concepts clearly, organizing the manuscript around this mechanistic thread rather than presenting a list of data.",
+      "content": "Ensure that after reading, readers can state what the mechanism and the core concepts are, rather than seeing only a list of data. Incorporate a mechanism diagram and the conceptual meanings into the narrative of the main text. Make the data and derivations serve the argument, and move incidental details to the supplementary material. Deliver the revised manuscript and an explanation of the restructuring, flagging paragraphs that still require readers to fill in missing reasoning themselves."
+    },
+    "p213": {
+      "title": "Fix Formatting Throughout the Manuscript",
+      "tags": ["Layout", "Repair", "Formatting"],
+      "short": "Fix the formatting: align numbering and cross-references, and standardize spacing, indentation, font sizes, and margins.",
+      "content": "Bring the layout of the whole manuscript to a level that can go straight to submission. Standardize equation and figure/table numbering, placement, and cross-references. Correct paragraph spacing, indentation, and margins, and set fonts and font sizes by hierarchy level. Deliver the repaired document, a style summary, and a list of issues, flagging overflow and misalignment that cannot be fixed automatically."
+    },
+    "p219": {
+      "title": "Standardize Reference Formatting",
+      "tags": ["Citations", "Formatting", "References"],
+      "short": "Standardize in-text citations and the reference list to the target citation style, checking fields, links, and correspondence with the text.",
+      "content": "Make every in-text citation and reference-list entry conform to the target format. Check authors, years, publication details, and volume, issue, and page fields, and establish two-way correspondence between the text and reference list for every entry. Deliver the reference list, a list of formatting corrections, and a table of missing fields, identifying orphan citations and entries that are never cited."
+    },
+    "p-80ad4bcd2dcb55c4": {
+      "title": "Reduce Textual Similarity",
+      "tags": ["Similarity Check", "Rewriting", "Reduce Overlap"],
+      "short": "Rewrite sentences that verbally overlap with the literature: change the wording without changing the meaning, and retain citations.",
+      "content": "Rewrite sentences in the manuscript that verbally overlap with published literature, changing the expression without changing the original meaning. Adjust sentence structure and wording sentence by sentence. Leave technical terms, data, and equations unchanged, and retain citations wherever others' ideas are paraphrased. Deliver the rewritten manuscript and a comparison of overlapping sentences, flagging definitions and equations that cannot be rewritten."
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "category": {
+    "name": "Rigorous Fact-Checking",
+    "desc": "Verification of derivations, equations and code, data support, dimensions, figure and table data, and factual sources"
+  },
+  "prompts": {
+    "p220": {
+      "title": "Rigorously Verify Derivations and Conclusions",
+      "tags": ["Verification", "Rigor", "Equations"],
+      "short": "Verify whether the derivations and conclusions hold, independently recalculating key steps.",
+      "content": "Make the principles and derivations in the manuscript or project hold up to scrutiny. Independently recalculate key steps, and cross-check the code and data using limiting cases and independent implementations. Deliver a prioritized issue list, with evidence and the repair result for each item."
+    },
+    "p221": {
+      "title": "Focus on Verifying Equations and Code",
+      "tags": ["Verification", "Equations", "Code"],
+      "short": "Recalculate each item against the equations and code, listing inconsistencies and test results.",
+      "content": "Make the equations in the manuscript match their code implementations. Examine symbol definitions and derivation assumptions, independently recalculate representative numerical values, and design tests. Deliver an equation-to-code correspondence table and test records, explaining the reasons for any failures."
+    },
+    "p222": {
+      "title": "Verify Computational Results Against Mechanisms",
+      "tags": ["Verification", "Mechanism", "Computation"],
+      "short": "Check computational results against mechanistic trends, locate anomalies, and return to the code for recalculation.",
+      "content": "Make the computational results match the mechanistic expectations. Check trends and orders of magnitude against the expected mechanistic direction, and against the mechanism diagram when there is one; trace suspicious points back to the code and data for recalculation. Deliver a table locating the anomalies and a list of unexplained discrepancies, with reproducible verification steps."
+    },
+    "p223": {
+      "title": "Independently Re-Examine the Full Argument",
+      "tags": ["Verification", "Principles", "Reflection"],
+      "short": "Independently re-examine the argument without relying on the original manuscript, resolving conflicts using reproducible evidence.",
+      "content": "Set aside the original manuscript's narrative and independently re-examine the full text from the basic assumptions about the research subject. First write down the expected relationships and boundary behavior. Check whether the assumptions, conservation relations, and causal directions are consistent with the derivations and implementation, resolving conflicts using reproducible evidence. Deliver evidence for each conflict and proposed corrections, listing unresolved items separately."
+    },
+    "p225": {
+      "title": "Verify the Data Supporting the Conclusions",
+      "tags": ["Verification", "Conclusions", "Evidence"],
+      "short": "Break the conclusions into testable claims and check the data and evidence for each one.",
+      "content": "Make sure every conclusion in the manuscript is backed by evidence. Break the conclusions into testable claims, locate the data and experimental conditions, and distinguish correlation from causation. Deliver a conclusion-to-evidence matrix, indicating the strength of support and identifying conclusions that need to be weakened."
+    },
+    "p226": {
+      "title": "Reproduce Published Results",
+      "tags": ["Verification", "Reproduction", "Code"],
+      "short": "Reproduce figures and numerical values from a paper by following its original steps, comparing differences figure by figure.",
+      "content": "Use the current code to reproduce figures and numerical values from the literature. From the cited papers, select the one most comparable to the current implementation. Run it using the original paper's model and parameters, record versions and tolerances, and make minimal fixes only after confirming an error. Deliver figure-by-figure comparisons and run instructions. Store new code separately, and identify the stage at which each unreproduced item failed."
+    },
+    "p227": {
+      "title": "Check Cross-Reference Completeness",
+      "tags": ["Verification", "References", "Cross-References"],
+      "short": "Check cross-references for completeness, listing undefined objects and objects that are never referenced.",
+      "content": "Check whether the manuscript's cross-references are complete. Verify the numbering sequence and links for equations, figures, and tables, and find missing references and objects that are never referenced. Deliver lists of undefined references, duplicate numbers, incorrect links, and unreferenced objects, giving the location and corrective action for each item."
+    },
+    "p228": {
+      "title": "Check Unit and Dimensional Consistency",
+      "tags": ["Verification", "Units", "Dimensions"],
+      "short": "Check units and dimensional conversions item by item, identifying inconsistencies and providing recalculation records.",
+      "content": "Make the units and dimensions in the manuscript and computational results consistent with each other. Build a correspondence table of symbols, units, and dimensions. Verify conversions and notation, and test the dimensions of equations against the SI system and standard conventions in the field. Deliver inconsistencies and conversion calculations, with boundary-test records."
+    },
+    "p229": {
+      "title": "Check That Figures Match the Data in the Main Text",
+      "tags": ["Verification", "Figures and Tables", "Data"],
+      "short": "Trace each figure to its data source, recalculate numerical values in the main text, and re-verify the exported figures.",
+      "content": "Make sure every number in a figure also matches the main text. Trace each figure to its run data and generating code, verify its axes and units, then recalculate the numerical values in the main text from the source data. Deliver a figure-by-figure verification table and discrepancy locations. After fixing the source, re-export the figures and verify them again."
+    },
+    "p230": {
+      "title": "Verify Key Literature Citations",
+      "tags": ["Verification", "Citations", "Literature"],
+      "short": "Find the core literature and compare in-text citations with the reference list in both directions.",
+      "content": "Make the manuscript's literature citations both complete and accurate. Find sources for the core conclusions and methods, verify that statements in the main text have sources, and compare in-text citations with the reference list in both directions. Deliver a list of missing and incorrect citations, then recheck numbering and links after making corrections."
+    },
+    "p306": {
+      "title": "Rigorously Verify Facts and Sources",
+      "tags": ["Rigor", "Integrity", "Sources"],
+      "short": "Trace every fact to a verifiable source, distinguishing confirmed, disputed, and unverifiable information.",
+      "content": "Make every factual statement in the manuscript traceable to a verifiable source. Trace facts and external links to verifiable sources, distinguishing confirmed, disputed, and unverifiable information. Deliver a verification table and a list of items awaiting verification, identifying passages to revise and information that still needs to be added."
+    },
+    "p231": {
+      "title": "Design Controlled Experiments",
+      "tags": ["Experiment", "Controls", "Verification"],
+      "short": "Define control groups, sample sizes, and replication counts for the research hypothesis, registering the decision criteria before the experiment.",
+      "content": "Design controlled experiments that can test whether the research hypothesis holds. Specify the independent and dependent variables and register the decision criteria before the experiment. Include baseline and ablation groups where necessary, and estimate sample sizes and replication counts from the expected effect size and statistical power. Deliver a group-assignment table and analysis plan, listing confounding factors that still cannot be ruled out."
+    }
+  }
+}

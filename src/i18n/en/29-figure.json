@@ -1,0 +1,62 @@
+{
+  "category": {
+    "name": "Plotting and Charts",
+    "desc": "Publication-quality plotting, axes and numerical display, vector export, self-explanatory figures, and standards for flowcharts and multi-panel figures"
+  },
+  "prompts": {
+    "p232": {
+      "title": "Create Publication-Quality Figures",
+      "tags": ["Plotting", "Academic", "Reproducibility"],
+      "short": "Use Python to create paper figures, saving the code, data, and images in commonly used formats.",
+      "content": "Produce figures that meet journal publication standards and can be regenerated simply by changing the data. Use Python to create publication-quality figures. Define the horizontal and vertical axes according to the meaning of the data, label units and legends, and put all plotting parameters into reproducible code. Deliver the code, a description of the data, and PNG and PDF images, encoding series with both color and line style."
+    },
+    "p238": {
+      "title": "Create a Standardized Schematic",
+      "tags": ["Schematic", "Vector", "Figure"],
+      "short": "Create a standardized schematic with arrows showing direction, and deliver a vector version and a black-and-white preview.",
+      "content": "Create a schematic of a model or process whose relationships and directions of action can be understood without reading the main text. Use consistent geometric shapes and line styles for the same meanings, use arrows to show direction and functional relationships, and standardize fonts and line widths. Deliver an editable source file, a vector graphic, and a black-and-white preview. The caption must explain every symbol and use terminology consistent with the main text."
+    },
+    "p-02e30347a2599560": {
+      "title": "Standardize Chart Axes and Numerical Display",
+      "tags": ["Plotting", "Axes", "Numerical Display"],
+      "short": "Make chart axes easy to read: match ranges and ticks to the data, avoid misleading truncation or nonzero baselines, and use appropriate notation for orders of magnitude.",
+      "content": "Make the axes and numerical values easy to read and not misleading. Choose ranges and tick marks according to the data distribution, and label any truncation or magnified inset. As a rule, bar charts must use a zero baseline on the vertical axis; when other chart types use a nonzero baseline, do not exaggerate differences. Scientific notation may be used for extreme orders of magnitude, and decimal places must match the precision. Deliver the figures and verification results."
+    },
+    "p-2589750faa406eb8": {
+      "title": "Export Charts as Vector Graphics",
+      "tags": ["Plotting", "Vector Graphics", "Export"],
+      "short": "Export the figures in vector format so they remain sharp when enlarged, with fonts and line widths preserved.",
+      "content": "Ensure that the delivered figures remain sharp when enlarged. Modify the plotting scripts to export vector formats, embedding fonts or converting them to paths and ensuring that line widths and transparency do not change with the format. Save bitmap versions separately at resolutions appropriate to their intended uses. Deliver both vector and bitmap versions, and check their clarity at the intended print size."
+    },
+    "p233": {
+      "title": "Check Whether Figures Are Self-Explanatory",
+      "tags": ["Plotting", "Schematic", "Self-Explanatory"],
+      "short": "Check each figure for whether it can be understood independently of the main text, fill in missing elements, and deliver revised figures.",
+      "content": "Check whether every figure in the manuscript can be understood independently of the main text. Fill in missing axes, units, and legends. Mark key processes and causal directions in schematics, and label mechanisms with insufficient evidence as schematic. Deliver a figure-by-figure checklist and the revised figures, explaining the core message of each figure."
+    },
+    "p234": {
+      "title": "Check the Flowchart Against the Algorithm",
+      "tags": ["Flowchart", "Algorithm", "Review"],
+      "short": "Check the flowchart against the code, reconstruct the execution process, and identify omitted branches and incorrect loops.",
+      "content": "Make sure the flowchart describes exactly what the code does. Reconstruct the execution process from the inputs and state transitions, compare it with the code to find omitted branches and incorrect loops, and walk through normal, boundary, and failure cases. Deliver a list of algorithm issues and a revised flowchart. If the strategy is adjusted, provide the rationale and a comparison of the results."
+    },
+    "p235": {
+      "title": "Standardize Multi-Panel Figure Layout",
+      "tags": ["Plotting", "Layout", "Standards"],
+      "short": "Standardize multi-panel figure layout parameters and check panel numbering, cross-references, and export dimensions.",
+      "content": "Make the multi-panel figure clear and readable at its target publication size. Standardize font sizes, line widths, and panel spacing. Complete every axis with its variable and unit, and distinguish series using colorblind-friendly encodings that also remain distinguishable in grayscale. Deliver the revised figure and layout parameters, checking panel labels, references, and export dimensions panel by panel."
+    },
+    "p236": {
+      "title": "Unify the Color Theme Across a Figure Set",
+      "tags": ["Plotting", "Color Palette", "Style"],
+      "short": "Define a color palette for the figure set, with hexadecimal values and a mapping to their roles.",
+      "content": "Define a consistent set of color rules for the entire figure set. Assign primary, secondary, and neutral colors by series and level of emphasis. Use the same color for the same variable across figures, and add line styles or markers to any series distinguished by color alone. Deliver a table mapping hexadecimal color values to their roles, explaining limitations for color, grayscale, and light or dark backgrounds."
+    },
+    "p237": {
+      "title": "Standardize Error Bars and Statistical Presentation",
+      "tags": ["Plotting", "Statistics", "Error"],
+      "short": "State what the error bars represent and the sample size, and handle outliers according to predefined rules.",
+      "content": "Ensure there is a ready answer when reviewers ask what the error bars represent and how large the sample is. State whether error bars show standard deviation, standard error, or confidence intervals. In the caption, specify the sample size, replication level, and calculation method, and handle outliers according to predefined rules. Deliver a description of the statistical conventions and recalculation code, and verify the error values against the source data."
+    }
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "category": {
+    "name": "Product Feature Design",
+    "desc": "Landing pages, login, registration, and onboarding, defaults and settings pages, notifications, subscriptions, and sharing, uploads, imports, and parsing, backups and file syncing, audio playback, icons, and simplification"
+  },
+  "prompts": {
+    "p123": {
+      "title": "Build a Product Landing Page",
+      "tags": ["Landing page", "Product", "Conversion"],
+      "short": "Build a product landing page: explain the value above the fold, then show features, a real demo, and pricing.",
+      "content": "Help visitors quickly decide whether the product is right for them. Above the fold, explain in one sentence what the product is and who it serves, and provide a call to action. Then present the core features, a real demo, and pricing. Deliver the page and mobile-responsive screenshots, including verification that the above-the-fold call to action clicks through and navigates correctly."
+    },
+    "p-7ac87170dc717ede": {
+      "title": "Design Login, Registration, and Account Recovery Flows",
+      "tags": ["Login", "Registration", "Account"],
+      "short": "Design login, registration, and password recovery flows, covering every branch and exception.",
+      "content": "Enable users to register, log in, and recover their accounts on their own when they forget their passwords. Specify account identifiers, verification methods, and the state of every branch, covering incorrect input, expired verification codes, existing accounts, and blocks by risk-control systems. Deliver flowcharts, page copy, and a list of exception branches, marking where third-party services are required."
+    },
+    "p-3f8bdb1e4561e38c": {
+      "title": "Integrate Third-Party Login",
+      "tags": ["Login", "Third-Party", "Account"],
+      "short": "Integrate third-party platform login: callback validation, account linking, and failure handling.",
+      "content": "Allow users to log in to the product with third-party platform accounts. Implement authorization redirects and callback validation, handle account linking or registration on first login, and cover branches where the user denies authorization or the callback fails. Deliver the login flow and account-linking rules, with test results for every exception branch."
+    },
+    "p-a8e7a0c990a39769": {
+      "title": "Configure Simple Administrator Login",
+      "tags": ["Login", "Administrator", "Admin console"],
+      "short": "Add single-administrator login to a page: keep the account in environment configuration, store only a password hash, and provide no registration.",
+      "content": "Add a login barrier to a personal tool or site so that only the sole administrator can enter. Keep the administrator account in environment configuration, store only a password hash, make the login session lifetime configurable, and wait for a while after consecutive failures exceed the limit. Do not provide registration or account recovery. Deliver the login implementation and configuration instructions, with verification results for login, expiration, and incorrect passwords."
+    },
+    "p127": {
+      "title": "Design an Onboarding Flow",
+      "tags": ["Onboarding", "New users", "Product"],
+      "short": "Create lightweight onboarding for new users: cover only three things, allow skipping, and use empty states instead of explanations.",
+      "content": "Help new users successfully complete the product's core task. Design lightweight guidance around the task path, covering only three key actions on first use and allowing users to skip it. Use empty states for content best explained in context. Deliver the onboarding flow and copy, with verification that users can still complete the task after skipping."
+    },
+    "p-cc38d13a38a3254c": {
+      "title": "Provide Sample Data",
+      "tags": ["Examples", "Demo", "First-use experience"],
+      "short": "Build a sample dataset into the application so users can load it with one click and understand how to use it.",
+      "content": "Help new users understand the features without preparing data. Include a small sample dataset covering the main scenarios, import it when the user clicks to load the sample, and provide a separate option to start blank. Keep sample and real data from interfering with each other. Deliver the sample data and loading entry point, with verification results for loading the sample and switching to a blank state."
+    },
+    "p-6f216a7287f9bd94": {
+      "title": "Set Defaults for a New Feature",
+      "tags": ["Defaults", "Behavior", "New feature"],
+      "short": "Set sound defaults for a new feature: first-use behavior should match most users' expectations, and users' choices should be remembered after they change them.",
+      "content": "Make the new feature's default behavior match most users' expectations. Define the default value of every toggle and option, use the most common usage pattern on first open, and remember users' choices after they change them. Deliver a list of defaults and persistence documentation, with verification results for first use and for choices remaining unchanged after modification."
+    },
+    "p-a05dcffc7b23996c": {
+      "title": "Design a Product Settings Page",
+      "tags": ["Settings", "Configuration", "Product"],
+      "short": "Design a settings page for the product, specifying defaults, when changes take effect, and how to restore defaults.",
+      "content": "Make settings changes predictable: users should know what changed, when it takes effect, and how to change it back. Group settings by task and frequency of use, and label each item's purpose and scope of impact. Explain the consequences of dangerous actions and require a second confirmation. Deliver the settings page and documentation, with item-by-item verification of defaults, effective timing, and restoring defaults."
+    },
+    "p-3e7b9d40c5821fa6": {
+      "title": "Implement Restoration of Default Settings",
+      "tags": ["Restore defaults", "Reset", "Settings"],
+      "short": "Let users restore all settings to their defaults with one click, listing the impact and requesting confirmation before resetting.",
+      "content": "Let users return to factory settings with one click even after making a mess of their configuration. Provide an entry point for restoring defaults, supporting either individual items or all settings. Before execution, list the items that will be reset and request confirmation. Deliver the restoration logic and entry-point location, with verification results for restoring after changes, partial restoration, and default-value checks."
+    },
+    "p121": {
+      "title": "Add an About Page or Section",
+      "tags": ["About", "Settings", "Product"],
+      "short": "Add an About page or settings section to the product, showing the version, developer, license, and contact information.",
+      "content": "Let users find product information and contact details in settings. Provide an About page or settings section that reads its content from centralized configuration and includes the developer, version number, license, and contact information. Keep the entry point within the existing navigation. Deliver the page and screenshots, hiding the corresponding entry when a field is empty."
+    },
+    "p-ef580195b6c9a3ae": {
+      "title": "Implement In-App Notifications and a Message Center",
+      "tags": ["Notifications", "Messages", "Product"],
+      "short": "Implement in-app notifications: triggers, unread counts, read status, and preference settings.",
+      "content": "Ensure users do not miss messages they need to know about without overwhelming them. Define which events trigger notifications, how messages are aggregated, and how they are muted. Implement unread counts and a message center, supporting read status, bulk clearing, and preference settings. Deliver the notification model, pages, and a list of trigger points, marking scenarios where notifications could be duplicated or omitted."
+    },
+    "p124": {
+      "title": "Implement Subscription and Unsubscription Flows",
+      "tags": ["Subscription", "Email", "Feature"],
+      "short": "Implement email subscription and unsubscription, activated by clicking a confirmation link, without creating multiple records for repeat subscriptions.",
+      "content": "Let users subscribe to product updates and unsubscribe, with a clearly visible subscription status. Validate the email format on submission and deduplicate by address. Activate the subscription only after the user clicks the link in the confirmation email, which must explain how to unsubscribe. Deliver the flow and copy, with verification that repeat subscriptions create only one record."
+    },
+    "p125": {
+      "title": "Implement Link Sharing and Copying",
+      "tags": ["Sharing", "Links", "Feature"],
+      "short": "Implement link copying and share cards, with links carrying only the page state that can be made public.",
+      "content": "Ensure recipients who open a shared link go directly to the content. Provide link copying and sharing channels. Cards should include a title, summary, and key information, while links carry only the page state that can be made public. Deliver the link-copying and share-card implementation, with verification that recipients reach the content directly and that no private link state is exposed."
+    },
+    "p-4737a5133e043c04": {
+      "title": "Implement Comments",
+      "tags": ["Comments", "Interaction", "Product"],
+      "short": "Implement comments for the product: support nesting and disabling comments, restrict who can post, comment length, and posting frequency, and provide moderation rules.",
+      "content": "Let users participate in discussions on the product while keeping the scope of comments under control. Specify who may post and the limits on comment length and frequency. Nest comments by level and preserve their expanded state. When comments are disabled, retain historical messages. Deliver the comment component and moderation rules, with verification results for nested expansion, rate limiting, and retaining history after comments are disabled."
+    },
+    "p126": {
+      "title": "Implement the User Feedback Handling Flow",
+      "tags": ["Feedback", "Form", "Product"],
+      "short": "Implement feedback submission and handling: validate the attachments, warn about sensitive information, keep the status trackable, and report the result back to the person who submitted it.",
+      "content": "Give users somewhere to report problems and let administrators triage them, with the outcome returned to the reporter. The form should collect a description, screenshots, and the page information. Before submission, validate attachments and warn about sensitive information, preserving the entered content if submission fails. Record the status of each report, and when it is resolved, reply and mark it closed. Deliver the form and the triage workflow, with verification results."
+    },
+    "p-6a26d37a9017f06f": {
+      "title": "Implement Image Upload and Preview Processing",
+      "tags": ["Upload", "Images", "Preview"],
+      "short": "Implement image upload and preview: validate type and size, compress images and generate thumbnails, and show progress placeholders.",
+      "content": "Make image uploads fast and visible, without users losing their selections when uploads fail. Validate file type and size, compress images and generate thumbnails according to their intended use, and support drag-and-drop, paste, and progress placeholders in the frontend. Preserve selected files on failure. Deliver the upload API and preview component, with test results for large images and invalid files."
+    },
+    "p-6369f443879734c5": {
+      "title": "Implement Tabular Data Parsing",
+      "tags": ["Tables", "Parsing", "Data import"],
+      "short": "Parse pasted table data into columns: detect the header, the delimiter, and the column types automatically.",
+      "content": "Turn pasted tables directly into well-structured columns. Automatically detect whether a header exists, the delimiter, and whether each column contains numeric or text data. Allow manual correction when detection is inaccurate, and list malformed rows separately with their handling options. Deliver the parsing implementation and detection rules, with verification results for single-row data, multiple delimiters, and null-value scenarios."
+    },
+    "p-6e14a95da938999e": {
+      "title": "Implement Content Import and Parsing",
+      "tags": ["Import", "Parsing", "Feature"],
+      "short": "Implement content import for the application: paste text or select a file, then preview before saving to the database.",
+      "content": "Bring external content into the application in bulk while keeping invalid data out. Support pasted text and file selection. Before import, show a preview and conflict-handling options, and deduplicate according to existing rules. If any item fails, roll back the entire import and list the reasons. Deliver the import flow and conflict-handling rules, with test results for large files and malformed formats."
+    },
+    "p-9a4d0a25ac9dfc8f": {
+      "title": "Implement Order and Payment Flows",
+      "tags": ["Orders", "Payments", "Transactions"],
+      "short": "Implement the full flow from order placement to payment completion, handling callbacks, duplicate notifications, and reconciliation.",
+      "content": "Ensure not a single transaction is mishandled from order placement through payment completion. Implement order creation, payment redirection, and callback signature verification. Handle duplicate notifications idempotently, and add order-state transitions and reconciliation records. Deliver the order model and payment flow, with test results for duplicate callbacks and interrupted payments."
+    },
+    "p-d3474a9ee707f0f7": {
+      "title": "Implement Automatic Application Data Backups",
+      "tags": ["Backup", "Data", "Reliability"],
+      "short": "Add automatic backups to the application: disabled by default, backing up once on first use each day.",
+      "content": "Ensure data can be recovered after application corruption or accidental deletion. Disable the backup toggle by default. Once enabled, automatically back up once on the first use of each day, include the date in filenames, retain the most recent 7 copies, and verify that they can be restored. Deliver the backup implementation and setting, with the results of a restoration drill."
+    },
+    "p-7e74e5e9a413da5b": {
+      "title": "Synchronize Local Files with the Interface",
+      "tags": ["Two-way sync", "Files", "Desktop App"],
+      "short": "Keep local files and the interface display consistent: synchronize changes in both directions and let users choose how to resolve conflicts.",
+      "content": "Update the interface when files change, and save interface changes back to disk. Write interface edits back to files and update the interface when files are edited externally. If file watching fails, fall back to refreshing once when the file is opened. When both sides change simultaneously, list the differences and let the user choose. Deliver the synchronization implementation and conflict-handling rules, with verification results for editing and conflict scenarios."
+    },
+    "p-3b30dc4fd57d0a30": {
+      "title": "Implement an Audio Player Component",
+      "tags": ["Player", "Audio", "Component"],
+      "short": "Build an audio player component: playback controls and playlist switching, with background behavior handled according to platform capabilities.",
+      "content": "Keep audio playback controllable without interrupting browsing. Provide play/pause, track switching, progress seeking, and volume control, and do not autoplay when the list changes. Handle background playback and interruption recovery according to platform capabilities, and update the cover art and title with the current content. Deliver the playback component and control interface, with verification for page switches and the lock screen."
+    },
+    "p-aedd244d38331da6": {
+      "title": "Configure Application and Site Icons",
+      "tags": ["Icons", "favicon", "Branding"],
+      "short": "Configure every icon for the application or website: application icon, favicon, and share card.",
+      "content": "Give the application or website a consistent icon everywhere it appears. Generate desktop application icons, the browser-tab favicon, and the share-card image from one icon source file, covering all sizes and specifications in the platform checklist. Deliver the icon asset directory and reference changes, with display verification after installation and in browsers."
+    },
+    "p-d326efc58c856875": {
+      "title": "Simplify a Complex Interface",
+      "tags": ["Simplification", "Usability", "Information density"],
+      "short": "Simplify an overly complex interface: bring common actions forward and consolidate similar actions in one place.",
+      "content": "Make an interface overwhelmed by features immediately understandable again. Group features by frequency of use, expose common actions directly, remove duplicate entry points and redundant explanations, and consolidate similar actions into one entry point. Deliver a list of features to keep or remove and the simplified interface, with item-by-item checks of new users completing the core tasks."
+    }
+  }
+}

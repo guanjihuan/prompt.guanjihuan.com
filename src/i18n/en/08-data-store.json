@@ -1,0 +1,50 @@
+{
+  "category": {
+    "name": "Data and Concurrency",
+    "desc": "Data modeling, indexes, migrations, concurrency consistency, asynchronous processing, and multi-tenant isolation"
+  },
+  "prompts": {
+    "p066": {
+      "title": "Data Modeling and Queries",
+      "tags": ["Database", "Modeling", "Queries"],
+      "short": "Design table structures (primary keys, foreign keys, indexes, and constraints) and write common queries.",
+      "content": "Turn business entities into table structures and provide the queries they need. Define primary and foreign keys, indexes, unique constraints, and soft-delete semantics, and write common queries for lists, details, and related updates. Deliver the table structures, constraint explanations, and query implementations, along with verification results using execution plans and notes on slow queries."
+    },
+    "p067": {
+      "title": "Find Bottlenecks and Add Indexes",
+      "tags": ["Indexes", "Database", "Performance"],
+      "short": "Use execution plans to pinpoint slow-query bottlenecks and add indexes for speed without slowing writes.",
+      "content": "Speed up slow queries without slowing down writes. First use execution plans to locate bottlenecks and record data volume, filter conditions, and sorting, then determine index columns and composite-index order, weighing write overhead against index storage. Deliver evidence of the bottlenecks and the index changes, along with before-and-after timing comparisons and scenarios where the approach does not apply."
+    },
+    "p071": {
+      "title": "Design Data Migrations",
+      "tags": ["Database", "Migrations", "Rollback"],
+      "short": "Design a schema migration: compatible reads and writes, batched writes, content validation, and rollback support.",
+      "content": "Design a rollback-capable migration plan for schema changes. Assess data volume and dependents, define the allowable interruption and recovery window, ensure old and new versions can read and write compatibly, and write large data volumes in batches. Deliver migration scripts and execution order, along with validation results and an actionable rollback plan."
+    },
+    "p-3f05ff66bdf7c2da": {
+      "title": "Ensure Data Consistency Under Concurrency",
+      "tags": ["Database", "Transactions", "Concurrency"],
+      "short": "Keep business data consistent under concurrent writes, with recovery paths for conflicts and failures.",
+      "content": "Keep business operations consistent under concurrent writes. Review cross-table writes, concurrent updates, and external calls; define transaction boundaries and rollback conditions; and choose constraints or locking strategies based on conflict frequency. Deliver consistency rules and implementation changes, along with concurrency tests covering duplicate submissions, deadlocks, and recovery from partial failures."
+    },
+    "p-b92b6803325d6afa": {
+      "title": "Implement Asynchronous Task Processing",
+      "tags": ["Asynchronous", "Task Queues", "Reliability"],
+      "short": "Implement asynchronous processing for time-consuming tasks, with status queries, bounded retries, and interruption recovery.",
+      "content": "Convert time-consuming tasks into recoverable asynchronous processing. Define enqueue parameters, task states, timeouts, and how results are queried; have consumers process messages idempotently; and distinguish retryable failures from permanent ones. Deliver the task flow, state definitions, configuration, and tests, verifying duplicate delivery and interruption recovery."
+    },
+    "p-accd891d4ea099d0": {
+      "title": "Implement Multi-Tenant Data Isolation",
+      "tags": ["Multi-Tenancy", "Data", "Isolation"],
+      "short": "Keep multi-tenant data invisible across tenants, with tenant boundaries on every query and write.",
+      "content": "Make data belonging to different tenants in the project invisible to one another. Determine the source and trustworthiness of tenant identifiers, carry tenant conditions through queries, writes, caches, and background jobs, and check where cross-tenant access is blocked. Deliver the isolation implementation, unauthorized-access test results, and a checklist for finding missed isolation points."
+    },
+    "p-e2710878b1901b7b": {
+      "title": "Configure Connection Pooling and Read/Write Splitting",
+      "tags": ["Database", "Connection Pool", "Performance"],
+      "short": "Configure connection pooling and read/write splitting for the service so connections are not exhausted under load testing.",
+      "content": "Prevent the service from being overwhelmed by connection exhaustion during concurrency peaks. Set connection-pool limits and timeouts, route writes to the primary database, distribute reads to read-only replicas according to consistency requirements, and avoid cross-database queries within transactions. Deliver connection-pool parameters, read/write configuration, and load-test results, flagging the risk of stale reads caused by replication lag."
+    }
+  }
+}

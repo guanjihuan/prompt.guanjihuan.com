@@ -1,0 +1,88 @@
+{
+  "category": {
+    "name": "Spreadsheet Operations and Formulas",
+    "desc": "Conditional formatting, drop-down lists and data validation, splitting and joining columns, lookup formulas, frozen panes and filters, named ranges, filling by rule, and protecting a worksheet"
+  },
+  "prompts": {
+    "p-91234567890abcde": {
+      "title": "Mark the Outliers with Conditional Formatting",
+      "tags": [
+        "Conditional Formatting",
+        "Outliers",
+        "Marking"
+      ],
+      "short": "Use conditional formatting to mark the cells that are out of range, duplicated, or empty.",
+      "content": "Mark the cells that have problems in a sheet with conditional formatting, so that nobody has to scan row by row. Set up a rule for each of the value ranges, the duplicated values, the missing values, and the abnormal text, choose a format that stands out against the background, and make sure the rules do not cancel each other out. Deliver the sheet with the rules set and the note on each rule."
+    },
+    "p-a234567890bcdef0": {
+      "title": "Add Drop-Down Lists to Stop Wrong Entries",
+      "tags": [
+        "Drop-Down",
+        "Options",
+        "Validation"
+      ],
+      "short": "Add drop-down lists to the fields that are used often, so that entries cannot go wrong.",
+      "content": "Add a list of allowed values to the fields that are used often, so that whoever fills in the sheet cannot pick the wrong thing or spell it wrong. List the allowed values and the required fields for each column first, turn them into drop-downs and refuse anything that is not on the list, and give the fields that take several values a way of combining them. Deliver the sheet with the lists added and the list of allowed values."
+    },
+    "p-b34567890cdef012": {
+      "title": "Split and Join Columns",
+      "tags": [
+        "Split",
+        "Join",
+        "Columns"
+      ],
+      "short": "Split one column into several or join several into one, without losing a single value.",
+      "content": "Split one column into several, or join several columns into one, and lose nothing in the process. Look at what separates the values in the column or where they can be cut, keep the original column before splitting anything, and put the pieces back in the same order when joining them, handling the empty values on the way. Deliver the sheet after the split or join and the note on how it was done."
+    },
+    "p-c4567890def01234": {
+      "title": "Match Two Tables with a Lookup Formula",
+      "tags": [
+        "Lookup",
+        "Matching",
+        "Formula"
+      ],
+      "short": "Match two tables on their shared fields with a lookup formula and list the ones that do not match.",
+      "content": "Match two tables on their shared fields with a lookup formula, so that the result can be spot-checked by hand. Settle the join key and the way the match is made, write the lookup formula with the referenced range locked, and list the rows that match nothing and the rows that match more than one separately. Deliver the matched sheet, the match rate, and the list of the rows that did not match."
+    },
+    "p-d567890ef0123456": {
+      "title": "Freeze the Panes and Set Up Filters",
+      "tags": [
+        "Freeze Panes",
+        "Filter",
+        "View"
+      ],
+      "short": "Freeze the header row and the key columns, and filter a long sheet down to the part that is being used.",
+      "content": "Make a long sheet still readable while it is being scrolled and searched. Freeze the header row and the key columns, turn the conditions that are used often into filters, keep the filtering state and use one way of filtering throughout, so that it is obvious which part is being looked at. Deliver the sheet with the view set up and the note on the filters."
+    },
+    "p-e67890f012345678": {
+      "title": "Manage the Ranges with Named Ranges",
+      "tags": [
+        "Names",
+        "Ranges",
+        "References"
+      ],
+      "short": "Name the ranges that are used often so that the formulas stop being strings of coordinates.",
+      "content": "Name the ranges of data that are used often, so that the formulas stop being strings of coordinates. List the ranges that are referenced again and again, give each one a name, and say which block of data the name stands for, then change the formulas to use the names and check that the results are the same. Deliver the named sheet and a table of the names."
+    },
+    "p-f7890a1234567890": {
+      "title": "Fill a Sheet by Rule",
+      "tags": [
+        "Fill",
+        "Series",
+        "Bulk Edit"
+      ],
+      "short": "Fill many rows at once by a rule or a series, instead of dragging the handle down.",
+      "content": "Do the repeated filling in one go, instead of dragging the handle down row by row. Generate the content by date, by number, or by a fixed rule, let the formulas and the series extend correctly, and check the last few rows afterwards for anything that has run off. Deliver the filled sheet and the rule that was used."
+    },
+    "p-08a1b2c3d4e5f601": {
+      "title": "Protect the Worksheet Against Mistaken Edits",
+      "tags": [
+        "Protection",
+        "Worksheet",
+        "Permissions"
+      ],
+      "short": "Protect the worksheet and the formulas so that a stray edit cannot break them.",
+      "content": "Lock the parts of a sheet that are easy to damage by mistake, so that nobody can break the important content. Separate the areas that need protecting from the ones that stay editable, lock the formulas and the formatting and set how they are unlocked, and mark the cells that are left for other people to fill in. Deliver the protected sheet and the note on how to unlock it."
+    }
+  }
+}

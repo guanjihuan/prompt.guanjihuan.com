@@ -1,0 +1,74 @@
+{
+  "category": {
+    "name": "Peer Review and Self-Assessment",
+    "desc": "Review self-checks and peer comments, responses and tracking, journal selection and submission, conference abstracts, and defense Q&A"
+  },
+  "prompts": {
+    "p239": {
+      "title": "Review a Manuscript and Identify Rejection Risks",
+      "tags": ["Peer Review", "Review", "Constructive"],
+      "short": "Review the manuscript from a strict reviewer's perspective, listing prioritized comments and rejection risks.",
+      "content": "Identify the most likely reasons this manuscript would be rejected before submission. Review the manuscript, examining its concepts, novelty, and chain of logic. Distinguish problems with the conclusions from problems of presentation, and list the five issues most likely to cause rejection together with corrective actions. Deliver a risk table and a prioritized revision order, indicating the triggering scenario and corresponding location for each item."
+    },
+    "p240": {
+      "title": "Iterate Through Self-Review and Revision",
+      "tags": ["Peer Review", "Self-Review", "Iteration"],
+      "short": "Self-review before revising, addressing high-priority issues round by round and keeping records.",
+      "content": "Make the manuscript genuinely better after each self-review round. After the self-review finds problems, revise it round by round, handling only the high-priority problems in one direction per round, and re-check the affected arguments and data after each change. Iterate at most 5 rounds, stopping and keeping a record if there is no substantive improvement. Deliver the changes from each round, the verification results, and the remaining issues."
+    },
+    "p-bbfae97935c4c07d": {
+      "title": "Write a Peer-Review Report",
+      "tags": ["Review", "Peer", "Comments"],
+      "short": "Review the manuscript as a peer, providing prioritized comments and a recommendation.",
+      "content": "Give the manuscript's authors specific, actionable review comments. Independently assess whether the research question, methods, and conclusions hold. Identify each problem and its basis, and give a clear recommendation to accept, request major revisions, or reject. Deliver the review report and the locations of the evidence supporting the conclusions under review, flagging anything that cannot be assessed."
+    },
+    "p241": {
+      "title": "Simulate Reviewer Reports and Responses",
+      "tags": ["Peer Review", "Response", "Submission"],
+      "short": "Simulate conclusions from two reviewers, then write a response letter as the author.",
+      "content": "Simulate two independent reviewers assessing the manuscript, and write a point-by-point response letter on the author's behalf. Each reviewer must independently recommend acceptance, major revisions, or rejection, citing specific passages or data. In the response, address every comment and describe the corresponding revisions. Deliver two independent review reports and one complete response letter."
+    },
+    "p244": {
+      "title": "Turn Reviewer Comments into a Tracking Table",
+      "tags": ["Peer Review", "Follow-Through", "Tracking"],
+      "short": "Organize reviewer comments into a filterable tracking table that records status and locations.",
+      "content": "Give every request in the review a state and evidence behind it. Split each comment into a problem that can be handled on its own, keep the original comment number, and record the problem type, severity, the change to make, the location, and the completion state row by row. Deliver a filterable tracking table, and give the reason and the alternative for the comments you leave for now."
+    },
+    "p245": {
+      "title": "Respond to Actual Reviewer Comments",
+      "tags": ["Peer Review", "Response", "Revision"],
+      "short": "Restate each issue before giving the response and revisions; provide evidence and an alternative for any suggestion not adopted.",
+      "content": "Respond to the reviewer comments point by point while revising the manuscript accordingly. For each comment, first restate the issue accurately, then explain the response, the specific revisions, and where those revisions can be found. Correct the manuscript directly when a comment is valid; when a suggestion is not adopted, provide evidence and an alternative. Deliver the response letter, a comparison table of revisions, and any evidence still needed."
+    },
+    "p-a8832d72ef34c85d": {
+      "title": "Identify Suitable Journals for Submission",
+      "tags": ["Submission", "Journal", "Fit"],
+      "short": "Identify suitable journals for the paper based on scope, review timeline, fees, and publication risks.",
+      "content": "Find journals whose scope fits the paper and whose review and fee information can be verified. Check each candidate journal's subject scope, length limits, and figure and table requirements. Compare review timelines and fees, and investigate whether the journal has ceased publication or presents predatory-publishing risks. Deliver a candidate list, recommended ranking, and information sources, flagging promotional claims that cannot be verified."
+    },
+    "p-82e147981bc0b720": {
+      "title": "Write a Cover Letter and Submission Checklist",
+      "tags": ["Cover Letter", "Submission", "Materials"],
+      "short": "Write a cover letter that explains the contribution and journal fit, and list the submission materials.",
+      "content": "Help the editor understand within a few minutes why this work deserves peer review. Explain the research question, core contribution, and advance over existing work, and describe how it fits the target journal's scope. Deliver the cover letter and a checklist of submission materials, identifying reviewers to be excluded and items that must be adapted to journal requirements."
+    },
+    "p242": {
+      "title": "Run a Pre-Submission Self-Check",
+      "tags": ["Submission", "Self-Check", "Checklist"],
+      "short": "Check the manuscript item by item before submission, and give a checklist with the pass state and the fixes to make.",
+      "content": "Check the manuscript item by item against the requirements of the target journal or conference. Assess the evidence for the novelty claims, the reproducibility of the method, the data support, and the quality of the figures and tables, check whether the conclusions go beyond the evidence, and check the citations and the compliance statements. Deliver a checklist with the pass state, giving the location and the evidence for each item, and write the reason and the fix for the items that fail."
+    },
+    "p-8e8af25306453d5c": {
+      "title": "Write a Conference Abstract and Oral Presentation",
+      "tags": ["Conference", "Abstract", "Presentation"],
+      "short": "Write an abstract and oral presentation script for an academic conference, highlighting the problem and conclusions.",
+      "content": "Make the conference abstract and oral presentation explain the same problem and conclusions. Write the abstract according to the conference requirements, covering the problem, methods, key results, and significance. Structure the spoken script by time allocation, with an opening, argument, and closing. Deliver the abstract, spoken script, and time allocation, flagging sections that could not be finished if the presentation runs over time."
+    },
+    "p-bd7c569f612fb5ff": {
+      "title": "Prepare Defense Questions and Answers",
+      "tags": ["Defense", "Q&A", "Rehearsal"],
+      "short": "Simulate 10 defense questions, each with key points for the answer.",
+      "content": "Prepare a Q&A rehearsal for the defense of a paper or project. From the examiners' perspective, formulate the 10 questions most likely to be asked, organized into fundamentals, methods, and contributions. Include key answer points and possible follow-up questions for each. Deliver a question list and answer outlines, flagging questions that require additional evidence."
+    }
+  }
+}

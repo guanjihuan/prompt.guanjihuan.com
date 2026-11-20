@@ -1,0 +1,104 @@
+{
+  "category": {
+    "name": "Project Initiation and Requirements",
+    "desc": "Competitor analysis, requirement clarification, requirement docs and user stories, technology selection, direction alignment, splitting core from supporting features, planning before building, implementation and iteration, taking over an unfamiliar codebase, locating code and explaining logic"
+  },
+  "prompts": {
+    "p-3df2e13ef4f801fe": {
+      "title": "Conduct Competitive Analysis",
+      "tags": ["Competitors", "Analysis", "Product"],
+      "short": "Analyze the main competitors in the product direction you plan to pursue: feature comparisons, differentiators, and practices worth borrowing.",
+      "content": "Investigate the main competitors in the product direction you plan to pursue to inform feature trade-offs. Select representative products and compare their target users, core features, pricing, and user experience. Identify differentiators and practices worth borrowing. Deliver a competitor comparison table and conclusions, cite information sources, and mark anything that cannot be verified as pending confirmation."
+    },
+    "p004": {
+      "title": "Clarify Requirements and List Decisions",
+      "tags": ["Requirements", "Clarification"],
+      "short": "Clarify the requirements before starting and list the decisions that still need confirmation.",
+      "content": "Clarify the goals and scope of the requirements, and list ambiguities and omissions. List every decision that affects implementation in one place, with alternatives, the scope of impact, and a recommended option for each. Deliver a confirmation checklist that identifies the options requiring a response and the latest time by which each must be confirmed."
+    },
+    "p-d53dad49cb52c0fe": {
+      "title": "Write a Product Requirements Document",
+      "tags": ["Requirements", "Product", "Planning"],
+      "short": "Write a reviewable requirements document covering goals, scope, and acceptance.",
+      "content": "Give this feature a requirements document that aligns everyone on scope and acceptance. Clearly describe the problem and target users, what is in and out of scope, functional rules, and exceptional cases. List priorities and what will not be done. Deliver the requirements document and an acceptance criteria checklist, marking rules and dependencies that still need confirmation."
+    },
+    "p-30df782566c067bc": {
+      "title": "Write User Stories and Acceptance Criteria",
+      "tags": ["User Stories", "Acceptance", "Product"],
+      "short": "Turn the requirements into user stories, each with verifiable acceptance criteria.",
+      "content": "Give development and testing a shared understanding of the same task. Break the requirements into short stories written from the user's perspective. Give each story a single goal and clear acceptance criteria, and list boundaries and exceptions separately. Deliver the story list and a mapping to acceptance criteria, marking items beyond the current release."
+    },
+    "p-9a072a449371eff8": {
+      "title": "Prioritize Features and Plan the Release Cadence",
+      "tags": ["Prioritization", "Scheduling", "Product"],
+      "short": "Prioritize features by value and cost, and release them in batches.",
+      "content": "Release features in batches according to their value instead of finishing everything before shipping. Assess each feature's user value, implementation cost, and dependencies, and organize the batches around the target milestones. Deliver a priority table, the batch breakdown, and acceptance checkpoints for each batch, marking dependencies that must be completed first."
+    },
+    "p007": {
+      "title": "Compare Technology Options",
+      "tags": ["Technology Selection", "Comparison"],
+      "short": "Compare 3 technical approaches for the requirements and provide a recommendation and risks.",
+      "content": "Select a technical approach for the requirements and make a recommendation. List 3 feasible approaches and the conditions under which each is valid, then compare development efficiency, runtime performance, maintenance cost, and learning curve. Deliver a comparison table and the reasons for the recommendation, along with risks and migration costs."
+    },
+    "p-c3fbb609a4b61b7c": {
+      "title": "Align on Direction Before Starting",
+      "tags": ["Initiation", "Direction", "Alignment"],
+      "short": "Align on direction before starting: restate your understanding of the goal and your plan, then begin once the direction is confirmed.",
+      "content": "Align on the goal and the intended approach before starting. Restate your understanding of the goal and how you plan to proceed in your own words, and point out anything that may differ from what I said. Start only after the direction is confirmed; you do not need to wait for me to provide a complete plan. Deliver a short direction confirmation and a list of open questions before starting."
+    },
+    "p-6a2107cafd56071b": {
+      "title": "Define the Core and Supporting Features",
+      "tags": ["Project", "Core Feature", "Scope"],
+      "short": "Lock down the one core feature the project stands on, sort the rest into supporting and optional, and build the interface and the docs around it.",
+      "content": "Make it obvious at a glance which single feature this project stands on. List all the features, mark which one is core and which are supporting or optional, and give the reason for keeping them and the cost of dropping them. Put the core feature in the most prominent place in the interface and the docs, and organize the rest around it. Deliver the core-and-supporting breakdown and the list of changes."
+    },
+    "p002": {
+      "title": "Produce a Plan Before Starting",
+      "tags": ["Initiation", "Plan"],
+      "short": "Produce a technical plan for the requirements first, and write code only after it is confirmed.",
+      "content": "Produce a reviewable technical plan for the requirements. In this round, write only the plan; do not change code or configuration. Explain the data structures and interface choices in terms of the architecture and module breakdown, and identify risks and decisions awaiting confirmation. Deliver a file-level plan that includes the acceptance method and the confirmations needed."
+    },
+    "p001": {
+      "title": "Implement the Project or a New Feature",
+      "tags": ["Initiation", "Implementation"],
+      "short": "Implement the project or feature for the concrete problem stated in the requirements, aimed at the real users, without changing existing behavior.",
+      "content": "Implement this project or feature to solve the concrete problem stated in the requirements for the actual target users, while preserving existing behavior. Check the existing structure and constraints, and choose the simplest solution that follows the project's style. Deliver a list of changes and verification results, and add tests for the new paths."
+    },
+    "p-ae9fea267e5b676a": {
+      "title": "Implement Using Standard Approaches",
+      "tags": ["Initiation", "Implementation", "Approach"],
+      "short": "Implement using mature, conventional industry approaches, document the rationale for key trade-offs, and avoid obscure practices.",
+      "content": "Build the new project on mature, conventional industry practices that stand up to scrutiny rather than personal taste. Design and implement the project using mainstream approaches first, avoid obscure practices that no one maintains, and document the rationale for key trade-offs. Deliver the implementation and design notes, with item-by-item verification results."
+    },
+    "p003": {
+      "title": "Implement Across Multiple Platforms with Consistent Behavior",
+      "tags": ["Multiple Platforms", "Consistency"],
+      "short": "Make the feature behave consistently across platforms, and deliver a comparison matrix and retest results.",
+      "content": "Implement this feature across multiple platforms, with the client and web versions sharing the core logic. Put platform differences in an adapter layer, and check that fields, validation rules, and error messages are consistent. Deliver both implementations and a comparison matrix, and retest to confirm that identical inputs produce identical behavior on both platforms."
+    },
+    "p-8b688a99254b1662": {
+      "title": "Iterate Until Acceptance Criteria Are Met",
+      "tags": ["Iteration", "Acceptance", "Loop"],
+      "short": "Check and revise repeatedly until the acceptance criteria are met or two consecutive rounds produce no substantive improvement.",
+      "content": "Make sure the output actually meets the acceptance criteria; if two consecutive rounds produce no substantive improvement, stop and explain the blocker. Repeatedly inspect and revise the current output, prioritizing the largest remaining acceptance gap in each round. If the criteria are not specified, first draft a version based on the requirements. Deliver a record of changes by round and the final comparison against the criteria."
+    },
+    "p-f22619276a2e1cf9": {
+      "title": "Take Over an Unfamiliar Codebase",
+      "tags": ["Codebase", "Onboarding", "Guide"],
+      "short": "Help me take over this project: explain the directory structure, run commands, and key conventions.",
+      "content": "Enable me to take over this project and start working independently. Explain the directory structure and module responsibilities, provide the commands for running and testing it, and identify error-prone conventions and legacy issues. Deliver an onboarding guide and a to-do list, with verification that the project runs successfully."
+    },
+    "p-17ae27df5308cc46": {
+      "title": "Locate a Feature's Implementation",
+      "tags": ["Location", "Code Navigation", "Onboarding"],
+      "short": "Explain where a feature is implemented: its entry point, key code, data storage, and data flow.",
+      "content": "Let me jump directly to the code I need to change. Explain where this feature's entry point is, which files and functions contain its key implementation, and where its interface text and data are stored. Walk through one operation to explain how data flows. Deliver a location list with paths and line numbers and a flow diagram, and verify that every path actually exists."
+    },
+    "p-ace6bd5d5df33afd": {
+      "title": "Explain What the Code Does",
+      "tags": ["Code", "Explanation", "Onboarding"],
+      "short": "Explain the code I need to read: what it does, why it is written this way, and where its boundaries are.",
+      "content": "Let readers understand this logic without guessing its intent. Explain what problem it solves, its inputs and outputs, and how its key branches and boundary conditions are handled, then describe its dependencies on surrounding code. Deliver section-by-section notes and a single flow diagram, marking anything that requires confirmation from the author."
+    }
+  }
+}

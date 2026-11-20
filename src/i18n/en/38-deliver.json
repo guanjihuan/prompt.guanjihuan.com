@@ -1,0 +1,68 @@
+{
+  "category": {
+    "name": "Delivery and Acceptance",
+    "desc": "Take a feature all the way from design to launch, check the delivery against the agreed acceptance criteria, support every conclusion with a reproducible comparison, simulate exceptional scenarios to confirm state recovery, walk through the product as a user, and state clearly what the delivery contains"
+  },
+  "prompts": {
+    "p-3cc5a14e0435104c": {
+      "title": "Take a Feature from Design to Launch in One Pass",
+      "tags": [
+        "Feature",
+        "Launch",
+        "Delivery"
+      ],
+      "short": "Take a feature from requirements to launch in one pass, verifying each step and confirming that it truly works.",
+      "content": "Complete a feature without waiting for handoffs between stages. Settle the requirements, interface, data, and launch approach up front, then carry them through in order with verification at every step. Finally, confirm that the feature can actually be used. Deliver the working feature, verification records, and launch notes."
+    },
+    "p-2350d81e0edd5a5": {
+      "title": "Check the Delivery Against the Agreed Acceptance Criteria",
+      "tags": [
+        "Acceptance",
+        "Checking",
+        "Delivery"
+      ],
+      "short": "Before delivery, go through the agreed acceptance criteria one by one and fill in whatever is missing.",
+      "content": "Make sure the delivered result truly meets the criteria agreed beforehand instead of only looking finished. List the agreed acceptance criteria, check each one with real operation or data, and complete or explain the ones that are not met. Deliver the result of each check, the unmet criteria, and the plan to close them."
+    },
+    "p-7e6bd6002dc886fa": {
+      "title": "Support Conclusions with Verifiable Comparisons",
+      "tags": [
+        "Verification",
+        "Reproduction",
+        "Comparison"
+      ],
+      "short": "Give every conclusion a comparison that can be run, so others can reproduce the same results.",
+      "content": "Do not let conclusions rest on one side's claims alone. Pair every result with a verifiable comparison method, and record the inputs, parameters, and intermediate artifacts so others can follow them and reproduce the same figures. Deliver comparison notes, reproduction steps, and the actual verification results."
+    },
+    "p-abc094ce32893adb": {
+      "title": "Simulate Failures and Confirm State Can Be Recovered",
+      "tags": [
+        "Exceptions",
+        "Edge Cases",
+        "Recovery"
+      ],
+      "short": "Simulate boundary inputs and mid-process failures, and confirm that project state can be recovered without data corruption.",
+      "content": "Keep unexpected events from forcing the project to start over. Identify the boundaries and interruption points most likely to cause problems, then simulate abnormal inputs and mid-process failures one by one. Confirm that state can be recovered and data remains intact. Deliver the scenario list, the locations fixed, and recovery verification."
+    },
+    "p-83507527ac212301": {
+      "title": "Walk Through It as a User",
+      "tags": [
+        "Experience",
+        "Hands-on Testing",
+        "Improvement"
+      ],
+      "short": "Walk through the product as a user and fix the awkward parts.",
+      "content": "Reduce friction and rework for real users. Choose the most common user journey and walk through it from beginning to end. Note anything confusing, hard to find, or repetitive, fix each issue, and walk through the journey again. Deliver a record of the walkthrough, the locations changed, and before-and-after comparisons."
+    },
+    "p-665a398574cc4b94": {
+      "title": "State Clearly What This Delivery Contains",
+      "tags": [
+        "Delivery List",
+        "Scope",
+        "Instructions"
+      ],
+      "short": "When handing work over, list what was delivered, what was not, and how to use it.",
+      "content": "Make sure whoever picks this up knows exactly what they received. List the results delivered this time, the files or services included, how to start and use them, and the parts that are explicitly not included with the reasons. Produce a delivery list, the run instructions, and a note of what is not included."
+    }
+  }
+}

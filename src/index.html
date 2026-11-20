@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-Hans" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GUAN 提示词库 · 按场景分类的常用提示词</title>
+<meta name="description" content="个人整理的提示词库：从工程实现到学术写作，反复验证过的提示词按场景分类，支持多关键词搜索、一键复制、收藏与自定义，无需登录。">
+<meta name="keywords" content="提示词,prompt,AI,智能体,Claude,分类,复制">
+<meta name="author" content="Ji-Huan Guan">
+<meta property="og:title" content="GUAN 提示词库 · 按场景分类的常用提示词">
+<meta property="og:description" content="从工程实现到学术写作，反复验证过的提示词按场景分类，搜索即取、复制即用，无需登录。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://prompt.guanjihuan.com/">
+<meta property="og:image" content="https://prompt.guanjihuan.com/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="GUAN 提示词库 · 常用智能体提示词分类检索">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GUAN 提示词库 · 按场景分类的常用提示词">
+<meta name="twitter:description" content="从工程实现到学术写作，反复验证过的提示词按场景分类，搜索即取、复制即用。">
+<meta name="twitter:image" content="https://prompt.guanjihuan.com/assets/og.png">
+<link rel="canonical" href="https://prompt.guanjihuan.com/">
+<meta name="theme-color" content="#111111">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
+<script>
+try {
+  var savedTheme = JSON.parse(localStorage.getItem('plib.theme.v1'));
+  if (savedTheme === 'light' || savedTheme === 'dark') {
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  }
+  var savedLanguage = JSON.parse(localStorage.getItem('plib.lang.v1'));
+  if (savedLanguage === 'en') document.documentElement.setAttribute('lang', 'en');
+} catch (e) { /* 使用默认暗色主题与中文 */ }
+</script>
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<script async src="https://stats.guanjihuan.com/tracker/tracker.min.js" data-site-id="site_2683c2401a511931"></script>
+</head>
+<body>
+
+<svg class="svg-defs" aria-hidden="true">
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9L12 3Z"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.5.5l2-2a5 5 0 0 0-7-7l-1.1 1.1M14 11a5 5 0 0 0-7.5-.5l-2 2a5 5 0 0 0 7 7l1.1-1.1"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5 8.5 8.5 0 1 0 20.5 14.2Z"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.6h.01"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-settings" viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h2M10 17h10M14 4v6M6 14v6"/></symbol>
+  <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m8 10 4 4 4-4"/></symbol>
+  <symbol id="i-chevron-up" viewBox="0 0 24 24"><path d="m8 14 4-4 4 4"/></symbol>
+  <symbol id="i-filter" viewBox="0 0 24 24"><path d="M4 6h16M7 12h10M10 18h4"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 4 6v5c0 5 3.4 8.6 8 10 4.6-1.4 8-5 8-10V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-edit" viewBox="0 0 24 24"><path d="m14 5 5 5M4 20l3.5-.7L20 6.8 17.2 4 4.7 16.5 4 20Z"/></symbol>
+  <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13M10 11v5M14 11v5"/></symbol>
+  <symbol id="i-import" viewBox="0 0 24 24"><path d="M12 3v12m-4-4 4 4 4-4M4 17v3h16v-3"/></symbol>
+  <symbol id="i-export" viewBox="0 0 24 24"><path d="M12 16V4m-4 4 4-4 4 4M4 17v3h16v-3"/></symbol>
+  <symbol id="i-transfer" viewBox="0 0 24 24"><path d="M7 4v16m-4-4 4 4 4-4M17 20V4m-4 4 4-4 4 4"/></symbol>
+</svg>
+
+<a class="skip-link" href="#main" data-i18n="跳到主要内容">跳到主要内容</a>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="./">
+      <span class="brand-mark" aria-hidden="true"><img src="assets/icon-180.png" alt="" width="38" height="38"></span>
+      <span class="brand-text"><strong data-i18n="GUAN 提示词库">GUAN 提示词库</strong><small>PROMPT LIBRARY</small></span>
+    </a>
+
+    <div class="search-wrap" role="search">
+      <svg class="search-icon" aria-hidden="true"><use href="#i-search"></use></svg>
+      <input id="search" type="search" placeholder="搜索全部提示词、标签或分类…" autocomplete="off" aria-label="搜索全部提示词，多个关键词用空格分隔" data-i18n-placeholder="搜索全部提示词、标签或分类…" data-i18n-aria-label="搜索全部提示词，多个关键词用空格分隔">
+      <kbd class="search-kbd" aria-hidden="true" hidden>/</kbd>
+      <button id="search-clear" class="search-clear" type="button" aria-label="清空搜索" data-i18n-aria-label="清空搜索" hidden><svg><use href="#i-close"></use></svg></button>
+    </div>
+
+    <div class="topbar-actions">
+      <button id="btn-language" class="lang-btn" type="button" title="Switch to English" aria-label="EN: Switch to English" lang="en">EN</button>
+      <button id="btn-fav" class="icon-btn" type="button" title="查看我的收藏" aria-label="查看我的收藏" aria-pressed="false">
+        <svg><use href="#i-star"></use></svg>
+      </button>
+      <button id="btn-theme" class="icon-btn" type="button" title="切换明暗主题" aria-label="切换明暗主题"><svg><use href="#i-sun"></use></svg></button>
+      <button id="btn-help" class="icon-btn" type="button" title="关于" aria-label="关于" data-i18n-title="关于" data-i18n-aria-label="关于"><svg><use href="#i-info"></use></svg></button>
+      <button id="btn-mobile-menu" class="icon-btn only-mobile" type="button" aria-label="打开分类导航" data-i18n-aria-label="打开分类导航" aria-expanded="false" aria-controls="sidebar"><svg><use href="#i-menu"></use></svg></button>
+    </div>
+  </div>
+</header>
+
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-copy">
+    <p class="eyebrow"><span></span> <b data-i18n="提示词工作台">提示词工作台</b></p>
+    <h1 id="hero-title"><span class="hero-title-main" data-i18n="需求即提示词">需求即提示词</span><span data-i18n="下一次对话，从一条好提示词开始">下一次对话，从一条好提示词开始</span></h1>
+    <p class="hero-desc" data-i18n="把需求说清楚，提示词就写好了。从工程实现到学术写作，把反复验证过的提示词按场景归类整理。无需登录，复制即用。">把需求说清楚，提示词就写好了。从工程实现到学术写作，把反复验证过的提示词按场景归类整理。无需登录，复制即用。</p>
+  </div>
+  <div class="hero-panel">
+    <div class="hero-stats" aria-label="内容统计" data-i18n-aria-label="内容统计">
+      <div><strong id="hero-total">—</strong><span data-i18n="条提示词">条提示词</span></div>
+      <div><strong id="hero-cat">—</strong><span data-i18n="个分类">个分类</span></div>
+      <div><strong id="hero-section">—</strong><span data-i18n="个场景">个场景</span></div>
+    </div>
+    <p><kbd>/</kbd> <span data-i18n="随时搜索">随时搜索</span> <span>·</span> <span data-i18n="收藏仅保存在本机">收藏仅保存在本机</span></p>
+  </div>
+</section>
+
+<div class="layout">
+  <div class="sidebar-backdrop" id="sidebar-backdrop" hidden></div>
+  <aside class="sidebar" id="sidebar" aria-label="分类导航" data-i18n-aria-label="分类导航">
+    <div class="sidebar-head"><span data-i18n="浏览分类">浏览分类</span><button id="btn-sidebar-close" class="icon-btn only-mobile" type="button" aria-label="关闭分类导航" data-i18n-aria-label="关闭分类导航"><svg><use href="#i-close"></use></svg></button></div>
+    <nav id="cat-nav"></nav>
+    <div class="side-foot">
+      <svg aria-hidden="true"><use href="#i-shield"></use></svg>
+      <div><strong data-i18n="你的数据，留在本机">你的数据，留在本机</strong><p data-i18n="收藏、使用次数与自定义内容仅保存在当前浏览器。">收藏、使用次数与自定义内容仅保存在当前浏览器。</p></div>
+    </div>
+  </aside>
+
+  <main id="main" class="main" tabindex="-1">
+    <div class="content-toolbar">
+      <div class="result-info">
+        <h2 id="current-context" tabindex="-1" data-i18n="全部提示词">全部提示词</h2>
+        <p class="stat" id="stat-count" role="status" aria-live="polite" data-i18n="正在整理…">正在整理…</p>
+      </div>
+      <div class="toolbar-actions">
+        <div class="seg" role="group" aria-label="排序方式" data-i18n-aria-label="排序方式" id="used-sort">
+          <button class="seg-btn" id="btn-used-sort" type="button" aria-pressed="false" title="按复制次数排列" data-i18n="按复制次数排列">按复制次数排列</button>
+        </div>
+        <button id="btn-copy-options" class="btn ghost" type="button" aria-expanded="false" aria-controls="copy-panel"><svg><use href="#i-settings"></use></svg><span data-i18n="复制设置">复制设置</span><span class="option-dot" id="copy-options-dot" hidden></span></button>
+        <button id="btn-export" class="btn ghost" type="button" aria-expanded="false" aria-controls="export-panel"><svg><use href="#i-transfer"></use></svg><span data-i18n="导入 / 导出">导入 / 导出</span></button>
+        <button id="btn-custom" class="btn primary" type="button"><svg><use href="#i-plus"></use></svg><span data-i18n="新建">新建</span></button>
+      </div>
+    </div>
+
+    <div class="filter-bar" id="filter-bar" aria-label="当前筛选条件" data-i18n-aria-label="当前筛选条件" hidden></div>
+
+    <section class="copy-panel" id="copy-panel" aria-label="复制设置" data-i18n-aria-label="复制设置" hidden>
+      <div class="copy-panel-head"><div><strong data-i18n="复制时自动处理">复制时自动处理</strong><p data-i18n="复制提示词时自动套用，保存在本机。">复制提示词时自动套用，保存在本机。</p></div><button id="btn-reset-options" class="text-btn" type="button" data-i18n="恢复默认">恢复默认</button></div>
+      <div class="copy-options-grid">
+        <div class="option-col">
+          <label class="option-row select-option" for="opt-prefix"><span><strong data-i18n="任务命令">任务命令</strong><small data-i18n="把 Claude Code 命令加在提示词前面">把 Claude Code 命令加在提示词前面</small></span><select id="opt-prefix">
+            <option value="" data-i18n="不加命令">不加命令</option>
+            <option value="/loop" data-desc="按默认节奏循环执行任务，直到完成或达到停止条件。" data-i18n="/loop · 循环执行" data-i18n-desc="按默认节奏循环执行任务，直到完成或达到停止条件。">/loop · 循环执行</option>
+            <option value="/plan" data-desc="进入计划模式并围绕所述任务制定实施方案。" data-i18n="/plan · 计划模式" data-i18n-desc="进入计划模式并围绕所述任务制定实施方案。">/plan · 计划模式</option>
+            <option value="/run" data-desc="启动并操作项目应用，验证提示词中描述的功能或改动。" data-i18n="/run · 运行验证" data-i18n-desc="启动并操作项目应用，验证提示词中描述的功能或改动。">/run · 运行验证</option>
+            <option value="/deep-research" data-desc="围绕研究问题检索并交叉核验资料，生成带引用的报告。" data-i18n="/deep-research · 深度研究" data-i18n-desc="围绕研究问题检索并交叉核验资料，生成带引用的报告。">/deep-research · 深度研究</option>
+            <option value="__custom" data-i18n="自定义…">自定义…</option>
+          </select></label>
+          <input id="opt-prefix-custom" class="option-custom" type="text" maxlength="200" placeholder="自定义命令，如 /mycmd" aria-label="自定义任务命令" data-i18n-placeholder="自定义命令，如 /mycmd" data-i18n-aria-label="自定义任务命令" autocomplete="off" spellcheck="false" hidden>
+        </div>
+        <div class="option-col">
+          <label class="option-row select-option" for="opt-block"><span><strong data-i18n="附加指令块">附加指令块</strong><small data-i18n="把一段工作指令追加到提示词后面">把一段工作指令追加到提示词后面</small></span><select id="opt-block"><option value="" data-i18n="不附加">不附加</option></select></label>
+          <textarea id="opt-block-custom" class="option-custom" rows="4" placeholder="自定义指令，与上方指令块可同时使用" aria-label="自定义指令块内容" data-i18n-placeholder="自定义指令，与上方指令块可同时使用" data-i18n-aria-label="自定义指令块内容" hidden></textarea>
+        </div>
+      </div>
+      <div class="command-preview" id="command-preview" hidden>
+        <span id="command-description"></span>
+        <small data-i18n="这里只列出常用命令，是否可用取决于你的 Claude Code 版本与账号；选「自定义…」可填任意命令。">这里只列出常用命令，是否可用取决于你的 Claude Code 版本与账号；选「自定义…」可填任意命令。</small>
+      </div>
+      <div class="block-preview" id="block-preview" aria-live="polite" hidden>
+        <span data-i18n="追加内容预览">追加内容预览</span>
+        <pre id="block-preview-content" tabindex="0"></pre>
+      </div>
+      <p class="copy-mode" id="copy-mode" data-i18n="当前为原始复制，不加命令或指令块。">当前为原始复制，不加命令或指令块。</p>
+    </section>
+
+    <section class="copy-panel" id="export-panel" aria-label="导入与导出" data-i18n-aria-label="导入与导出" hidden>
+      <div class="copy-panel-head"><div><strong data-i18n="导入 / 导出">导入 / 导出</strong><p data-i18n="「我的收藏」与「自定义」可导出为 Markdown 或 JSON 文件，也能从文件导入回本机。">「我的收藏」与「自定义」可导出为 Markdown 或 JSON 文件，也能从文件导入回本机。</p></div><button id="btn-export-close" class="text-btn" type="button" data-i18n="收起">收起</button></div>
+      <div class="export-options">
+        <button class="btn ghost" id="btn-export-fav-md" type="button"><svg><use href="#i-export"></use></svg><span data-i18n="收藏 · Markdown">收藏 · Markdown</span></button>
+        <button class="btn ghost" id="btn-export-fav-json" type="button"><svg><use href="#i-export"></use></svg><span data-i18n="收藏 · JSON">收藏 · JSON</span></button>
+        <button class="btn ghost" id="btn-export-custom-md" type="button"><svg><use href="#i-export"></use></svg><span data-i18n="自定义 · Markdown">自定义 · Markdown</span></button>
+        <button class="btn ghost" id="btn-export-custom" type="button"><svg><use href="#i-export"></use></svg><span data-i18n="自定义 · JSON">自定义 · JSON</span></button>
+      </div>
+      <div class="import-row">
+        <span class="import-hint"><strong data-i18n="从文件导入">从文件导入</strong><small data-i18n="收藏导出文件用「导入收藏」，自定义导出文件用「导入自定义」，选错会提示且不会导入；支持 JSON 与 Markdown">收藏导出文件用「导入收藏」，自定义导出文件用「导入自定义」，选错会提示且不会导入；支持 JSON 与 Markdown</small></span>
+        <button class="btn ghost" id="btn-import-fav" type="button"><svg><use href="#i-import"></use></svg><span data-i18n="导入收藏">导入收藏</span></button>
+        <button class="btn ghost" id="btn-import-custom" type="button"><svg><use href="#i-import"></use></svg><span data-i18n="导入自定义">导入自定义</span></button>
+        <input type="file" id="import-file-fav" accept=".json,.md,.markdown,.txt,application/json,text/markdown,text/plain" aria-label="选择要导入的收藏文件（JSON 或 Markdown）" data-i18n-aria-label="选择要导入的收藏文件（JSON 或 Markdown）" hidden>
+        <input type="file" id="import-file-custom" accept=".json,.md,.markdown,.txt,application/json,text/markdown,text/plain" aria-label="选择要导入的自定义文件（JSON 或 Markdown）" data-i18n-aria-label="选择要导入的自定义文件（JSON 或 Markdown）" hidden>
+      </div>
+      <p class="copy-mode" id="export-note" data-i18n="导出的是原始正文，不含复制设置里的任务命令与指令块。">导出的是原始正文，不含复制设置里的任务命令与指令块。</p>
+    </section>
+
+    <div class="grid-wrap" id="grid"></div>
+    <div class="load-more" id="load-more" hidden>
+      <button class="btn ghost" type="button" id="btn-load-more"><span data-i18n="再显示 24 条">再显示 24 条</span><svg><use href="#i-chevron"></use></svg></button>
+      <!-- app.js 按剩余条数改写文案（如「再显示 24 条」），滚动到底也会自动接续 -->
+      <span id="load-more-count"></span>
+    </div>
+    <div class="empty" id="empty" hidden>
+      <div class="empty-mark"><svg><use href="#i-search"></use></svg></div>
+      <h3 id="empty-title" data-i18n="没有找到相关提示词">没有找到相关提示词</h3>
+      <p id="empty-desc" data-i18n="换个关键词，或清空分类与搜索条件后再试试。">换个关键词，或清空分类与搜索条件后再试试。</p>
+      <button class="btn ghost" type="button" id="empty-reset" data-i18n="清空搜索与筛选">清空搜索与筛选</button>
+    </div>
+  </main>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"><svg><use href="#i-check"></use></svg><span></span></div>
+
+<button id="btn-top" class="to-top" type="button" aria-label="回到顶部" title="回到顶部" data-i18n-aria-label="回到顶部" data-i18n-title="回到顶部" hidden><svg><use href="#i-chevron-up"></use></svg></button>
+
+<noscript><div class="noscript"><span data-i18n="本页需要 JavaScript 才能进行搜索与复制。提示词原文维护在仓库的">本页需要 JavaScript 才能进行搜索与复制。提示词原文维护在仓库的</span> <code>src/prompts/</code> <span data-i18n="目录中。">目录中。</span></div></noscript>
+
+<div class="modal" id="modal" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-head"><div><h2 id="modal-title" data-i18n="新建提示词">新建提示词</h2><p data-i18n="保存到当前浏览器，随时编辑或导出。">保存到当前浏览器，随时编辑或导出。</p></div><button class="icon-btn" type="button" data-close aria-label="关闭" data-i18n-aria-label="关闭"><svg><use href="#i-close"></use></svg></button></div>
+    <form id="custom-form">
+      <div class="modal-body">
+        <label class="field"><span><span data-i18n="标题">标题</span> <b data-i18n="必填">必填</b></span><input id="cm-title" type="text" placeholder="例如：生成项目周报" data-i18n-placeholder="例如：生成项目周报" maxlength="80" required></label>
+        <label class="field"><span><span data-i18n="简洁表达">简洁表达</span> <small data-i18n="可选，仅在确有更短说法时填写">可选，仅在确有更短说法时填写</small></span><textarea id="cm-short" rows="3" placeholder="正文已经足够简洁时请留空…" data-i18n-placeholder="正文已经足够简洁时请留空…"></textarea></label>
+        <label class="field"><span><span data-i18n="提示词正文">提示词正文</span> <b data-i18n="必填">必填</b></span><textarea id="cm-body" rows="7" placeholder="完整的提示词正文…" data-i18n-placeholder="完整的提示词正文…" required></textarea></label>
+        <label class="field"><span><span data-i18n="使用备注">使用备注</span> <small data-i18n="可选，仅自己可见">可选，仅自己可见</small></span><input id="cm-note" type="text" placeholder="例如：使用前替换项目名与时间范围" data-i18n-placeholder="例如：使用前替换项目名与时间范围"></label>
+        <label class="field"><span><span data-i18n="所属分类">所属分类</span> <small data-i18n="可选，留空放进「我的自定义」">可选，留空放进「我的自定义」</small></span><input id="cm-category" type="text" list="cm-category-list" autocomplete="off" maxlength="40" placeholder="我的自定义" data-i18n-placeholder="我的自定义"></label>
+        <datalist id="cm-category-list"></datalist>
+        <div class="custom-manager">
+          <div class="manager-head"><h3><span data-i18n="管理已保存条目">管理已保存条目</span> <span id="cm-count">0</span></h3><div class="modal-tools"><button class="text-btn" type="button" id="cm-export"><svg><use href="#i-export"></use></svg><span data-i18n="导出">导出</span></button><button class="text-btn" type="button" id="cm-import"><svg><use href="#i-import"></use></svg><span data-i18n="导入">导入</span></button><input type="file" id="cm-file" accept=".json,.md,.markdown,.txt,application/json,text/markdown,text/plain" aria-label="选择要导入的 JSON 或 Markdown 文件" data-i18n-aria-label="选择要导入的 JSON 或 Markdown 文件" hidden></div></div>
+          <div class="modal-list" id="cm-list"></div>
+        </div>
+      </div>
+      <div class="modal-foot"><button class="btn ghost" type="button" data-close data-i18n="取消">取消</button><button class="btn primary" type="submit" id="cm-save" data-i18n="保存提示词">保存提示词</button></div>
+    </form>
+  </div>
+</div>
+
+<div class="modal" id="help" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-card modal-card-sm" role="dialog" aria-modal="true" aria-labelledby="help-title">
+    <div class="modal-head"><div><h2 id="help-title" data-i18n="关于">关于</h2></div><button class="icon-btn" type="button" data-close aria-label="关闭" data-i18n-aria-label="关闭"><svg><use href="#i-close"></use></svg></button></div>
+    <div class="modal-body">
+      <p class="about-intro"><span data-i18n="本站的提示词整理自个人工作习惯，已做脱敏与通用化处理，复制即可直接粘贴使用。">本站的提示词整理自个人工作习惯，已做脱敏与通用化处理，复制即可直接粘贴使用。</span> <span class="about-dev"><span data-i18n="开发者：">开发者：</span><span data-i18n="关济寰">关济寰</span> · <a href="https://www.guanjihuan.com/about" target="_blank" rel="noopener">https://www.guanjihuan.com/about</a></span></p>
+      <p class="about-links">
+        <span><span data-i18n="主站：">主站：</span><a href="https://www.guanjihuan.com/" target="_blank" rel="noopener">https://www.guanjihuan.com</a></span>
+        <span data-i18n="内容采用 CC BY 4.0 许可">内容采用 CC BY 4.0 许可</span>
+      </p>
+      <h3 class="about-sub" data-i18n="键盘快捷键">键盘快捷键</h3>
+      <dl class="keys">
+      <dt><kbd>/</kbd> <kbd>Ctrl</kbd>+<kbd>K</kbd></dt><dd data-i18n="聚焦搜索框">聚焦搜索框</dd>
+      <dt><kbd>Esc</kbd></dt><dd data-i18n="关闭弹层 / 收起面板 / 清空搜索">关闭弹层 / 收起面板 / 清空搜索</dd>
+      <dt><kbd>?</kbd></dt><dd data-i18n="打开关于面板">打开关于面板</dd>
+      <dt><kbd>↑</kbd> <kbd>↓</kbd></dt><dd data-i18n="在卡片行与行之间上下移动">在卡片行与行之间上下移动</dd>
+      <dt><kbd>←</kbd> <kbd>→</kbd></dt><dd data-i18n="在同一行卡片之间左右移动">在同一行卡片之间左右移动</dd>
+      <dt><kbd>C</kbd></dt><dd data-i18n="复制当前提示词（优先简洁版）">复制当前提示词（优先简洁版）</dd>
+      <dt><kbd>F</kbd></dt><dd data-i18n="收藏 / 取消收藏当前提示词">收藏 / 取消收藏当前提示词</dd>
+    </dl></div>
+  </div>
+</div>
+
+<script id="prompt-data" type="application/json">/*__PROMPT_DATA__*/</script>
+<script src="assets/i18n.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+{
+  "category": {
+    "name": "Communication and Collaboration",
+    "desc": "Emails and notices, wording revisions and social media copy, weekly and monthly reports, meeting agendas and minutes, and interview guides"
+  },
+  "prompts": {
+    "p153": {
+      "title": "Write an Email or Notice",
+      "tags": ["Email", "Notice", "Communication"],
+      "short": "Write an email or notice that explains the background and conclusion; when action is needed, specify the tasks and deadlines.",
+      "content": "Write a ready-to-send email or notice so that recipients know what happened and what they need to do after reading it. Use a formal or friendly tone as appropriate for the occasion. State the background and conclusion at the beginning, and when action is needed, specify the tasks and deadlines. Deliver the subject line and body, and check that times, locations, and attachments match the available materials."
+    },
+    "p154": {
+      "title": "Rewrite Wording for the Audience",
+      "tags": ["Wording", "Communication", "Audience"],
+      "short": "Rewrite this passage in the desired style, preserving its meaning and tailoring it to the target audience.",
+      "content": "Make the same passage achieve the desired effect with the target audience. Rewrite it in a professional, friendly, concise, or tactful style while preserving the facts, position, numbers, and limitations that cannot be dropped. Remove pointless pleasantries and correct inappropriate tones. Deliver the revised draft and an explanation of the main adjustments."
+    },
+    "p156": {
+      "title": "Rewrite with the Conclusion First",
+      "tags": ["Communication", "Conclusion", "Expression"],
+      "short": "Give the conclusion first, then the reasons and data, and finally the recommendations; do not write a chronological account.",
+      "content": "Give readers the main judgment in the first sentence so they do not have to read to the end to understand the point. Rewrite the material with the conclusion first: state the judgment and its scope at the beginning, support it with reasons and data while distinguishing facts from speculation, and end with recommendations. Deliver the revised draft and data sources, marking missing information as pending confirmation."
+    },
+    "p-15ff055b2b267520": {
+      "title": "Rewrite as a Short Social Media Post",
+      "tags": ["Copywriting", "Social media", "Reach"],
+      "short": "Turn the content into a short social media post that communicates its value and gives a next step.",
+      "content": "Make the content state its value and the next step in a short social post. Extract one core message and the evidence that backs it, rewrite it for the platform's length and tone, and keep the premises and limits of the original text. Deliver the post copy and alternative openings, marking the parts that need an image or a link."
+    },
+    "p155": {
+      "title": "Write a Progress Report",
+      "tags": ["Reporting", "Progress", "Summary"],
+      "short": "Report progress: completed, in progress, and not started items, plus risks and points that need my decision.",
+      "content": "Report current progress, distinguishing completed, in-progress, and not-started items based on actual files, execution logs, and verification records. Attach verifiable results to completed items. State the impact and response for each risk, and list blockers separately with their causes and scope of impact. Deliver the progress report, listing decisions separately with options and the latest time by which confirmation is needed."
+    },
+    "p-3b09aea4b4d39097": {
+      "title": "Write a Weekly or Monthly Report",
+      "tags": ["Weekly report", "Reporting", "Summary"],
+      "short": "Organize this week's or month's work into a weekly or monthly report: progress, next steps, risks, and support needed.",
+      "content": "Organize this week's or month's work into a ready-to-send weekly or monthly report. Structure it around progress, next steps, risks, and support needed. Include numbers or verifiable results for accomplishments, and adapt the tone to the report's audience. Deliver the report body, marking statements that are pending confirmation."
+    },
+    "p157": {
+      "title": "Confirm Responsibilities Across Multiple Parties",
+      "tags": ["Collaboration", "Responsibilities", "Confirmation"],
+      "short": "Before collaborating, align on each party's responsibilities, deliverables, and handoff points to avoid duplicated work and overwriting one another.",
+      "content": "Give every task exactly one owner, with no omissions or overlap. Align on boundaries before the collaborative task begins. The responsibility table must specify each owner, scope of responsibility, and deliverables, with only one owner for any overlapping area. Deliver the responsibility table and handoff checklist, which serve as the basis for acceptance once confirmed by the relevant members."
+    },
+    "p159": {
+      "title": "Explain Refusals and Fallbacks",
+      "tags": ["Communication", "Explanation", "Boundaries"],
+      "short": "When something cannot be done, clearly explain the reason, alternatives, and costs rather than glossing over it.",
+      "content": "When a request truly cannot be fulfilled, clearly explain the reason and costs and provide an actionable alternative. Distinguish capability limitations, missing information, and external constraints. Complete any parts that can be done first. Deliver the conclusion and recommended next steps, marking which parts remain incomplete and why."
+    },
+    "p-a21eb985ecd6228d": {
+      "title": "Prepare a Meeting Agenda",
+      "tags": ["Meeting", "Agenda", "Collaboration"],
+      "short": "Prepare an agenda based on the meeting's objectives, specifying owners, materials, durations, and expected decisions.",
+      "content": "Ensure the meeting covers every topic and reaches conclusions on matters requiring decisions during the session. Draft the agenda based on the meeting objectives and participant roles, prioritizing matters that require joint decisions. Specify the owner, materials, and duration for every item. Deliver a time-ordered agenda and pre-meeting preparation checklist, listing decisions that must be confirmed during the meeting."
+    },
+    "p162": {
+      "title": "Organize Meeting Minutes",
+      "tags": ["Meeting", "Minutes", "Action items"],
+      "short": "Organize meeting notes into conclusions, action items, and open questions, with an owner and deadline for every action item.",
+      "content": "Enable people who did not attend the meeting to catch up by reading the minutes. Start with confirmed conclusions, then list action items with their owners, deliverables, and deadlines. Mark any unspecified owner or date as pending confirmation. Deliver the minutes and items requiring confirmation, with open questions and the next follow-up listed separately at the end."
+    },
+    "p-07668bdaf8fffc32": {
+      "title": "Write a User Interview Guide",
+      "tags": ["Interview", "Research", "Product"],
+      "short": "Write an interview guide for the research questions, using neutral, non-leading questions.",
+      "content": "Make the interview elicit real behavior rather than polite responses. Write an opening and background explanation around the research questions. Arrange follow-up questions by topic, moving from open-ended to specific, and avoid leading questions and presumed answers. Note what each question is intended to validate. Deliver the guide, a list of follow-up questions, and a note-taking template, marking transition questions that require judgment during the interview."
+    }
+  }
+}

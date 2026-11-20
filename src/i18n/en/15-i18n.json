@@ -1,0 +1,74 @@
+{
+  "category": {
+    "name": "Internationalization and Localization",
+    "desc": "Multi-language wording, language switching and omission checks, multilingual documentation, dates, numbers and units, long-text layout and fonts, right-to-left layout and plural forms"
+  },
+  "prompts": {
+    "p113": {
+      "title": "Extract Copy for Internationalization",
+      "tags": ["i18n", "Copy", "Refactoring"],
+      "short": "Extract interface copy into language resource files grouped by module, leaving only keys in the code without changing behavior.",
+      "content": "Add new languages without changing code. Separate interface copy from code, place copy in language resource files grouped by module, and leave only key references in the code, preserving interpolation and interface behavior. Deliver the resource files and a list of omissions, and use page comparisons as the acceptance check."
+    },
+    "p114": {
+      "title": "Add a Language",
+      "tags": ["i18n", "Languages", "Copy"],
+      "short": "Complete the translation for the target language so the interface no longer mixes Chinese and English, and keep the terminology consistent.",
+      "content": "Fill in the translation for the target language so the interface no longer mixes Chinese and English. Check every field, settle the term glossary first and translate against it, phrase things naturally in context, and preserve the variables and format markers. Deliver the translation file and the term glossary, and check that the key pages display correctly."
+    },
+    "p115": {
+      "title": "Implement UI Language Switching",
+      "tags": ["i18n", "Switching", "Interaction"],
+      "short": "Implement language switching: promptly update localizable content, persist the preference, and fall back according to defined rules when translations are missing.",
+      "content": "Let users switch languages in the interface at any time without refreshing the page. Update the current interface and subsequently loaded content immediately, persist the selection, and fall back according to defined rules when translations are missing. Deliver the switching logic and fallback rules, and verify preference restoration."
+    },
+    "p-9b5b49df522703cc": {
+      "title": "Audit for Missing Translations After Language Switching",
+      "tags": ["i18n", "Omissions", "Inspection"],
+      "short": "Switch languages page by page to find omissions, and add all hardcoded copy and untranslated entries to the language resources.",
+      "content": "Ensure no untranslated text remains after switching languages. Review every page in both languages to find hardcoded copy and missing translation entries, and add them to the language resources together with error messages and dynamically assembled content. Deliver a list of omissions and the completed translations, with a follow-up check of every page after switching."
+    },
+    "p-b4744d8df04b5d88": {
+      "title": "Provide Documentation in Multiple Languages",
+      "tags": ["Documentation", "Multilingual", "README"],
+      "short": "Prepare multi-language versions of the main documents, organized in separate files per language.",
+      "content": "Let readers in either language read the same instructions. Provide multiple language versions of the user-facing documentation, organize them per language as separate files, and keep their structure and numbering aligned so copies do not drift apart. Deliver the list of multilingual documents and a record of the structure consistency check, marking the sections that are still missing."
+    },
+    "p116": {
+      "title": "Localize Dates and Times",
+      "tags": ["i18n", "Dates", "Formatting"],
+      "short": "Format dates and times according to target-region conventions, and define storage and display time zones explicitly.",
+      "content": "Display dates and times according to language conventions, avoiding mixed time zones and formats. Standardize date order, month names, and 12/24-hour clock use according to target-region conventions, and define storage and display time zones explicitly. Deliver formatting wrappers and examples, with checks of actual rendering for each language region."
+    },
+    "p117": {
+      "title": "Localize Numbers and Units",
+      "tags": ["i18n", "Numbers", "Units"],
+      "short": "Show separators, currency, percentages, and negative signs for numbers and units according to the conventions of the target locale.",
+      "content": "Display numbers, monetary amounts, and units according to target-region conventions. Standardize decimal points and thousands separators; define the notation for currency symbols, percentages, minus signs, and units; and round currencies according to the precision of each currency. Deliver formatting methods and examples, with checks of currency precision, minus signs, and unit display."
+    },
+    "p118": {
+      "title": "Check Layout with Long Copy",
+      "tags": ["i18n", "Typography", "Layout"],
+      "short": "Check for UI overflow with long copy: button widths, label wrapping, and table column widths.",
+      "content": "Keep the interface neatly laid out with long copy. Use long target-language text to check button widths, label wrapping, and table column widths, and use flex-based layouts to accommodate long text. Deliver layout adjustments and screenshots covering navigation and forms."
+    },
+    "p119": {
+      "title": "Configure Fonts and Character Sets",
+      "tags": ["i18n", "Fonts", "Encoding"],
+      "short": "Ensure fonts and character sets support the target language, provide fallbacks for missing glyphs, and use UTF-8 encoding.",
+      "content": "Display the target language correctly on the page without missing or misaligned characters. Check fonts and character sets, use UTF-8 consistently for page encoding, and configure a readable fallback when glyphs are missing. Deliver the font fallback stack and rendering records."
+    },
+    "p120": {
+      "title": "Support Right-to-Left Language Layouts",
+      "tags": ["i18n", "RTL", "Layout"],
+      "short": "Support right-to-left languages by mirroring directional icons and layouts while leaving nondirectional icons unchanged.",
+      "content": "Support right-to-left language layouts without breaking the interface when direction changes. Adjust text, directional icons, and column order with direction; leave nondirectional icons unchanged; and use logical properties for spacing. Deliver bidirectional styles and screenshots, with page-by-page comparisons in both directions."
+    },
+    "p-877be4e9022940a1": {
+      "title": "Handle Plurals and Dynamic Copy",
+      "tags": ["i18n", "Plurals", "Dynamic Copy"],
+      "short": "Handle plurals, gender, and variable interpolation according to each language's rules instead of assembling word order in code.",
+      "content": "Make dynamic copy adapt to each language's rules instead of assembling word order through concatenation. Handle plurals, gender, and variable interpolation for the target languages, select message branches according to the rules, and standardize placeholders and escaping. Deliver message examples and use cases, with rendering checks for plural branches in each language."
+    }
+  }
+}

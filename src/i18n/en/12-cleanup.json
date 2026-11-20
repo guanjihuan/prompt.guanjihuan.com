@@ -1,0 +1,50 @@
+{
+  "category": {
+    "name": "Cleanup and Archiving",
+    "desc": "Project closeout, archiving and local-junk cleanup, retiring content and updating references, removing old names and codenames, process locks and deletion recovery"
+  },
+  "prompts": {
+    "p058": {
+      "title": "Clean Up and Update Documentation",
+      "tags": ["Cleanup", "Closeout", "README"],
+      "short": "Bring documentation up to date with the project's current state while preserving the real test cases.",
+      "content": "At project closeout, bring documentation up to date with the current state without accidentally deleting the real test cases. Check that the README matches actual functionality and commands, correct outdated descriptions, and add missing explanations. Deliver a list of documentation changes and the results of checking that tests were retained, along with a record of verifying the documented steps by following them."
+    },
+    "p059": {
+      "title": "Archive Obsolete and Unrelated Files",
+      "tags": ["Archiving", "Backups", "Obsolete Files"],
+      "short": "Move obsolete and unrelated files into an archive directory, classify them by references, and update affected paths.",
+      "content": "Leave only actively used content in the workspace while archiving obsolete files in a traceable way. Classify files by references: keep the ones in use, move the unrelated ones into an archive directory, and list the ones awaiting confirmation separately with a reason. After moving files, update affected paths and configuration. Deliver lists of files moved out and retained, along with reference changes and how to trace the archived files."
+    },
+    "p061": {
+      "title": "Clean Up Local Junk",
+      "tags": ["Cleanup", "gitignore"],
+      "short": "Remove ignored local junk, listing everything before deletion and leaving tracked files untouched.",
+      "content": "Clear accumulated local junk without losing a single tracked file. Identify temporary directories, coverage reports, logs, and caches; exclude tracked files; and list paths and disk usage before deleting anything. Deliver what was cleaned up and retained, along with the space freed and verification that tracked files were unaffected."
+    },
+    "p310": {
+      "title": "Retire Content and Update References",
+      "tags": ["Retirement", "Links", "References"],
+      "short": "Retire the content to be removed, redirect internal references to replacement pages or remove them, flag external references for confirmation, and check for broken links.",
+      "content": "Leave no broken links after content is retired. Find internal links, documentation, navigation, and external references pointing to the content being removed; change each to a replacement page or remove it; keep the reason each item was retired; and confirm that targets are reachable. Deliver a list of reference changes and broken-link results, flagging external references that require manual confirmation."
+    },
+    "p-1b13f8cc63e501f1": {
+      "title": "Remove Old Names and Internal Codenames",
+      "tags": ["Cleanup", "Naming", "Consistency"],
+      "short": "After a rename, replace the old name and internal codename everywhere in the code, the docs, and the interface, leaving no leftovers.",
+      "content": "Leave only one way of naming things in the project. List where the old name and internal codenames appear, covering code identifiers, configuration keys, documentation, interface text, and artifact names, replace each one, and double-check for omissions. Deliver the replacement list and the leftover check results, marking the places that cannot change for now because of external dependencies."
+    },
+    "p-1ed25ee499b4af92": {
+      "title": "Investigate Process and File Locks",
+      "tags": ["Troubleshooting", "Processes", "Locks"],
+      "short": "Find and handle processes holding ports or files so the operation can be rerun safely.",
+      "content": "When an operation is blocked because a file, directory, or port is in use, identify the source and release it safely. Find the process holding the port, file, or directory and confirm its origin, terminate it safely, and retry the operation without touching anything outside this task. Deliver the lock source, how it was handled, and the result of rerunning the operation, along with suggestions for preventing recurrence."
+    },
+    "p-3a4baf32c285f2c4": {
+      "title": "Implement Undo and Recovery for Deletions",
+      "tags": ["Deletion", "Recovery", "Accidental-Deletion Prevention"],
+      "short": "Add a recycle bin and undo support to deletion: restore mistaken deletions and confirm again before permanent emptying.",
+      "content": "Make deletions reversible so accidental deletion does not lose data. Send deleted items to a recycle bin that retains their original category information, support individual and bulk restoration, require another confirmation before permanently emptying it, and clean it up automatically when items expire. Deliver the recycle-bin implementation and restoration flow, along with verification results for deletion, restoration, and expiration cleanup."
+    }
+  }
+}
